@@ -68,7 +68,7 @@ def generate_inputs():
     #else:
 
     # reduce to one group for test, full: ["AGE_13_17", "AGE_18_24", "AGE_25_34", "AGE_35_44", "AGE_45_54", "AGE_55_100"]
-    age = ["AGE_18_24"]
+    age = ["AGE_13_17", "AGE_18_24", "AGE_25_34", "AGE_35_44", "AGE_45_54", "AGE_55_100"]
 
     gender = ["GENDER_FEMALE", "GENDER_MALE", "GENDER_UNLIMITED"]
 
