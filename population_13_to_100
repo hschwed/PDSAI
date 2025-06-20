@@ -1,0 +1,73 @@
+#World-Bank population counts
+"""
+Build reference/pop_by_country_13_100.csv
+----------------------------------------
+• Downloads World-Bank population counts for   10-14 … 95-99, 100UP
+  (male & female).
+• Keeps each 5-year bucket up to 50-54 untouched.
+• Sums everything ≥55 into one “55plus” bucket.
+--------------------------------------------------------------------
+Run once from repo root:
+    python scripts/build_population_13_to_100.py
+"""
+
+from pathlib import Path
+import pandas as pd
+import requests, io, zipfile
+
+YEAR = "2024"                                 # align with TikTok snapshot
+OUT  = Path("reference/pop_by_country_13_100.csv")
+OUT.parent.mkdir(exist_ok=True)
+
+# 5-year WB indicator suffixes
+BUCKETS = [
+    "1014", "1519", "2024", "2529", "3034",
+    "3539", "4044", "4549", "5054", "5559",
+    "6064", "6569", "7074", "7579", "8084",
+    "8589", "9094", "9599", "100UP",
+]
+
+WB_URL = "https://api.worldbank.org/v2/en/indicator/{}?downloadformat=csv"
+
+def fetch(code: str) -> pd.DataFrame | None:
+    """Return df with country_code + YEAR column for one WB indicator."""
+    r = requests.get(WB_URL.format(code), timeout=60)
+    if r.status_code != 200:
+        print(f"⚠ {code} missing, skipped.")
+        return None
+    with zipfile.ZipFile(io.BytesIO(r.content)) as z:
+        data = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
+        df = pd.read_csv(z.open(data), skiprows=4, low_memory=False)
+        return df.loc[:, ["Country Code", YEAR]]
+
+def build():
+    merged = None
+    for bucket in BUCKETS:
+        for sex, sx in [("male", "MA"), ("female", "FE")]:
+            ind = f"SP.POP.{bucket}.{sx}.IN"
+            col = f"pop_{sex}_{bucket}"
+            df  = fetch(ind)
+            if df is None:        # indicator missing for tiny states etc.
+                continue
+            df = df.rename(columns={"Country Code": "country_code", YEAR: col})
+            merged = df if merged is None else merged.merge(df, on="country_code", how="outer")
+
+    # --- split ≤50-54 vs ≥55
+    keep_cols  = [c for c in merged.columns if any(k in c for k in
+                                                   ["1014", "1519", "2024", "2529",
+                                                    "3034", "3539", "4044", "4549", "5054"])]
+    plus_cols_m = [c for c in merged if c.startswith("pop_male_55")]
+    plus_cols_f = [c for c in merged if c.startswith("pop_female_55")]
+
+    merged["pop_male_55plus"]   = merged[[c for c in merged if c.startswith("pop_male_") and c not in keep_cols]].sum(axis=1)
+    merged["pop_female_55plus"] = merged[[c for c in merged if c.startswith("pop_female_") and c not in keep_cols]].sum(axis=1)
+
+    # columns to output
+    cols_out = ["country_code"] + sorted(keep_cols) + ["pop_male_55plus", "pop_female_55plus"]
+    out = merged[cols_out].dropna(subset=["pop_male_55plus", "pop_female_55plus"])
+
+    out.to_csv(OUT, index=False)
+    print(f"✓ {OUT} written ({len(out)} countries, {len(cols_out)-1} data columns)")
+
+if __name__ == "__main__":
+    build()
