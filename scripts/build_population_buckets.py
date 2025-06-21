@@ -1,71 +1,71 @@
 from pathlib import Path
-import requests, pandas as pd
+import pandas as pd
 
-YEAR = "2024"                                     # world-bank year column
-OUT  = Path("reference/pop_by_country_buckets.csv")
-OUT.parent.mkdir(exist_ok=True)
+# ── Paths ──────────────────────────────────────────────────────────
+IN_CSV  = Path("reference/worldbank_population_by_age.csv")
+OUT_CSV = Path("reference/pop_by_country_buckets.csv")
+OUT_CSV.parent.mkdir(exist_ok=True)
 
-# 5-year suffixes World Bank uses
-BUCKETS = [
-    "1014","1519","2024","2529","3034","3539","4044",
-    "4549","5054","5559","6064","6569","7074","7579",
-    "8084","8589","9094","9599","100UP"
-]
-BASE = "https://api.worldbank.org/v2/country/all/indicator/{}"
-
-def fetch(ind):
-    """Return DataFrame(country_code, country_name, value) for one indicator."""
-    r = requests.get(BASE.format(ind), params={"format":"json","per_page":20000}, timeout=30)
-    data = r.json()
-    if len(data) != 2:
-        return pd.DataFrame()
-    rows = [
-        {"country_code": rec["country"]["id"],
-         "country_name": rec["country"]["value"],
-         ind:           rec["value"] or 0}
-        for rec in data[1] if rec["date"] == YEAR
-    ]
-    return pd.DataFrame(rows)
+# ── TikTok-matching buckets we want ────────────────────────────────
+ATOMIC = ["1014", "1519", "2024"]           # keep as-is
+COMBO  = {                                  # new bucket : parts
+    "2534": ["2529", "3034"],
+    "3544": ["3539", "4044"],
+    "4554": ["4549", "5054"],
+}
+PLUS_SUFFIXES = ["5559","6064","6569","7074","7579",
+                 "8084","8589","9094","9599","100UP"]
 
 def main():
-    frames = []
-    for suf in BUCKETS:
-        for sex, sx in [("male","MA"), ("female","FE")]:
-            ind = f"SP.POP.{suf}.{sx}.IN"
-            df  = fetch(ind)
-            if not df.empty:
-                frames.append(df)
+    # 1) read full CSV (header line is row 0)
+    df = pd.read_csv(IN_CSV, low_memory=False)
 
-    if not frames:
-        print("No data downloaded.")
-        return
+    # 2) find the latest numeric year column (e.g. '2024 [YR2024]')
+    year_cols = [c for c in df.columns if c.startswith("20")]
+    YEAR_COL  = next(col for col in reversed(year_cols)
+                     if pd.to_numeric(df[col].str.replace(",",""), errors="coerce").notna().any())
+    print(f"Using year column: {YEAR_COL}")
 
-    pop = frames[0]
-    for df in frames[1:]:
-        pop = pop.merge(df, on=["country_code","country_name"], how="outer").fillna(0)
+    # 3) keep only raw head-count series & only bucket codes we need
+    keep_codes = (
+        [f"SP.POP.{s}.MA.IN" for s in ATOMIC + sum(COMBO.values(), []) + PLUS_SUFFIXES] +
+        [f"SP.POP.{s}.FE.IN" for s in ATOMIC + sum(COMBO.values(), []) + PLUS_SUFFIXES]
+    )
+    df = df[df["Series Code"].isin(keep_codes)]
 
-    # helper: safe get
-    G = lambda code: pop[code] if code in pop.columns else 0
+    # 4) pivot so each Series Code becomes a column
+    pivot = df.pivot_table(
+        index=["Country Code","Country Name"],
+        columns="Series Code",
+        values=YEAR_COL,
+        aggfunc="first"
+    ).fillna(0)
 
-    # atomic buckets
-    for b in ["1014","1519","2024"]:
-        pop[f"pop_male_{b}"]   = G(f"SP.POP.{b}.MA.IN")
-        pop[f"pop_female_{b}"] = G(f"SP.POP.{b}.FE.IN")
+    # 5) remove thousands separators & convert to numeric
+    pivot = pivot.replace({",":""}, regex=True).apply(pd.to_numeric, errors="coerce").fillna(0)
 
-    # combined buckets
-    pop["pop_male_2534"]   = G("SP.POP.2529.MA.IN") + G("SP.POP.3034.MA.IN")
-    pop["pop_female_2534"] = G("SP.POP.2529.FE.IN") + G("SP.POP.3034.FE.IN")
+    out = pivot.reset_index().rename(columns={
+        "Country Code":"country_code",
+        "Country Name":"country_name"
+    })
 
-    pop["pop_male_3544"]   = G("SP.POP.3539.MA.IN") + G("SP.POP.4044.MA.IN")
-    pop["pop_female_3544"] = G("SP.POP.3539.FE.IN") + G("SP.POP.4044.FE.IN")
+    G = lambda code: out[code] if code in out.columns else 0
 
-    pop["pop_male_4554"]   = G("SP.POP.4549.MA.IN") + G("SP.POP.5054.MA.IN")
-    pop["pop_female_4554"] = G("SP.POP.4549.FE.IN") + G("SP.POP.5054.FE.IN")
+    # 6) atomic 5-year buckets
+    for b in ATOMIC:
+        out[f"pop_male_{b}"]   = G(f"SP.POP.{b}.MA.IN")
+        out[f"pop_female_{b}"] = G(f"SP.POP.{b}.FE.IN")
 
-    plus = [f"SP.POP.{s}.{sx}.IN" for s in BUCKETS if s=="100UP" or int(s[:2])>=55 for sx in ["MA","FE"]]
-    pop["pop_male_55plus"]   = sum(G(c) for c in plus if ".MA." in c)
-    pop["pop_female_55plus"] = sum(G(c) for c in plus if ".FE." in c)
+    # 7) combined 10-year buckets
+    for new, parts in COMBO.items():
+        out[f"pop_male_{new}"]   = sum(G(f"SP.POP.{p}.MA.IN") for p in parts)
+        out[f"pop_female_{new}"] = sum(G(f"SP.POP.{p}.FE.IN") for p in parts)
 
+    # 8) 55-plus
+    out["pop_male_55plus"]   = sum(G(f"SP.POP.{s}.MA.IN") for s in PLUS_SUFFIXES)
+    out["pop_female_55plus"] = sum(G(f"SP.POP.{s}.FE.IN") for s in PLUS_SUFFIXES)
+
+    # 9) save
     cols = [
         "country_code","country_name",
         "pop_male_1014","pop_female_1014",
@@ -76,8 +76,8 @@ def main():
         "pop_male_4554","pop_female_4554",
         "pop_male_55plus","pop_female_55plus"
     ]
-    pop[cols].to_csv(OUT, index=False)
-    print(f"✓ {OUT} written ({len(pop)} countries)")
+    out[cols].to_csv(OUT_CSV, index=False)
+    print(f"✓ {OUT_CSV} written with {len(out)} countries")
 
 if __name__ == "__main__":
     main()
