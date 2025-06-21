@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 
 YEAR = "2024"
-RAW  = Path("reference/worldbank_raw/totl.csv")  # total pop CSV you just committed
+RAW  = Path("reference/API_SP.POP.TOTL_DS2_en_csv_v2_81108.csv")  # total pop CSV you just committed
 OUT  = Path("reference/pop_by_country_buckets.csv")
 OUT.parent.mkdir(exist_ok=True)
 
