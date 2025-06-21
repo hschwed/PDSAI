@@ -14,14 +14,14 @@ def main():
     df = pd.read_csv(IN_CSV, low_memory=False)
 
     # ──── DIAGNOSTIC ────
-year_cols = [c for c in df.columns if c.startswith("20")]
-print("\nDEBUG - first 15 year columns ➜", year_cols[:15])
-print("DEBUG - sample rows:")
-print(
-    df.loc[:3, ["Country Code", "Series Code"] + year_cols[:5]]
-    .to_string(index=False)
-)
-print("──────── end diagnostic ────────\n")
+    year_cols = [c for c in df.columns if c.startswith("20")]
+    print("\nDEBUG - first 15 year columns ➜", year_cols[:15])
+    print("DEBUG - sample rows:")
+    print(
+        df.loc[:3, ["Country Code", "Series Code"] + year_cols[:5]]
+        .to_string(index=False)
+    )
+    print("──────── end diagnostic ────────\n")
 # ─────────────────────
     
 
