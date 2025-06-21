@@ -92,7 +92,7 @@ merged["gap_abs"] = merged["pen_male"] - merged["pen_female"]
 merged["gap_pct"] = 100 * merged["gap_abs"] / (
     merged["pen_male"] + merged["pen_female"])
 
-OUT_DIR.joinpath("penetration_by_country.csv").write_csv(merged, index=False)
+merged.to_csv(OUT_DIR / "penetration_by_country.csv", index=False)
 print("✓ penetration_by_country.csv")
 
 # ----------------------------------------------------------------------
