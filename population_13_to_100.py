@@ -1,25 +1,8 @@
-#World-Bank population counts
-"""
-build_population_buckets.py
--------------------------------------------------
-Creates   reference/pop_by_country_buckets.csv   with
-male & female population totals for these buckets:
-
- 10-14, 15-19, 20-24            (kept as-is)
- 25-34  = 25-29 + 30-34
- 35-44  = 35-39 + 40-44
- 45-54  = 45-49 + 50-54
- 55-100 = all buckets ≥55-59 combined
-
-Run once from the repo root:
-    python scripts/build_population_buckets.py
-"""
-
 from pathlib import Path
 import pandas as pd
 import requests, io, zipfile
 
-YEAR = "2024"                                   # align with TikTok snapshot
+YEAR = "2024"
 OUT  = Path("reference/pop_by_country_buckets.csv")
 OUT.parent.mkdir(exist_ok=True)
 
@@ -30,17 +13,21 @@ BUCKETS = [
 ]
 URL = "https://api.worldbank.org/v2/en/indicator/{}?downloadformat=csv"
 
-def fetch(code: str) -> pd.DataFrame | None:
-    r = requests.get(URL.format(code), timeout=60)
+def fetch(code: str):
+    url = URL.format(code)
+    r = requests.get(url, timeout=60)
     if r.status_code != 200:
-        print(f"⚠ {code} not found, skipped.")
+        print(f"⚠ {code} → HTTP {r.status_code}, skipped.")
         return None
-    with zipfile.ZipFile(io.BytesIO(r.content)) as z:
-        data = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
-        df = pd.read_csv(z.open(data), skiprows=4, low_memory=False)
-        return df[["Country Code", YEAR]]
+    try:
+        with zipfile.ZipFile(io.BytesIO(r.content)) as z:
+            fname = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
+            df = pd.read_csv(z.open(fname), skiprows=4, low_memory=False)
+    except zipfile.BadZipFile:
+        df = pd.read_csv(io.BytesIO(r.content), skiprows=4, low_memory=False)
+    return df[["Country Code", YEAR]]
 
-def sum_cols(df: pd.DataFrame, sex: str, parts: list[str]) -> pd.Series:
+def sum_cols(df, sex, parts):
     return df[[f"pop_{sex}_{p}" for p in parts]].sum(axis=1)
 
 def main():
@@ -55,12 +42,11 @@ def main():
             d = d.rename(columns={"Country Code": "country_code", YEAR: col})
             merged = d if merged is None else merged.merge(d, on="country_code", how="outer")
 
-    # custom buckets
     for sex in ["male", "female"]:
         merged[f"pop_{sex}_2534"] = sum_cols(merged, sex, ["2529", "3034"])
         merged[f"pop_{sex}_3544"] = sum_cols(merged, sex, ["3539", "4044"])
         merged[f"pop_{sex}_4554"] = sum_cols(merged, sex, ["4549", "5054"])
-        high = [s for s in BUCKETS if int(s[:2]) >= 55 or s == "100UP"]
+        high = [s for s in BUCKETS if (s != "100UP" and int(s[:2]) >= 55) or s == "100UP"]
         merged[f"pop_{sex}_55plus"] = sum_cols(merged, sex, high)
 
     out_cols = [
