@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 
 # Input: the CSV you uploaded
-IN_CSV = Path("reference/worldbank_population_by_age.csv")
+IN_CSV = Path("worldbank_population_by_age.csv")
 # Output: the cleaned buckets file
 OUT_CSV = Path("reference/pop_by_country_buckets.csv")
 OUT_CSV.parent.mkdir(exist_ok=True)
