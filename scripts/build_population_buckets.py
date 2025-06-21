@@ -27,11 +27,7 @@ def main():
     print(f"Using year column: {YEAR_COL}")
 
     # 3) keep only raw head-count series & only bucket codes we need
-    keep_codes = (
-        [f"SP.POP.{s}.MA.IN" for s in ATOMIC + sum(COMBO.values(), []) + PLUS_SUFFIXES] +
-        [f"SP.POP.{s}.FE.IN" for s in ATOMIC + sum(COMBO.values(), []) + PLUS_SUFFIXES]
-    )
-    df = df[df["Series Code"].isin(keep_codes)]
+    df = df[df["Series Code"].str.endswith(".IN", na=False)]
 
     # 4) pivot so each Series Code becomes a column
     pivot = df.pivot_table(
