@@ -13,6 +13,18 @@ def main():
     # 1️⃣ Load full file
     df = pd.read_csv(IN_CSV, low_memory=False)
 
+    # ──── DIAGNOSTIC ────
+year_cols = [c for c in df.columns if c.startswith("20")]
+print("\nDEBUG - first 15 year columns ➜", year_cols[:15])
+print("DEBUG - sample rows:")
+print(
+    df.loc[:3, ["Country Code", "Series Code"] + year_cols[:5]]
+    .to_string(index=False)
+)
+print("──────── end diagnostic ────────\n")
+# ─────────────────────
+    
+
     # 2️⃣ Filter to population series (.MA.IN & .FE.IN)
     mask = df["Series Code"].str.endswith(".MA.IN") | df["Series Code"].str.endswith(".FE.IN")
     df = df[mask]
