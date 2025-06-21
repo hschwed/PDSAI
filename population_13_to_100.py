@@ -11,25 +11,24 @@ BUCKETS = [
     "5054", "5559", "6064", "6569", "7074", "7579", "8084",
     "8589", "9094", "9599", "100UP"
 ]
-URL = "https://api.worldbank.org/v2/en/indicator/{}?downloadformat=csv"
+URL = "https://api.worldbank.org/v2/country/all/indicator/{}?format=zip"
 
 def fetch(code: str):
-    url = URL.format(code)
-    r = requests.get(url, timeout=60)
+    import io, zipfile, pandas as pd, requests
+
+    r = requests.get(URL.format(code), timeout=60)
     if r.status_code != 200:
         print(f"⚠ {code} → HTTP {r.status_code}, skipped.")
         return None
-    try:
+
+    try:                                      # always a ZIP on this endpoint
         with zipfile.ZipFile(io.BytesIO(r.content)) as z:
             fname = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
             df = pd.read_csv(z.open(fname), skiprows=4, low_memory=False)
-    except zipfile.BadZipFile:
-        try:
-            df = pd.read_csv(io.BytesIO(r.content), skiprows=4, low_memory=False)
-        except pd.errors.EmptyDataError:
-            print(f"⚠ {code} returned no tabular data, skipped.")
-            return None
-    return df[["Country Code", YEAR]]
+            return df[["Country Code", YEAR]]
+    except Exception as e:
+        print(f"⚠ {code} invalid zip, skipped. ({e})")
+        return None
 
 def sum_cols(df, sex, parts):
     return df[[f"pop_{sex}_{p}" for p in parts]].sum(axis=1)
