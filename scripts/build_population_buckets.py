@@ -1,77 +1,71 @@
-"""
-build_population_buckets.py
------------------------------------------------
-Creates reference/pop_by_country_buckets.csv with:
-
- 10-14 , 15-19 , 20-24               (kept as-is)
- 25-34 = 25-29 + 30-34
- 35-44 = 35-39 + 40-44
- 45-54 = 45-49 + 50-54
- 55+   = every bucket ≥55-59
-
-Run once from repo root:
-    python scripts/build_population_buckets.py
-"""
 from pathlib import Path
-import requests, pandas as pd
+import pandas as pd
 
-YEAR   = 2024
-OUT    = Path("reference/pop_by_country_buckets.csv")
-OUT.parent.mkdir(exist_ok=True)
+# Input: the CSV you uploaded
+IN_CSV = Path("reference/worldbank_population_by_age.csv")
+# Output: the cleaned buckets file
+OUT_CSV = Path("reference/pop_by_country_buckets.csv")
+OUT_CSV.parent.mkdir(exist_ok=True)
 
-# 5-yr suffixes World Bank uses
-BUCKETS = [
-    "1014", "1519", "2024", "2529", "3034", "3539", "4044",
-    "4549", "5054", "5559", "6064", "6569", "7074", "7579",
-    "8084", "8589", "9094", "9599", "100UP"
-]
-
-def fetch_series(code: str) -> pd.Series:
-    """Return pd.Series indexed by ISO code for a single indicator & YEAR."""
-    url = f"https://api.worldbank.org/v2/country/all/indicator/{code}"
-    r   = requests.get(url, params={"format": "json", "per_page": 20000})
-    data = r.json()
-    if len(data) != 2:                               # no data
-        return pd.Series(dtype=float)
-    rows = [ (rec["country"]["id"], rec["value"])
-             for rec in data[1] if rec["date"] == str(YEAR) ]
-    return pd.Series(dict(rows))
+# The 2024 numeric column in that CSV
+YEAR_COL = "2024 [YR2024]"
 
 def main():
-    store = {}
-    for suf in BUCKETS:
-        for sex, sx in [("male", "MA"), ("female", "FE")]:
-            ind = f"SP.POP.{suf}.{sx}.IN"
-            ser = fetch_series(ind)
-            if ser.empty:
-                print(f"⚠ {ind} empty")
-                continue
-            store[f"pop_{sex}_{suf}"] = ser
+    # 1. load & filter to absolute counts
+    df = pd.read_csv(IN_CSV, skiprows=4, low_memory=False)
+    df = df[df["Series Code"].str.endswith(".IN", na=False)]
 
-    df = pd.DataFrame(store).fillna(0).reset_index().rename(columns={"index":"country_code"})
+    # 2. pivot so each Series Code becomes a column
+    pivot = (
+        df
+        .pivot_table(
+            index=["Country Code", "Country Name"],
+            columns="Series Code",
+            values=YEAR_COL,
+            aggfunc="first"
+        )
+        .fillna(0)
+    )
 
-    def bucket(sex, parts):
-        return df[[f"pop_{sex}_{p}" for p in parts]].sum(axis=1)
+    # 3. set up output DataFrame
+    idx = pivot.index
+    out = pd.DataFrame({
+        "country_code": idx.get_level_values(0),
+        "country_name": idx.get_level_values(1),
+    })
 
-    for s in ["male","female"]:
-        df[f"pop_{s}_2534"]   = bucket(s, ["2529","3034"])
-        df[f"pop_{s}_3544"]   = bucket(s, ["3539","4044"])
-        df[f"pop_{s}_4554"]   = bucket(s, ["4549","5054"])
-        high = [p for p in BUCKETS if p=="100UP" or int(p[:2])>=55]
-        df[f"pop_{s}_55plus"] = bucket(s, high)
+    # helper to safely grab a column (or return zeros)
+    def get_val(code):
+        return pivot[code] if code in pivot.columns else 0
 
-    keep = [
-        "country_code",
-        "pop_male_1014","pop_female_1014",
-        "pop_male_1519","pop_female_1519",
-        "pop_male_2024","pop_female_2024",
-        "pop_male_2534","pop_female_2534",
-        "pop_male_3544","pop_female_3544",
-        "pop_male_4554","pop_female_4554",
-        "pop_male_55plus","pop_female_55plus"
-    ]
-    df[keep].to_csv(OUT, index=False)
-    print(f"✓ {OUT} written ({len(df)} countries)")
+    # 4. atomic buckets: 10-14,15-19,20-24
+    for b in ("1014","1519","2024"):
+        out[f"pop_male_{b}"]   = get_val(f"SP.POP.{b}.MA.IN")
+        out[f"pop_female_{b}"] = get_val(f"SP.POP.{b}.FE.IN")
+
+    # 5. combined buckets
+    out["pop_male_2534"]   = get_val("SP.POP.2529.MA.IN") + get_val("SP.POP.3034.MA.IN")
+    out["pop_female_2534"] = get_val("SP.POP.2529.FE.IN") + get_val("SP.POP.3034.FE.IN")
+
+    out["pop_male_3544"]   = get_val("SP.POP.3539.MA.IN") + get_val("SP.POP.4044.MA.IN")
+    out["pop_female_3544"] = get_val("SP.POP.3539.FE.IN") + get_val("SP.POP.4044.FE.IN")
+
+    out["pop_male_4554"]   = get_val("SP.POP.4549.MA.IN") + get_val("SP.POP.5054.MA.IN")
+    out["pop_female_4554"] = get_val("SP.POP.4549.FE.IN") + get_val("SP.POP.5054.FE.IN")
+
+    # 55+ = all buckets from 55-59 up to 100+
+    plus_codes_m = [f"SP.POP.{s}.MA.IN" for s in [
+        "5559","6064","6569","7074","7579","8084",
+        "8589","9094","9599","100UP"
+    ]]
+    plus_codes_f = [c.replace(".MA.IN",".FE.IN") for c in plus_codes_m]
+
+    out["pop_male_55plus"]   = sum(get_val(c) for c in plus_codes_m)
+    out["pop_female_55plus"] = sum(get_val(c) for c in plus_codes_f)
+
+    # 6. write the result
+    out.to_csv(OUT_CSV, index=False)
+    print(f"✓ {OUT_CSV} created with {len(out)} countries")
 
 if __name__ == "__main__":
     main()
