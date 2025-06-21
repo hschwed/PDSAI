@@ -14,21 +14,28 @@ BUCKETS = [
 URL = "https://api.worldbank.org/v2/country/all/indicator/{}?format=zip"
 
 def fetch(code: str):
-    import io, zipfile, pandas as pd, requests
+    """
+    Download World-Bank indicator → DataFrame(country_code, YEAR).
 
-    r = requests.get(URL.format(code), timeout=60)
-    if r.status_code != 200:
-        print(f"⚠ {code} → HTTP {r.status_code}, skipped.")
-        return None
-
-    try:                                      # always a ZIP on this endpoint
+    Tries ZIP first, then falls back to CSV.  Skips if nothing tabular.
+    """
+    base = f"https://api.worldbank.org/v2/country/all/indicator/{code}"
+    # 1 try ZIP
+    r = requests.get(base + "?format=zip", timeout=60)
+    try:
         with zipfile.ZipFile(io.BytesIO(r.content)) as z:
-            fname = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
-            df = pd.read_csv(z.open(fname), skiprows=4, low_memory=False)
+            name = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
+            df   = pd.read_csv(z.open(name), skiprows=4, low_memory=False)
             return df[["Country Code", YEAR]]
-    except Exception as e:
-        print(f"⚠ {code} invalid zip, skipped. ({e})")
-        return None
+    except (zipfile.BadZipFile, IndexError):
+        # 2 fallback CSV
+        r = requests.get(base + "?format=csv&per_page=6000", timeout=60)
+        try:
+            df = pd.read_csv(io.BytesIO(r.content), skiprows=4, low_memory=False)
+            return df[["Country Code", YEAR]]
+        except Exception:
+            print(f"⚠ {code} → no usable data, skipped.")
+            return None
 
 def sum_cols(df, sex, parts):
     return df[[f"pop_{sex}_{p}" for p in parts]].sum(axis=1)
