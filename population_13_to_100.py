@@ -24,7 +24,11 @@ def fetch(code: str):
             fname = [n for n in z.namelist() if n.endswith("_Data.csv")][0]
             df = pd.read_csv(z.open(fname), skiprows=4, low_memory=False)
     except zipfile.BadZipFile:
-        df = pd.read_csv(io.BytesIO(r.content), skiprows=4, low_memory=False)
+        try:
+            df = pd.read_csv(io.BytesIO(r.content), skiprows=4, low_memory=False)
+        except pd.errors.EmptyDataError:
+            print(f"⚠ {code} returned no tabular data, skipped.")
+            return None
     return df[["Country Code", YEAR]]
 
 def sum_cols(df, sex, parts):
