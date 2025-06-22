@@ -51,7 +51,7 @@ pop_long = (pop.set_index(["country_code","country_name"])
                .rename(columns=lambda c: c.replace("pop_",""))
                .stack().reset_index()
                .rename(columns={"level_2":"tmp", 0:"pop"}))
-pop_long[["sex","bucket"]] = pop_long["tmp"].str.split("_", 1, expand=True)
+pop_long[["sex","bucket"]] = pop_long["tmp"].str.split("_", n=1, expand=True)
 pop_tidy = (pop_long.pivot_table(index=["country_code","bucket"],
                                  columns="sex", values="pop")
                      .reset_index()
