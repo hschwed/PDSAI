@@ -104,7 +104,9 @@ aud_tidy = (
         .rename(columns={"male": "tiktok_male",
                          "female": "tiktok_female"})
 )
-
+if "tiktok_male" not in aud_tidy.columns and "male" in aud_tidy.columns:
+    aud_tidy = aud_tidy.rename(columns={"male": "tiktok_male",
+                                        "female": "tiktok_female"})
 # ── 3 · merge + metrics ─────────────────────────────────────────────
 merged = (aud_tidy
           .merge(pop_tidy, on=["country_code", "bucket"], how="inner"))
