@@ -2,22 +2,23 @@
 gender_gap_tables.py – TikTok penetration & gender gap by age bucket
 --------------------------------------------------------------------
 Reads
-  • outputs/tt_clean.csv                     – slim TikTok export
-  • reference/pop_by_country_buckets.csv     – population buckets (2024)
+  • outputs/tt_clean.csv                         – slim TikTok export
+  • reference/pop_by_country_buckets_stripped.csv
+      ↳ columns: country_code, country_name,
+                 male_1014, female_1014, … , male_55plus, female_55plus
 
 Writes to outputs/
-  • penetration_by_country.csv   – country × bucket
-  • penetration_by_bucket.csv    – world totals
-  • overall_gap.csv, gap_by_country.csv      – legacy totals
+  • penetration_by_country.csv   – country × age bucket
+  • penetration_by_bucket.csv    – world totals by age bucket
+  • overall_gap.csv, gap_by_country.csv          – legacy totals
 """
 
 from pathlib import Path
 import pandas as pd
-import numpy as np
 import re
 
-SLIM_TT = Path("outputs/tt_clean.csv")                 # <── your new file
-POP_FILE = Path("reference/pop_by_country_buckets.csv")
+SLIM_TT  = Path("outputs/tt_clean.csv")
+POP_FILE = Path("reference/pop_by_country_buckets_stripped.csv")  # <── new file
 OUT_DIR  = Path("outputs"); OUT_DIR.mkdir(exist_ok=True)
 
 # ── helpers ─────────────────────────────────────────────────────────
@@ -29,17 +30,16 @@ RANGE_MAP = {
     "AGE_45_54":  "4554",
     "AGE_55_100": "55plus",
 }
-def normalize(s: str) -> str:
-    return re.sub(r"[^a-z0-9]", "", str(s).lower())
+normalize = lambda s: re.sub(r"[^a-z0-9]", "", str(s).lower())
 
-# ── 1 · population buckets (ISO codes + totals) ────────────────────
+# ── 1 · population buckets (already stripped) ──────────────────────
 pop = pd.read_csv(POP_FILE)
 name2iso = {normalize(n): c for n, c in
             zip(pop["country_name"], pop["country_code"])}
 
+# melt → tidy
 pop_long = (
     pop.set_index(["country_code", "country_name"])
-       .rename(columns=lambda c: c.replace("pop_", ""))
        .stack()
        .reset_index()
        .rename(columns={"level_2": "tmp", 0: "pop"})
@@ -56,21 +56,20 @@ pop_tidy = (
 # ── 2 · TikTok slim file → tidy ────────────────────────────────────
 aud = pd.read_csv(SLIM_TT)
 
-# ensure ISO-3 codes present
+# map ISO codes if missing
 if aud["country_code"].isna().all():
     aud["country_code"] = aud["country_name"].map(lambda x: name2iso.get(normalize(x)))
 
-aud = aud.dropna(subset=["country_code"])          # rows we can’t map
-aud["bucket"] = aud["age_bucket"].map(RANGE_MAP)
+aud = aud.dropna(subset=["country_code"])
 
-# warn if any TikTok age label wasn't mapped
-n_dropped = aud["bucket"].isna().sum()
-if n_dropped:
-    print(f"⚠️  {n_dropped:,} TikTok rows had unknown age buckets and were skipped.")
+# age bucket mapping
+aud["bucket"] = aud["age_bucket"].map(RANGE_MAP)
+n_bad = aud["bucket"].isna().sum()
+if n_bad:
+    print(f"⚠️  {n_bad:,} TikTok rows had unknown buckets – skipped.")
 aud = aud.dropna(subset=["bucket"])
 
-
-# safety: compute est_users if absent
+# ensure est_users column is present
 if "est_users" not in aud.columns:
     aud["est_users"] = (aud["lower_end"] + aud["upper_end"]) / 2
 
@@ -83,15 +82,15 @@ aud_tidy = (
         .reset_index()
 )
 
-# —— flatten any MultiIndex & force tiktok_male / tiktok_female —— #
-if isinstance(aud_tidy.columns, pd.MultiIndex):
-    aud_tidy.columns = [c if isinstance(c, str) else c[1] for c in aud_tidy.columns]
-
+# force columns tiktok_male / tiktok_female
 rename_map = {c: f"tiktok_{c.strip().lower()}"
               for c in aud_tidy.columns
               if c.strip().lower() in ("male", "female")}
 aud_tidy = aud_tidy.rename(columns=rename_map)
-# ------------------------------------------------------------------
+for col in ("tiktok_male", "tiktok_female"):
+    if col not in aud_tidy.columns:
+        print(f"⚠️  '{col}' missing – inserting zeros.")
+        aud_tidy[col] = 0
 
 # ── 3 · merge & metrics ────────────────────────────────────────────
 merged = aud_tidy.merge(pop_tidy, on=["country_code", "bucket"], how="inner")
@@ -103,7 +102,7 @@ merged["gap_pct"] = 100 * merged["gap_abs"] / (
     merged["pen_male"] + merged["pen_female"])
 
 merged.to_csv(OUT_DIR / "penetration_by_country.csv", index=False)
-print("✓ penetration_by_country.csv →", len(merged), "rows")
+print("✓ penetration_by_country.csv  →", len(merged), "rows")
 
 # ── 4 · world totals by bucket ─────────────────────────────────────
 world = (
@@ -116,9 +115,9 @@ world = (
 world["gap_abs"] = world["pen_male"] - world["pen_female"]
 world["gap_pct"] = 100 * world["gap_abs"] / (world["pen_male"] + world["pen_female"])
 world.to_csv(OUT_DIR / "penetration_by_bucket.csv")
-print("✓ penetration_by_bucket.csv  →", len(world), "buckets")
+print("✓ penetration_by_bucket.csv   →", len(world), "buckets")
 
-# ── 5 · legacy totals ─────────────────────────────────────────────
+# ── 5 · legacy totals (unchanged) ──────────────────────────────────
 tot = (aud.groupby("sex")["est_users"].sum()
           .rename({"male": "total_male", "female": "total_female"})
           .to_frame().T)
