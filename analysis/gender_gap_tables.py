@@ -63,6 +63,13 @@ if aud["country_code"].isna().all():
 aud = aud.dropna(subset=["country_code"])          # rows we can’t map
 aud["bucket"] = aud["age_bucket"].map(RANGE_MAP)
 
+# warn if any TikTok age label wasn't mapped
+n_dropped = aud["bucket"].isna().sum()
+if n_dropped:
+    print(f"⚠️  {n_dropped:,} TikTok rows had unknown age buckets and were skipped.")
+aud = aud.dropna(subset=["bucket"])
+
+
 # safety: compute est_users if absent
 if "est_users" not in aud.columns:
     aud["est_users"] = (aud["lower_end"] + aud["upper_end"]) / 2
