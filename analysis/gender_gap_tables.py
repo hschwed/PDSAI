@@ -41,6 +41,7 @@ def _normal(s: str) -> str:
 #  STEP A · read population file  (already has ISO-3 codes)
 # -------------------------------------------------------------------
 pop = pd.read_csv(POP_FILE)
+pop.iloc[:, 2:] = pop.iloc[:, 2:] * 1_000
 
 pop_long = (
     pop.set_index(["country_code", "country_name"])
