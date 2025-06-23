@@ -7,7 +7,6 @@
 # possibly fixed now
 
 
-
 from pathlib import Path
 import pandas as pd
 import re
@@ -45,39 +44,39 @@ if "code" in df.columns:
     df["country_code"] = df["code"].astype(str).str.strip()
 else:
     pop = pd.read_csv(POP)[["country_code", "country_name"]]
-    lookup = {normal(name): code for code, name in pop.values}
+    lookup = {normal(n): c for c, n in pop.values}
     df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
 df["country_code"].replace("", "UNK", inplace=True)
 
 # -------------------------------------------------------------------
-# 4) Filter to the 57 valid countries by region_id
+# 4) Detect & filter by region_id
 # -------------------------------------------------------------------
+# Load the 57 valid region_ids
 countries = pd.read_csv(COUNTRIES_FILE)
-valid_ids = (
-    countries
-    .loc[countries["region_level"] == "COUNTRY", "region_id"]
-    .astype(int)
-    .tolist()
-)
+valid_ids = countries.loc[
+    countries["region_level"] == "COUNTRY", "region_id"
+].astype(int).tolist()
 
-# Ensure the raw export has region_id; error if not
-if "region_id" not in df.columns:
-    raise KeyError("Expected 'region_id' column in raw export")
+# Auto-detect your region-id column in the TikTok export
+for candidate in ("region_id","regionId","region","region_code"):
+    if candidate in df.columns:
+        df["region_id"] = df[candidate].astype(int)
+        break
+else:
+    raise KeyError(
+        "No region‐ID column found in TikTok export. "
+        f"Available columns: {list(df.columns)}"
+    )
 
-df["region_id"] = df["region_id"].astype(int)
+# Keep only rows whose region_id is in your 57-country list
 df = df[df["region_id"].isin(valid_ids)].copy()
 
 # -------------------------------------------------------------------
 # 5) Slim columns & rename for consistency
 # -------------------------------------------------------------------
 keep = [
-    "name",
-    "country_code",
-    "ages_ranges",
-    "sex",
-    "lower_end",
-    "upper_end",
-    "est_users"
+    "name", "country_code", "ages_ranges",
+    "sex", "lower_end", "upper_end", "est_users"
 ]
 df = df[keep].rename(columns={
     "name": "country_name",
