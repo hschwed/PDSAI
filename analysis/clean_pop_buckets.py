@@ -2,10 +2,15 @@
 # strips “pop_” prefixes and tidies column names
 # -> Outputs: [pop_by_country_buckets_stripped.csv ]
 
+
+
 # ---------------------------------------------------------------
 # Strip the "pop_" prefix from bucket columns so they read e.g.
 #   male_1014 , female_1014 , male_2024 , …
 # ---------------------------------------------------------------
+
+
+
 from pathlib import Path
 import pandas as pd
 
