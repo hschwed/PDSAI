@@ -5,17 +5,6 @@
 
 
 
-# analysis/diagnose_gender_pipeline.py
-# -------------------------------------------------------------------
-# A self-contained debugger for the TikTok-vs-population pipeline.
-#
-# It reproduces each stage from gender_gap_tables.py but never crashes.
-# Instead it captures exceptions, prints row/column counts, and
-# appends every warning to outputs/pipeline_diagnostics.txt
-#
-# Run from repo root:
-#     python analysis/diagnose_gender_pipeline.py
-# -------------------------------------------------------------------
 from pathlib import Path
 import pandas as pd
 import re
