@@ -1,3 +1,4 @@
+# uses [pop_by_country_buckets.csv ]
 # strips “pop_” prefixes and tidies column names
 # -> Outputs: [pop_by_country_buckets_stripped.csv ]
 
