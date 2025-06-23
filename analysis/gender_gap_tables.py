@@ -37,7 +37,6 @@ def _normal(s: str) -> str:
 #  STEP A · read population file  (already has ISO-3 codes)
 # -------------------------------------------------------------------
 pop = pd.read_csv(POP_FILE)
-#pop.iloc[:, 2:] = pop.iloc[:, 2:] * 1_000
 
 pop_long = (
     pop.set_index(["country_code", "country_name"])
@@ -96,7 +95,7 @@ mask = aud["country_code"] == ""
 aud.loc[mask, "country_code"] = aud.loc[mask, "country_name"].apply(to_iso3)
 
 missing_iso = aud["country_code"].isna().sum()
-print(f"ISO-3 mapping → {len(aud)-missing_iso:,} rows mapped, {missing_iso:,} missing")
+print(f"ISO-3 mapping -> {len(aud)-missing_iso:,} rows mapped, {missing_iso:,} missing")
 aud = aud.dropna(subset=["country_code"])
 
 # -------------------------------------------------------------------
@@ -135,7 +134,7 @@ merged[["pen_male", "pen_female", "gap_abs", "gap_pct"]] = \
     merged[["pen_male", "pen_female", "gap_abs", "gap_pct"]].round(4)
 
 merged.to_csv(OUT_DIR / "penetration_by_country.csv", index=False)
-print(f"✓ penetration_by_country.csv → {len(merged):,} rows")
+print(f"✓ penetration_by_country.csv -> {len(merged):,} rows")
 
 # -------------------------------------------------------------------
 #  STEP F · world totals by bucket
@@ -156,7 +155,7 @@ world[["pen_male", "pen_female", "gap_abs", "gap_pct"]] = \
     world[["pen_male", "pen_female", "gap_abs", "gap_pct"]].round(4)
 
 world.to_csv(OUT_DIR / "penetration_by_bucket.csv", index=False)
-print(f"✓ penetration_by_bucket.csv → {len(world):,} buckets")
+print(f"✓ penetration_by_bucket.csv -> {len(world):,} buckets")
 
 # -------------------------------------------------------------------
 #  STEP G · legacy totals (overall & by country)
@@ -224,7 +223,7 @@ RANGE_MAP = {
 
 # ────────────────────── helper functions ────────────────────────────
 def _normal(s: str) -> str:
-    """ASCII-only, lowercase, no punctuation → handy dict key."""
+    """ASCII-only, lowercase, no punctuation -> handy dict key."""
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
@@ -232,7 +231,6 @@ def _normal(s: str) -> str:
 #  STEP A · read population file  (already has ISO-3 codes)
 # -------------------------------------------------------------------
 pop = pd.read_csv(POP_FILE)
-pop.iloc[:, 2:] = pop.iloc[:, 2:] * 1_000
 
 pop_long = (
     pop.set_index(["country_code", "country_name"])
@@ -248,7 +246,7 @@ pop_tidy = (
             .rename(columns={"male": "pop_male", "female": "pop_female"})
 )
 
-# dictionary to convert *cleaned* country names → ISO-3
+# dictionary to convert *cleaned* country names -> ISO-3
 NAME2ISO = {_normal(n): c for n, c in
             zip(pop["country_name"], pop["country_code"])}
 
@@ -297,7 +295,7 @@ aud.loc[aud["country_code"] == "", "country_code"] = (
 )
 
 missing_iso = aud["country_code"].isna().sum()
-print(f"ISO-3 mapping → {len(aud)-missing_iso:,} rows mapped , {missing_iso:,} missing")
+print(f"ISO-3 mapping -> {len(aud)-missing_iso:,} rows mapped , {missing_iso:,} missing")
 if missing_iso:
     aud = aud.dropna(subset=["country_code"])
 
@@ -333,7 +331,7 @@ merged["gap_pct"] = 100 * merged["gap_abs"] / (
 )
 
 merged.to_csv(OUT_DIR / "penetration_by_country.csv", index=False)
-print("✓ penetration_by_country.csv →", len(merged), "rows")
+print("✓ penetration_by_country.csv ->", len(merged), "rows")
 
 # -------------------------------------------------------------------
 #  STEP F · world totals by bucket
@@ -348,7 +346,7 @@ world = (
 world["gap_abs"] = world["pen_male"] - world["pen_female"]
 world["gap_pct"] = 100 * world["gap_abs"] / (world["pen_male"] + world["pen_female"])
 world.to_csv(OUT_DIR / "penetration_by_bucket.csv")
-print("✓ penetration_by_bucket.csv  →", len(world), "buckets")
+print("✓ penetration_by_bucket.csv  ->", len(world), "buckets")
 
 # -------------------------------------------------------------------
 #  STEP G · legacy totals (overall & by country)
