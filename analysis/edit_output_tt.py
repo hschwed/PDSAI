@@ -11,32 +11,44 @@ from pathlib import Path
 import pandas as pd
 import re
 
-# ------------------------------------------------------------------
-RAW  = Path("output.csv")
-POP  = Path("reference/pop_by_country_buckets.csv")  # for name→ISO fallback
-OUT  = Path("outputs/tt_clean.csv")
+# 1) files & paths
+RAW = Path("output.csv")                    # your TikTok dump
+POP = Path("reference/pop_by_country_buckets.csv")
+OUT = Path("outputs/tt_clean.csv")
 OUT.parent.mkdir(exist_ok=True)
 
-# 1) load raw TikTok output
+# 2) load raw TikTok output
 df = pd.read_csv(RAW)
 
-# 2) normalization helper
+# 3) helper to normalize names
 def normal(x):
     return re.sub(r'[^a-z]', '', str(x).strip().lower())
 
-# 3) load population reference for name→ISO mapping
-pop = pd.read_csv(POP, usecols=["country_name", "country_code"]).drop_duplicates()
+# 4) build name→ISO lookup from your pop reference
+pop = (
+    pd.read_csv(POP, usecols=["country_name", "country_code"])
+      .drop_duplicates()
+)
+name2iso = { normal(n): code for n, code in pop.values }
 
-# 4) map each TikTok “name” to its ISO code
-name2iso = {normal(n): c for n, c in pop.values}
+# 5) map TikTok “name” → ISO, then drop the non-matches
 df["country_code"] = df["name"].map(lambda x: name2iso.get(normal(x)))
-
-# 4.1) drop anything that didn’t map to a valid country ISO
 df = df[df["country_code"].notna()]
 
-# 5) pick the slim column set and rename
+# 6) compute midpoint estimate
+df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
+
+# 7) normalize genders→sex
+#    expects strings like “GENDER_FEMALE” / “GENDER_MALE”
+df["sex"] = (
+    df["genders"]
+      .str.replace("GENDER_", "", regex=False)
+      .str.lower()
+)
+
+# 8) pick & rename the final columns
 keep = [
-    "name",
+    "name",         # original label from TikTok
     "country_code",
     "ages_ranges",
     "sex",
@@ -44,11 +56,15 @@ keep = [
     "upper_end",
     "est_users"
 ]
-df = df[keep].rename(columns={
-    "name": "country_name",
-    "ages_ranges": "age_bucket"
-})
+df_clean = (
+    df[keep]
+      .rename(columns={
+          "name": "country_name",
+          "ages_ranges": "age_bucket"
+      })
+)
 
-# 6) save cleaned CSV
-df.to_csv(OUT, index=False)
-print(f"✓ {OUT} written with {len(df):,} rows")
+# 9) write out
+df_clean.to_csv(OUT, index=False)
+print(f"✓ {OUT} written with {len(df_clean):,} rows")
+
