@@ -11,7 +11,7 @@ from pathlib import Path
 import pandas as pd
 
 # 1) files & paths
-RAW = Path("output-3.csv")             # your TikTok dump
+RAW = Path("output.csv")             # your TikTok dump
 OUT = Path("outputs/tt_clean.csv")
 OUT.parent.mkdir(exist_ok=True)
 
