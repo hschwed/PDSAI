@@ -12,9 +12,10 @@ import pandas as pd
 import re
 
 # ------------------------------------------------------------------
-RAW  = Path("output.csv")
-POP  = Path("reference/pop_by_country_buckets.csv")  # for ISO lookup
-OUT  = Path("outputs/tt_clean.csv")
+RAW            = Path("output.csv")
+COUNTRIES_FILE = Path("countries.csv")                       # list of 57 countries
+POP            = Path("reference/pop_by_country_buckets.csv")
+OUT            = Path("outputs/tt_clean.csv")
 OUT.parent.mkdir(exist_ok=True)
 
 # quick utils ------------------------------------------------------
@@ -25,7 +26,7 @@ def normal(s: str) -> str:
 # 1) load TikTok export (parse commas as thousands separators)
 df = pd.read_csv(RAW, thousands=",")
 
-# 2) keep only male/female, estimate audience & map sex
+# 2) keep only male/female and estimate audience; map sexes
 df = df[df["genders"].isin(["GENDER_MALE", "GENDER_FEMALE"])].copy()
 df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
 df["sex"] = df["genders"].map({
@@ -33,7 +34,7 @@ df["sex"] = df["genders"].map({
     "GENDER_FEMALE": "female"
 })
 
-# 3) build or preserve ISO-3 country codes
+# 3) ensure ISO-3 country codes
 if "code" in df.columns:
     df["country_code"] = df["code"].astype(str).str.strip()
 else:
@@ -41,17 +42,28 @@ else:
     lookup = {normal(n): c for n, c in pop.values}
     df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
 
-# 4) fill any missing country codes so downstream merges don’t drop rows
+# 4) fill any missing codes to avoid downstream drops
 df["country_code"] = df["country_code"].replace("", "UNK")
 
-# 5) slim down columns & rename
-keep = ["name", "country_code", "ages_ranges",
-        "sex", "lower_end", "upper_end", "est_users"]
+# 5) filter to the 57 countries from countries.csv
+countries = pd.read_csv(COUNTRIES_FILE)
+valid_codes = countries.loc[
+    countries["region_level"] == "COUNTRY", 
+    "country_code"
+].tolist()
+df = df[df["country_code"].isin(valid_codes)].copy()
+
+# 6) slim down columns & rename for consistency
+keep = [
+    "name", "country_code", "ages_ranges",
+    "sex", "lower_end", "upper_end", "est_users"
+]
 df = df[keep].rename(columns={
     "name": "country_name",
     "ages_ranges": "age_bucket"
 })
 
-# 6) save
+# 7) save cleaned output
 df.to_csv(OUT, index=False)
-print(f"✓ {OUT} written with {len(df):,} rows")
+print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_codes)} countries)")
+
