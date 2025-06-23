@@ -1,4 +1,5 @@
 # uses [output.csv]
+# uses [countries.csv]
 # cleans & normalizes TikTok data and maps country codes ISO
 # Outputs: [tt_clean.csv]
 
@@ -11,22 +12,25 @@ from pathlib import Path
 import pandas as pd
 import re
 
-# ------------------------------------------------------------------
+# ───────────────────────── file paths ───────────────────────────
 RAW            = Path("output.csv")
-COUNTRIES_FILE = Path("countries.csv")                       # list of 57 countries
+COUNTRIES_FILE = Path("countries.csv")
 POP            = Path("reference/pop_by_country_buckets.csv")
 OUT            = Path("outputs/tt_clean.csv")
 OUT.parent.mkdir(exist_ok=True)
 
-# quick utils ------------------------------------------------------
+# ────────────────────────── quick utils ──────────────────────────
 def normal(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", str(s).lower())
 
-# ------------------------------------------------------------------
-# 1) load TikTok export (parse commas as thousands separators)
+# -------------------------------------------------------------------
+# 1) Load raw TikTok export (parse commas as thousands separators)
+# -------------------------------------------------------------------
 df = pd.read_csv(RAW, thousands=",")
 
-# 2) keep only male/female and estimate audience; map sexes
+# -------------------------------------------------------------------
+# 2) Basic cleaning & audience estimate
+# -------------------------------------------------------------------
 df = df[df["genders"].isin(["GENDER_MALE", "GENDER_FEMALE"])].copy()
 df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
 df["sex"] = df["genders"].map({
@@ -34,7 +38,9 @@ df["sex"] = df["genders"].map({
     "GENDER_FEMALE": "female"
 })
 
-# 3) ensure ISO-3 country codes
+# -------------------------------------------------------------------
+# 3) Map to ISO-3 country codes
+# -------------------------------------------------------------------
 if "code" in df.columns:
     df["country_code"] = df["code"].astype(str).str.strip()
 else:
@@ -42,18 +48,24 @@ else:
     lookup = {normal(n): c for n, c in pop.values}
     df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
 
-# 4) fill any missing codes to avoid downstream drops
 df["country_code"] = df["country_code"].replace("", "UNK")
 
-# 5) filter to the 57 countries from countries.csv
+# -------------------------------------------------------------------
+# 4) Filter to the 57 valid countries by region_id
+# -------------------------------------------------------------------
 countries = pd.read_csv(COUNTRIES_FILE)
-valid_codes = countries.loc[
+valid_ids = countries.loc[
     countries["region_level"] == "COUNTRY", 
-    "country_code"
-].tolist()
-df = df[df["country_code"].isin(valid_codes)].copy()
+    "region_id"
+].astype(int).tolist()
 
-# 6) slim down columns & rename for consistency
+# Assume the TikTok export has a `region_id` column:
+df["region_id"] = df["region_id"].astype(int)
+df = df[df["region_id"].isin(valid_ids)].copy()
+
+# -------------------------------------------------------------------
+# 5) Slim columns & rename
+# -------------------------------------------------------------------
 keep = [
     "name", "country_code", "ages_ranges",
     "sex", "lower_end", "upper_end", "est_users"
@@ -63,7 +75,10 @@ df = df[keep].rename(columns={
     "ages_ranges": "age_bucket"
 })
 
-# 7) save cleaned output
+# -------------------------------------------------------------------
+# 6) Save cleaned output
+# -------------------------------------------------------------------
 df.to_csv(OUT, index=False)
-print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_codes)} countries)")
+print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_ids)} countries)")
+
 
