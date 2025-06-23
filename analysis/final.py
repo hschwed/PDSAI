@@ -47,15 +47,16 @@ pop_tidy = (
 NAME2ISO = { _normal(n): c for n,c in zip(pop["country_name"], pop["country_code"]) }
 
 # -------------------------------------------------------------------
-#  STEP B · read TikTok data with thousands parsing
+#  STEP B · read TikTok data
 # -------------------------------------------------------------------
-aud = pd.read_csv(TT_FILE, thousands=',')
+# The following line was corrected to remove `thousands=','`
+aud = pd.read_csv(TT_FILE)
 
 # normalize age_bucket labels
 aud["age_bucket"] = aud["age_bucket"].str.replace('-', '_')
 aud["bucket"] = aud["age_bucket"].map(RANGE_MAP)
 if aud["bucket"].isna().any():
-    raise ValueError(f"Unknown age_bucket labels: {aud["age_bucket"][aud['bucket'].isna()].unique()}")
+    raise ValueError(f"Unknown age_bucket labels: {aud['age_bucket'][aud['bucket'].isna()].unique()}")
 
 # -------------------------------------------------------------------
 #  STEP C · ensure ISO-3 codes
@@ -110,7 +111,7 @@ aud_tidy = (
 # -------------------------------------------------------------------
 merged = aud_tidy.merge(pop_tidy, on=["country_code","bucket"], how="inner")
 if merged.empty:
-    raise RuntimeError("Merged table is empty – check ISO codes & bucket labels")
+    raise RuntimeError("Merged table is empty – check ISO codes & bucket labels in your input files")
 
 # penetration and gap
 merged["pen_male"] = np.where(merged["pop_male"]>0,
