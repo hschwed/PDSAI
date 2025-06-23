@@ -1,22 +1,9 @@
-# analysis/make_penetration_outputs.py
-"""
-Create two high-level outputs from penetration_by_country.csv
-------------------------------------------------------------
+# uses [penetration_by_country.csv]
+# summarize & rank bucket gaps
+# Outputs: [penetration_summary.csv]
+# Outputs: [ranking_by_bucket.csv ]
 
-Reads
-  • outputs/penetration_by_country.csv   (built by gender_gap_tables.py)
 
-Writes to outputs/
-  1. penetration_summary.csv
-       country_code · bucket · pen_total · pen_male · pen_female
-       · gap_abs · gap_pct
-  2. ranking_by_bucket.csv
-       bucket-wise ranking of countries by gap_pct
-       (rank 1 = largest male-advantage gap)
-
-Run from repo root:
-    python analysis/make_penetration_outputs.py
-"""
 
 from pathlib import Path
 import pandas as pd
