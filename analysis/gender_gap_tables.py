@@ -8,19 +8,6 @@
 
 
 
-"""
-gender_gap_tables.py – TikTok penetration & gender-gap by age bucket
---------------------------------------------------------------------
-Reads
-  • outputs/tt_clean.csv                       – slim TikTok export
-  • reference/pop_by_country_buckets_stripped.csv   – pop buckets (2024)
-
-Writes to outputs/
-  • penetration_by_country.csv   – country × bucket
-  • penetration_by_bucket.csv    – world totals
-  • overall_gap.csv, gap_by_country.csv        – legacy totals
-"""
-
 from pathlib import Path
 import pandas as pd
 import numpy as np
