@@ -23,7 +23,12 @@ reference/worldbank_population_by_age.csv
 --------------------------------------
 ### normalize raw TikTok export & map country codes ###
 
+____ToDO_______
 
+- edis output.csv in a way that makes it usable, get rid of 58k rows
+- use countries.csv to get the region id for the country in output.csv
+
+_______________
 output.csv  
   → analysis/edit_output_tt.py  
           → outputs/tt_clean.csv  
