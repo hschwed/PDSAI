@@ -44,32 +44,21 @@ if "code" in df.columns:
     df["country_code"] = df["code"].astype(str).str.strip()
 else:
     pop = pd.read_csv(POP)[["country_code", "country_name"]]
-    lookup = {normal(n): c for c, n in pop.values}
+    lookup = {normal(name): code for code, name in pop.values}
     df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
+
 df["country_code"].replace("", "UNK", inplace=True)
 
 # -------------------------------------------------------------------
-# 4) Detect & filter by region_id
+# 4) Filter to the 57 valid countries by ISO code
 # -------------------------------------------------------------------
-# Load the 57 valid region_ids
 countries = pd.read_csv(COUNTRIES_FILE)
-valid_ids = countries.loc[
-    countries["region_level"] == "COUNTRY", "region_id"
-].astype(int).tolist()
+valid_codes = countries.loc[
+    countries["region_level"] == "COUNTRY",
+    "country_code"
+].tolist()
 
-# Auto-detect your region-id column in the TikTok export
-for candidate in ("region_id","regionId","region","region_code"):
-    if candidate in df.columns:
-        df["region_id"] = df[candidate].astype(int)
-        break
-else:
-    raise KeyError(
-        "No region‐ID column found in TikTok export. "
-        f"Available columns: {list(df.columns)}"
-    )
-
-# Keep only rows whose region_id is in your 57-country list
-df = df[df["region_id"].isin(valid_ids)].copy()
+df = df[df["country_code"].isin(valid_codes)].copy()
 
 # -------------------------------------------------------------------
 # 5) Slim columns & rename for consistency
@@ -87,4 +76,4 @@ df = df[keep].rename(columns={
 # 6) Save cleaned & filtered output
 # -------------------------------------------------------------------
 df.to_csv(OUT, index=False)
-print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_ids)} countries)")
+print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_codes)} countries)")
