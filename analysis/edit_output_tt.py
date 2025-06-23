@@ -1,5 +1,5 @@
-#edit output.csv for better handling
-# analysis/edit_output_tt.py
+# cleans & normalizes TikTok data and maps country codes ISO
+# Outputs: [tt_clean.csv]
 from pathlib import Path
 import pandas as pd
 import re
