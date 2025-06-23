@@ -1,5 +1,6 @@
-#cleans pop_bucket file, in order to get clear col names
-# analysis/clean_pop_buckets.py
+# strips “pop_” prefixes and tidies column names
+# -> Outputs: [pop_by_country_buckets_stripped.csv ]
+
 # ---------------------------------------------------------------
 # Strip the "pop_" prefix from bucket columns so they read e.g.
 #   male_1014 , female_1014 , male_2024 , …
