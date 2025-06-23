@@ -6,54 +6,52 @@
 # possibly fixed now
 
 
+
 from pathlib import Path
 import pandas as pd
 import re
 
-# 1) files & paths
-RAW = Path("output.csv")             # your TikTok dump
-OUT = Path("outputs/tt_clean.csv")
+# ------------------------------------------------------------------
+RAW  = Path("output.csv")
+POP  = Path("reference/pop_by_country_buckets.csv")  # for ISO lookup
+OUT  = Path("outputs/tt_clean.csv")
 OUT.parent.mkdir(exist_ok=True)
 
-# 2) load raw TikTok output
-df = pd.read_csv(RAW)
+# quick utils ------------------------------------------------------
+def normal(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(s).lower())
 
-# 3) keep only 2-letter uppercase country codes
-#    (drops any city/region entries)
-df = df[df["name"].astype(str).str.match(r'^[A-Z]{2}$', na=False)]
+# ------------------------------------------------------------------
+# 1) load TikTok export (parse commas as thousands separators)
+df = pd.read_csv(RAW, thousands=",")
 
-# 4) keep only female & male segments (drop unlimited)
-df = df[df["genders"].isin(["GENDER_FEMALE", "GENDER_MALE"]) ]
+# 2) keep only male/female, estimate audience & map sex
+df = df[df["genders"].isin(["GENDER_MALE", "GENDER_FEMALE"])].copy()
+df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
+df["sex"] = df["genders"].map({
+    "GENDER_MALE": "male",
+    "GENDER_FEMALE": "female"
+})
 
-# 5) drop any global-stage summaries
-#    (TikTok stage4 often returns world/global figures leaked into every country)
-df = df[df["user_count_stage"] != 4]
+# 3) build or preserve ISO-3 country codes
+if "code" in df.columns:
+    df["country_code"] = df["code"].astype(str).str.strip()
+else:
+    pop = pd.read_csv(POP)[["country_code", "country_name"]]
+    lookup = {normal(n): c for n, c in pop.values}
+    df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
 
-# 6) normalize gender → sex
-#    transforms GENDER_MALE → male, GENDER_FEMALE → female
-df["sex"] = df["genders"].str.replace("GENDER_", "", regex=False).str.lower()
+# 4) fill any missing country codes so downstream merges don’t drop rows
+df["country_code"] = df["country_code"].replace("", "UNK")
 
-# 7) aggregate to one bound per country×age×sex
-#    taking the maximum lower & upper ends to cover all ad-objective segments
-grp = (
-    df
-      .groupby(["name", "ages_ranges", "sex"], as_index=False)
-      .agg({"lower_end": "max", "upper_end": "max"})
-)
-# 8) compute midpoint estimate
-grp["est_users"] = (grp["lower_end"] + grp["upper_end"]) / 2
+# 5) slim down columns & rename
+keep = ["name", "country_code", "ages_ranges",
+        "sex", "lower_end", "upper_end", "est_users"]
+df = df[keep].rename(columns={
+    "name": "country_name",
+    "ages_ranges": "age_bucket"
+})
 
-# 9) rename & reorder columns
-df_clean = (
-    grp
-      .rename(columns={
-          "name": "country_code",
-          "ages_ranges": "age_bucket"
-      })
-      [["country_code", "age_bucket", "sex", "lower_end", "upper_end", "est_users"]]
-)
-
-# 10) write out
-df_clean.to_csv(OUT, index=False)
-print(f"✓ {OUT} written with {len(df_clean):,} rows")
-
+# 6) save
+df.to_csv(OUT, index=False)
+print(f"✓ {OUT} written with {len(df):,} rows")
