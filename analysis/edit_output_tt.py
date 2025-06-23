@@ -18,7 +18,7 @@ def normal(s: str) -> str:
 
 # ------------------------------------------------------------------
 # 1) load TikTok export
-df = pd.read_csv(RAW)
+df = pd.read_csv(RAW, thousands=',')
 
 # 2) basic cleaning / keep only rows we care about
 df = df[df["genders"].isin(["GENDER_MALE", "GENDER_FEMALE"])].copy()
