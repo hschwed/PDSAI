@@ -29,7 +29,7 @@ def normal(s: str) -> str:
 df = pd.read_csv(RAW, thousands=",")
 
 # -------------------------------------------------------------------
-# 2) Basic cleaning & audience estimate
+# 2) Keep only male/female, estimate audience & map sex
 # -------------------------------------------------------------------
 df = df[df["genders"].isin(["GENDER_MALE", "GENDER_FEMALE"])].copy()
 df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
@@ -45,30 +45,39 @@ if "code" in df.columns:
     df["country_code"] = df["code"].astype(str).str.strip()
 else:
     pop = pd.read_csv(POP)[["country_code", "country_name"]]
-    lookup = {normal(n): c for n, c in pop.values}
+    lookup = {normal(name): code for code, name in pop.values}
     df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
-
-df["country_code"] = df["country_code"].replace("", "UNK")
+df["country_code"].replace("", "UNK", inplace=True)
 
 # -------------------------------------------------------------------
 # 4) Filter to the 57 valid countries by region_id
 # -------------------------------------------------------------------
 countries = pd.read_csv(COUNTRIES_FILE)
-valid_ids = countries.loc[
-    countries["region_level"] == "COUNTRY", 
-    "region_id"
-].astype(int).tolist()
+valid_ids = (
+    countries
+    .loc[countries["region_level"] == "COUNTRY", "region_id"]
+    .astype(int)
+    .tolist()
+)
 
-# Assume the TikTok export has a `region_id` column:
+# Ensure the raw export has region_id; error if not
+if "region_id" not in df.columns:
+    raise KeyError("Expected 'region_id' column in raw export")
+
 df["region_id"] = df["region_id"].astype(int)
 df = df[df["region_id"].isin(valid_ids)].copy()
 
 # -------------------------------------------------------------------
-# 5) Slim columns & rename
+# 5) Slim columns & rename for consistency
 # -------------------------------------------------------------------
 keep = [
-    "name", "country_code", "ages_ranges",
-    "sex", "lower_end", "upper_end", "est_users"
+    "name",
+    "country_code",
+    "ages_ranges",
+    "sex",
+    "lower_end",
+    "upper_end",
+    "est_users"
 ]
 df = df[keep].rename(columns={
     "name": "country_name",
@@ -76,9 +85,7 @@ df = df[keep].rename(columns={
 })
 
 # -------------------------------------------------------------------
-# 6) Save cleaned output
+# 6) Save cleaned & filtered output
 # -------------------------------------------------------------------
 df.to_csv(OUT, index=False)
 print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_ids)} countries)")
-
-
