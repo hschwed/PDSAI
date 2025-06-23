@@ -33,7 +33,7 @@ except FileNotFoundError:
 
 # ─────────────────── 3. Locate region column ──────────────────────────
 candidates = [c for c in df.columns]
-preferred  = ["region_id", "regionId", "region", "region_code"]
+preferred  = ["geo_location", "region_id", "regionId", "region", "region_code"]
 
 region_col = next((c for c in preferred if c in candidates), None)
 if region_col is None:
