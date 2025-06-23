@@ -6,9 +6,9 @@
 # possibly fixed now
 
 
-
 from pathlib import Path
 import pandas as pd
+import re
 
 # 1) files & paths
 RAW = Path("output.csv")             # your TikTok dump
@@ -20,25 +20,40 @@ df = pd.read_csv(RAW)
 
 # 3) keep only 2-letter uppercase country codes
 #    (drops any city/region entries)
-df = df[df["name"].str.match(r'^[A-Z]{2}$', na=False)]
+df = df[df["name"].astype(str).str.match(r'^[A-Z]{2}$', na=False)]
 
-# 4) compute midpoint estimate
-df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
+# 4) keep only female & male segments (drop unlimited)
+df = df[df["genders"].isin(["GENDER_FEMALE", "GENDER_MALE"]) ]
 
-# 5) normalize gender → sex
+# 5) drop any global-stage summaries
+#    (TikTok stage4 often returns world/global figures leaked into every country)
+df = df[df["user_count_stage"] != 4]
+
+# 6) normalize gender → sex
+#    transforms GENDER_MALE → male, GENDER_FEMALE → female
 df["sex"] = df["genders"].str.replace("GENDER_", "", regex=False).str.lower()
 
-# 6) select & rename
+# 7) aggregate to one bound per country×age×sex
+#    taking the maximum lower & upper ends to cover all ad-objective segments
+grp = (
+    df
+      .groupby(["name", "ages_ranges", "sex"], as_index=False)
+      .agg({"lower_end": "max", "upper_end": "max"})
+)
+# 8) compute midpoint estimate
+grp["est_users"] = (grp["lower_end"] + grp["upper_end"]) / 2
+
+# 9) rename & reorder columns
 df_clean = (
-    df[["name", "ages_ranges", "sex", "lower_end", "upper_end", "est_users"]]
+    grp
       .rename(columns={
-         "name": "country_code",
-         "ages_ranges": "age_bucket"
+          "name": "country_code",
+          "ages_ranges": "age_bucket"
       })
+      [["country_code", "age_bucket", "sex", "lower_end", "upper_end", "est_users"]]
 )
 
-# 7) write out
+# 10) write out
 df_clean.to_csv(OUT, index=False)
 print(f"✓ {OUT} written with {len(df_clean):,} rows")
-
 
