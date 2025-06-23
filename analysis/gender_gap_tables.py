@@ -1,3 +1,13 @@
+# uses [pop_by_country_buckets_stripped.csv]
+# uses [tt_clean.csv]
+# computes penetration rates & gender gaps
+# Outputs: [penetration_by_country.csv]
+# Outputs: [penetration_by_bucket.csv]
+# Outputs: [overall_gap.csv]
+# Outputs: [gap_by_country.csv]
+
+
+
 """
 gender_gap_tables.py – TikTok penetration & gender-gap by age bucket
 --------------------------------------------------------------------
