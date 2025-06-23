@@ -1,3 +1,6 @@
+# bucketize WB [worldbank_population_by_age.csv  ] age-by-sex data by country & TikTok age groups
+# ->Output: [pop_by_country_buckets.csv]
+
 from pathlib import Path
 import pandas as pd
 
