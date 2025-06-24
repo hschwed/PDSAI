@@ -51,6 +51,17 @@ pop_tidy = (
 # -------------------------------------------------------------------
 aud = pd.read_csv(TT_FILE)
 
+# if country_code isn’t already present, map region_id → ISO-3 via countries.csv
+if "country_code" not in aud.columns:
+    ref = pd.read_csv(Path("countries.csv"))
+    # pick up only the COUNTRY‐level rows
+    id2iso = (
+        ref.loc[ref["region_level"].str.upper()=="COUNTRY", ["region_id","country_code"]]
+           .astype({"region_id": int})
+    )
+    aud = aud.merge(id2iso, on="region_id", how="inner")
+
+
 # ensure we have the core columns
 for col in ["country_code","ages_ranges","sex","est_users"]:
     if col not in aud.columns:
