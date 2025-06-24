@@ -75,7 +75,7 @@ MAPPINGS = [
 CODE_LOOKUP = {item['region_id']: item['country_code'] for item in MAPPINGS}
 NAME_LOOKUP = {item['region_id']: item['region_name'] for item in MAPPINGS}
 
- def add_region_columns(df: pd.DataFrame) -> pd.DataFrame:
+def add_region_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
     Given a DataFrame with a `geo_location` column of region IDs,
     add `region_id`, `country_code`, and `region_name` columns.
