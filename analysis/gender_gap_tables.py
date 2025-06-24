@@ -14,9 +14,10 @@ import numpy as np
 # ───────────────────────── file paths ───────────────────────────
 TT_FILE  = Path("outputs/country_output.csv")
 POP_FILE = Path("reference/pop_by_country_buckets_stripped.csv")
-OUT_DIR  = Path("outputs");  OUT_DIR.mkdir(exist_ok=True)
+OUT_DIR  = Path("outputs")
+OUT_DIR.mkdir(exist_ok=True)
 
-# ─────────────────────────── age-bucket map ─────────────────────────
+# ─────────────────────────── age‐bucket map ─────────────────────────
 RANGE_MAP = {
     "AGE_13_17":  "1014",
     "AGE_18_24":  "2024",
@@ -27,127 +28,126 @@ RANGE_MAP = {
 }
 
 # -------------------------------------------------------------------
-# STEP A · read population buckets
+# STEP A · load and tidy population buckets
 # -------------------------------------------------------------------
 pop = pd.read_csv(POP_FILE)
+# Convert wide stripped file into long‐form tidy frame
 pop_long = (
-    pop.set_index(["country_code","country_name"])
+    pop.set_index(["country_code", "country_name"])
        .stack()
        .reset_index()
-       .rename(columns={"level_2":"tmp", 0:"pop"})
+       .rename(columns={"level_2": "tmp", 0: "pop"})
 )
-pop_long[["sex","bucket"]] = pop_long["tmp"].str.split("_", n=1, expand=True)
+# Extract sex and bucket from 'tmp' (e.g., 'male_1014' → sex='male', bucket='1014')
+pop_long[["sex", "bucket"]] = pop_long["tmp"].str.split("_", n=1, expand=True)
 pop_tidy = (
     pop_long.pivot_table(
-        index=["country_code","bucket"],
-        columns="sex", values="pop", aggfunc="first"
+        index=["country_code", "bucket"],
+        columns="sex",
+        values="pop",
+        aggfunc="first"
     )
     .reset_index()
-    .rename(columns={"male":"pop_male","female":"pop_female"})
+    .rename(columns={"male": "pop_male", "female": "pop_female"})
 )
 
 # -------------------------------------------------------------------
-# STEP B · read filtered TikTok audience
+# STEP B · load filtered TikTok data
 # -------------------------------------------------------------------
 aud = pd.read_csv(TT_FILE)
 
-# if country_code isn’t already present, map region_id → ISO-3 via countries.csv
-if "country_code" not in aud.columns:
-    ref = pd.read_csv(Path("countries.csv"))
-    # pick up only the COUNTRY‐level rows
-    id2iso = (
-        ref.loc[ref["region_level"].str.upper()=="COUNTRY", ["region_id","country_code"]]
-           .astype({"region_id": int})
-    )
-    aud = aud.merge(id2iso, on="region_id", how="inner")
+# Ensure required columns are present
+required = ["country_code", "age_bucket", "sex", "est_users"]
+missing = [c for c in required if c not in aud.columns]
+if missing:
+    raise KeyError(f"Missing columns in {TT_FILE}: {missing}")
 
-
-# ensure we have the core columns
-for col in ["country_code","ages_ranges","sex","est_users"]:
-    if col not in aud.columns:
-        raise KeyError(f"Missing column {col} in {TT_FILE}")
-
-# map ages_ranges → bucket
-aud["bucket"] = aud["ages_ranges"].map(RANGE_MAP)
+# Map TikTok age_bucket labels to numeric bucket keys
+aud["bucket"] = aud["age_bucket"].map(RANGE_MAP)
 if aud["bucket"].isna().any():
-    bad = aud.loc[aud["bucket"].isna(), "ages_ranges"].unique()
-    raise ValueError(f"Unknown age ranges: {bad}")
+    bad = aud.loc[aud["bucket"].isna(), "age_bucket"].unique()
+    raise ValueError(f"Unknown age_bucket values: {bad}")
 
 # -------------------------------------------------------------------
-# STEP C · aggregate TikTok by country, bucket & sex
+# STEP C · aggregate TikTok audience by country, bucket & sex
 # -------------------------------------------------------------------
 aud_tidy = (
-    aud.groupby(["country_code","bucket","sex"], as_index=False)["est_users"]
+    aud.groupby(["country_code", "bucket", "sex"], as_index=False)["est_users"]
        .sum()
-       .pivot(index=["country_code","bucket"], columns="sex", values="est_users")
+       .pivot(index=["country_code", "bucket"], columns="sex", values="est_users")
        .fillna(0)
        .reset_index()
-       .rename(columns={"male":"tiktok_male","female":"tiktok_female"})
+       .rename(columns={"male": "tiktok_male", "female": "tiktok_female"})
 )
 
 # -------------------------------------------------------------------
-# STEP D · merge with population & compute metrics
+# STEP D · merge with population and compute metrics
 # -------------------------------------------------------------------
-merged = aud_tidy.merge(pop_tidy, on=["country_code","bucket"], how="inner")
+merged = aud_tidy.merge(pop_tidy, on=["country_code", "bucket"], how="inner")
 if merged.empty:
-    raise RuntimeError("Empty merge – check country codes & bucket labels")
+    raise RuntimeError("Empty merge: check country_code and bucket alignment")
 
+# Compute penetration and gap metrics
 merged["pen_male"]   = merged["tiktok_male"]   / merged["pop_male"]
 merged["pen_female"] = merged["tiktok_female"] / merged["pop_female"]
 merged["gap_abs"]    = merged["pen_male"] - merged["pen_female"]
 den = merged["pen_male"] + merged["pen_female"]
-merged["gap_pct"]    = np.where(den>0, 100 * merged["gap_abs"] / den, 0)
+merged["gap_pct"]    = np.where(den > 0, 100 * merged["gap_abs"] / den, 0)
 
-# round only the final metrics
-for c in ["pen_male","pen_female","gap_abs","gap_pct"]:
-    merged[c] = merged[c].round(4)
+# Round final metrics
+for col in ["pen_male", "pen_female", "gap_abs", "gap_pct"]:
+    merged[col] = merged[col].round(4)
 
-# write country-level table
-merged.to_csv(OUT_DIR/"penetration_by_country.csv", index=False)
+# Write country‐level penetration & gaps
+merged.to_csv(OUT_DIR / "penetration_by_country.csv", index=False)
 print(f"✓ penetration_by_country.csv → {len(merged):,} rows")
 
 # -------------------------------------------------------------------
-# STEP E · world totals by bucket
+# STEP E · compute world totals by bucket
 # -------------------------------------------------------------------
 world = (
-    merged.groupby("bucket")[["tiktok_male","tiktok_female","pop_male","pop_female"]]
+    merged.groupby("bucket")[["tiktok_male", "tiktok_female", "pop_male", "pop_female"]]
           .sum()
           .assign(
-             pen_male   = lambda d: d.tiktok_male   / d.pop_male,
-             pen_female = lambda d: d.tiktok_female / d.pop_female
+              pen_male   = lambda d: d["tiktok_male"]   / d["pop_male"],
+              pen_female = lambda d: d["tiktok_female"] / d["pop_female"]
           )
 )
-world["gap_abs"] = world.pen_male - world.pen_female
-den_w = world.pen_male + world.pen_female
-world["gap_pct"] = np.where(den_w>0, 100 * world.gap_abs / den_w, 0)
-for c in ["pen_male","pen_female","gap_abs","gap_pct"]:
-    world[c] = world[c].round(4)
+world["gap_abs"] = world["pen_male"] - world["pen_female"]
+den_w = world["pen_male"] + world["pen_female"]
+world["gap_pct"] = np.where(den_w > 0, 100 * world["gap_abs"] / den_w, 0)
+for col in ["pen_male", "pen_female", "gap_abs", "gap_pct"]:
+    world[col] = world[col].round(4)
 
-world.to_csv(OUT_DIR/"penetration_by_bucket.csv", index=False)
+world.to_csv(OUT_DIR / "penetration_by_bucket.csv", index=False)
 print(f"✓ penetration_by_bucket.csv → {len(world):,} buckets")
 
 # -------------------------------------------------------------------
-# STEP F · legacy totals
+# STEP F · legacy overall & by‐country gaps
 # -------------------------------------------------------------------
-overall = merged[["tiktok_male","tiktok_female"]].sum().rename({
-    "tiktok_male":"total_male","tiktok_female":"total_female"
-}).to_frame().T
-overall["gap_abs"] = overall.total_male - overall.total_female
-den_o = overall.total_male + overall.total_female
-overall["gap_pct"] = np.where(den_o>0, 100 * overall.gap_abs / den_o, 0)
-overall[["gap_abs","gap_pct"]] = overall[["gap_abs","gap_pct"]].round(4)
-overall.to_csv(OUT_DIR/"overall_gap.csv", index=False)
+overall = (
+    merged[["tiktok_male", "tiktok_female"]]
+    .sum()
+    .rename({"tiktok_male": "total_male", "tiktok_female": "total_female"})
+    .to_frame()
+    .T
+)
+overall["gap_abs"] = overall["total_male"] - overall["total_female"]
+den_o = overall["total_male"] + overall["total_female"]
+overall["gap_pct"] = np.where(den_o > 0, 100 * overall["gap_abs"] / den_o, 0)
+overall[["gap_abs", "gap_pct"]] = overall[["gap_abs", "gap_pct"]].round(4)
+overall.to_csv(OUT_DIR / "overall_gap.csv", index=False)
 
 by_cty = (
-    merged.groupby("country_code")[["tiktok_male","tiktok_female"]]
+    merged.groupby("country_code")[["tiktok_male", "tiktok_female"]]
           .sum()
           .reset_index()
-          .rename(columns={"tiktok_male":"total_male","tiktok_female":"total_female"})
+          .rename(columns={"tiktok_male": "total_male", "tiktok_female": "total_female"})
 )
-by_cty["gap_abs"] = by_cty.total_male - by_cty.total_female
-den_c = by_cty.total_male + by_cty.total_female
-by_cty["gap_pct"] = np.where(den_c>0, 100 * by_cty.gap_abs / den_c, 0)
-by_cty[["gap_abs","gap_pct"]] = by_cty[["gap_abs","gap_pct"]].round(4)
-by_cty.to_csv(OUT_DIR/"gap_by_country.csv", index=False)
+by_cty["gap_abs"] = by_cty["total_male"] - by_cty["total_female"]
+den_c = by_cty["total_male"] + by_cty["total_female"]
+by_cty["gap_pct"] = np.where(den_c > 0, 100 * by_cty["gap_abs"] / den_c, 0)
+by_cty[["gap_abs", "gap_pct"]] = by_cty[["gap_abs", "gap_pct"]].round(4)
+by_cty.to_csv(OUT_DIR / "gap_by_country.csv", index=False)
 
 print("✓ overall_gap.csv & gap_by_country.csv refreshed")
