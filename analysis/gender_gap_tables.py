@@ -10,6 +10,18 @@
 #   outputs/penetration_by_bucket.csv
 #   outputs/overall_gap.csv
 #   outputs/gap_by_country.csv
+
+"""
+### Formulas used
+
+est_users       = (lower_end + upper_end) / 2
+pen_male        = tiktok_male   / pop_male
+pen_female      = tiktok_female / pop_female
+gap_abs         = pen_male      - pen_female
+gap_pct         = 100 * gap_abs / (pen_male + pen_female)
+
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
