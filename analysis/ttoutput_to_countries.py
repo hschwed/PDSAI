@@ -1,17 +1,22 @@
-# Uses [output.csv] and [countries.csv]
-# Filters output.csv to the 57 COUNTRY-level region_ids in countries.csv
-# and writes the reduced CSV to outputs/country_output.csv
+# Uses [BR_male_female_output.csv] and [countries.csv]
+
+
+
+# Keeps only rows whose geo_location matches one of the 57 COUNTRY-level region_ids
+# Writes the reduced CSV to outputs/country_output.csv
+
 
 from pathlib import Path
 import pandas as pd
 import sys
 
-RAW          = Path("output.csv")
-COUNTRIES    = Path("countries.csv")
-OUT          = Path("outputs/country_output.csv")
+# ───────────────────────── file paths ───────────────────────────
+INPUT       = Path("reference/BR_male_female_output.csv")
+COUNTRIES   = Path("countries.csv")
+OUT         = Path("outputs/country_output.csv")
 OUT.parent.mkdir(exist_ok=True)
 
-# ─────────────────── 1. Load list of valid region IDs ──────────────────
+# ───────────── 1. Load list of valid region IDs ────────────────
 try:
     ref = pd.read_csv(COUNTRIES)
 except FileNotFoundError:
@@ -25,36 +30,29 @@ valid_ids = (
 if not valid_ids:
     sys.exit("❌ No COUNTRY-level rows found in countries.csv")
 
-# ─────────────────── 2. Load TikTok export ─────────────────────────────
+# ───────────── 2. Load the filtered TikTok file ────────────────
 try:
-    df = pd.read_csv(RAW)
+    df = pd.read_csv(INPUT)
 except FileNotFoundError:
-    sys.exit(f"❌ {RAW} not found")
+    sys.exit(f"❌ {INPUT} not found")
 
-# ─────────────────── 3. Locate region column ──────────────────────────
-candidates = [c for c in df.columns]
-preferred  = ["geo_location", "region_id", "regionId", "region", "region_code"]
-
-region_col = next((c for c in preferred if c in candidates), None)
-if region_col is None:
+# ────────── 3. Ensure geo_location exists & is numeric ──────────
+if "geo_location" not in df.columns:
     sys.exit(
-        "❌ No region-ID column found in output.csv.\n"
-        f"   Available columns: {list(df.columns)}\n"
-        "   Expected one of:  region_id, regionId, region, region_code"
+        "❌ No 'geo_location' column found in "
+        f"{INPUT}. Available columns: {list(df.columns)}"
     )
+df["geo_location"] = pd.to_numeric(df["geo_location"], errors="coerce").astype("Int64")
 
-# Ensure integer type
-df[region_col] = pd.to_numeric(df[region_col], errors="coerce").astype("Int64")
-
-# ─────────────────── 4. Filter to the 57 countries ────────────────────
+# ───────────── 4. Filter to the 57 countries ────────────────
 before = len(df)
-df = df[df[region_col].isin(valid_ids)].copy()
+df = df[df["geo_location"].isin(valid_ids)].copy()
 after = len(df)
 
-# ─────────────────── 5. Save result ───────────────────────────────────
+# ──────────── 5. Save the filtered output ────────────────
 df.to_csv(OUT, index=False)
 print(
     f"✓ {OUT} written "
     f"(kept {after:,} of {before:,} rows; "
-    f"{len(valid_ids)} valid COUNTRY region_ids)"
+    f"{len(valid_ids)} valid COUNTRY geo_locations)"
 )
