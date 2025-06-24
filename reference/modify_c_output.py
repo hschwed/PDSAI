@@ -101,7 +101,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Add country_code, region_id, and region_name based on geo_location to CSV.'
     )
-    parser.add_argument('--input', '-i', default='country_output.csv', help='Path to input CSV file')
+    parser.add_argument('--input', '-i', default='outputs/country_output.csv', help='Path to input CSV file')
     parser.add_argument('--output', '-o', default='country_output_with_regions.csv', help='Path to output CSV file')
     args = parser.parse_args()
     main(args.input, args.output)
