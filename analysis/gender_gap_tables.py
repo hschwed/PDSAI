@@ -22,7 +22,7 @@ import sys
 # ───────────────────────── file paths ───────────────────────────
 TT_FILE   = Path("outputs/country_output.csv")
 POP_FILE  = Path("reference/pop_by_country_buckets_stripped.csv")
-REF_FILE  = Path("reference/countries.csv")
+REF_FILE  = Path("countries.csv")
 OUT_DIR   = Path("outputs");  OUT_DIR.mkdir(exist_ok=True)
 
 # ─────────────────────────── age-bucket map ─────────────────────
