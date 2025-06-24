@@ -11,12 +11,14 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import re, unicodedata
+import sys
 
 
 # ───────────────────────── file paths ───────────────────────────
-TT_FILE  = Path("outputs/country_output.csv")            # use filtered TikTok file
-POP_FILE = Path("reference/pop_by_country_buckets_stripped.csv")
-OUT_DIR  = Path("outputs");  OUT_DIR.mkdir(exist_ok=True)
+TT_FILE       = Path("outputs/country_output.csv")
+POP_FILE      = Path("reference/pop_by_country_buckets_stripped.csv")
+COUNTRIES_CSV = Path("countries.csv")
+OUT_DIR       = Path("outputs");  OUT_DIR.mkdir(exist_ok=True)
 
 # ─────────────────────────── age-bucket map ─────────────────────────
 RANGE_MAP = {
@@ -34,10 +36,9 @@ def _normal(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 # -------------------------------------------------------------------
-#  STEP A · read population file  (already has ISO-3 codes)
+# STEP A · read population file (no extra scaling)
 # -------------------------------------------------------------------
 pop = pd.read_csv(POP_FILE)
-
 pop_long = (
     pop.set_index(["country_code","country_name"])
        .stack()
@@ -54,36 +55,58 @@ pop_tidy = (
     .rename(columns={"male":"pop_male","female":"pop_female"})
 )
 
-NAME2ISO = {
-    _normal(n): c for n,c in zip(pop["country_name"], pop["country_code"])
-}
-
 # -------------------------------------------------------------------
-#  STEP B · read filtered TikTok file
+# STEP B · read filtered TikTok export
 # -------------------------------------------------------------------
-aud = pd.read_csv(TT_FILE)
+try:
+    aud = pd.read_csv(TT_FILE)
+except FileNotFoundError:
+    sys.exit(f"❌ {TT_FILE} not found")
 
-# map age_bucket to our numeric buckets
-aud["bucket"] = aud["ages_ranges"].map(RANGE_MAP)
-if aud["bucket"].isna().any():
-    raise ValueError(
-        "Unknown age_bucket labels: "
-        f"{aud.loc[aud['bucket'].isna(),'ages_ranges'].unique()}"
+# STEP B1: detect & normalize region_id column
+region_cols = ["region_id","regionId","region","region_code","geo_location"]
+for col in region_cols:
+    if col in aud.columns:
+        aud["region_id"] = pd.to_numeric(aud[col], errors="coerce").astype("Int64")
+        break
+else:
+    sys.exit(
+        "❌ No region-ID column found in country_output.csv\n"
+        f"   Available: {list(aud.columns)}"
     )
 
 # -------------------------------------------------------------------
-#  STEP C · ensure country_code is present
+# STEP C · map region_id to ISO-3 via countries.csv
 # -------------------------------------------------------------------
-if "country_code" not in aud.columns:
-    raise KeyError("Expected 'country_code' column in country_output.csv")
+try:
+    ref = pd.read_csv(COUNTRIES_CSV)
+except FileNotFoundError:
+    sys.exit(f"❌ {COUNTRIES_CSV} not found")
+
+mapping = (
+    ref.loc[ref["region_level"].str.upper()=="COUNTRY", ["region_id","country_code"]]
+       .dropna()
+       .astype({"region_id":int})
+)
+aud = aud.merge(mapping, on="region_id", how="left")
+aud = aud.dropna(subset=["country_code"])
+aud["country_code"] = aud["country_code"].astype(str)
 
 # -------------------------------------------------------------------
-#  STEP D · tidy TikTok audience
+# STEP D · map age buckets & prepare for aggregation
 # -------------------------------------------------------------------
-# if est_users not already computed, compute from lower/upper
+aud["bucket"] = aud["ages_ranges"].map(RANGE_MAP)
+if aud["bucket"].isna().any():
+    unknown = aud.loc[aud["bucket"].isna(), "ages_ranges"].unique()
+    raise ValueError(f"Unknown age_bucket labels: {unknown}")
+
+# ensure est_users exists
 if "est_users" not in aud.columns:
     aud["est_users"] = (aud["lower_end"] + aud["upper_end"]) / 2
 
+# -------------------------------------------------------------------
+# STEP E · aggregate TikTok by country_code, bucket, sex
+# -------------------------------------------------------------------
 aud_tidy = (
     aud.groupby(["country_code","bucket","sex"], as_index=False)["est_users"]
        .sum()
@@ -94,39 +117,40 @@ aud_tidy = (
 )
 
 # -------------------------------------------------------------------
-#  STEP E · merge with population + compute metrics
+# STEP F · merge with population + compute metrics
 # -------------------------------------------------------------------
 merged = aud_tidy.merge(pop_tidy, on=["country_code","bucket"], how="inner")
 if merged.empty:
-    raise RuntimeError("Merged table is empty – check country codes & bucket labels")
+    raise RuntimeError("Empty merge – check country codes & buckets")
 
 merged["pen_male"]   = merged["tiktok_male"]   / merged["pop_male"]
 merged["pen_female"] = merged["tiktok_female"] / merged["pop_female"]
-merged["gap_abs"] = merged["pen_male"] - merged["pen_female"]
+merged["gap_abs"]    = merged["pen_male"] - merged["pen_female"]
 den = merged["pen_male"] + merged["pen_female"]
-merged["gap_pct"] = np.where(den>0, 100*merged["gap_abs"]/den, 0)
+merged["gap_pct"]    = np.where(den>0, 100*merged["gap_abs"]/den, 0)
 
-# round only final metrics
+# round final metrics
 for col in ["pen_male","pen_female","gap_abs","gap_pct"]:
     merged[col] = merged[col].round(4)
 
+# output country-level
 merged.to_csv(OUT_DIR/"penetration_by_country.csv", index=False)
 print(f"✓ penetration_by_country.csv -> {len(merged):,} rows")
 
 # -------------------------------------------------------------------
-#  STEP F · world totals by bucket
+# STEP G · world totals by bucket
 # -------------------------------------------------------------------
 world = (
     merged.groupby("bucket")[["tiktok_male","tiktok_female","pop_male","pop_female"]]
           .sum()
           .assign(
-              pen_male   = lambda d: d.tiktok_male   / d.pop_male,
-              pen_female = lambda d: d.tiktok_female / d.pop_female
+             pen_male   = lambda d: d.tiktok_male  / d.pop_male,
+             pen_female = lambda d: d.tiktok_female/ d.pop_female
           )
 )
-world["gap_abs"] = world["pen_male"] - world["pen_female"]
-den_w = world["pen_male"] + world["pen_female"]
-world["gap_pct"] = np.where(den_w>0, 100*world["gap_abs"]/den_w, 0)
+world["gap_abs"] = world.pen_male - world.pen_female
+den_w = world.pen_male + world.pen_female
+world["gap_pct"] = np.where(den_w>0, 100*world.gap_abs/den_w, 0)
 for col in ["pen_male","pen_female","gap_abs","gap_pct"]:
     world[col] = world[col].round(4)
 
@@ -134,7 +158,7 @@ world.to_csv(OUT_DIR/"penetration_by_bucket.csv", index=False)
 print(f"✓ penetration_by_bucket.csv -> {len(world):,} buckets")
 
 # -------------------------------------------------------------------
-#  STEP G · legacy totals (overall & by country)
+# STEP H · legacy totals
 # -------------------------------------------------------------------
 overall = merged[["tiktok_male","tiktok_female"]].sum().rename({
     "tiktok_male":"total_male","tiktok_female":"total_female"
