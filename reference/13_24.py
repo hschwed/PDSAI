@@ -2,38 +2,51 @@
 # Output: [reference/13_17_18_24.csv]
 # More detailed age buckets with exact bucket match for TT data
 
-
 import pandas as pd
 
 
 def main():
-    # Load the raw per-age TikTok counts
+    # Read the source CSV
     df = pd.read_csv('reference/13-24.csv')
 
-    # Ensure age is numeric
-    df['age'] = pd.to_numeric(df['age'], errors='coerce')
+    # Extract age from the "indicator name" column (e.g., "Age population, age 15, male")
+    # Assumes there is a column named 'indicator name' or similar; adjust if different
+    if 'indicator name' in df.columns:
+        ind_col = 'indicator name'
+    elif 'indicator_name' in df.columns:
+        ind_col = 'indicator_name'
+    else:
+        raise KeyError("No 'indicator name' column found")
 
-    # Define buckets
-    mask_13_17 = df['age'].between(13, 17)
-    mask_18_24 = df['age'].between(18, 24)
+    # Pull out the numeric age
+    df['age'] = df[ind_col].str.extract(r'age\s*(\d+)', expand=False).astype(int)
+    # Determine gender
+    df['gender'] = df[ind_col].str.contains('female', case=False).map({True: 'female', False: 'male'})
 
-    # Aggregate sums by country
-    female1317 = df.loc[mask_13_17].groupby('country_code')['tiktok_female'].sum()
-    female1824 = df.loc[mask_18_24].groupby('country_code')['tiktok_female'].sum()
-    male1317   = df.loc[mask_13_17].groupby('country_code')['tiktok_male'].sum()
-    male1824   = df.loc[mask_18_24].groupby('country_code')['tiktok_male'].sum()
+    # Identify the population value column (assuming it's the last one)
+    value_col = df.columns[-1]
 
-    # Combine into output DataFrame
-    output = pd.DataFrame({
-        'country_code': female1317.index,
-        'female1317': female1317.values,
-        'female1824': female1824.reindex(female1317.index).values,
-        'male1317':   male1317.values,
-        'male1824':   male1824.reindex(male1317.index).values,
-    })
+    # Define age buckets
+    buckets = {
+        '1317': (13, 17),
+        '1824': (18, 24)
+    }
 
-    # Write the aggregated buckets to CSV
-    output.to_csv('reference/13_17_18_24.csv', index=False)
+    # Prepare aggregation
+    results = []
+    for country in df['country_code'].unique():
+        sub = df[df['country_code'] == country]
+        row = {'country_code': country}
+        for gender in ['female', 'male']:
+            for suffix, (low, high) in buckets.items():
+                mask = (sub['gender'] == gender) & sub['age'].between(low, high)
+                total = sub.loc[mask, value_col].sum()
+                row[f'{gender}{suffix}'] = total
+        results.append(row)
+
+    # Convert to DataFrame and save
+    out_df = pd.DataFrame(results)
+    out_df.to_csv('reference/13_17_18_24.csv', index=False)
 
 
 if __name__ == '__main__':
