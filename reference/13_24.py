@@ -2,51 +2,60 @@
 # Output: [reference/13_17_18_24.csv]
 # More detailed age buckets with exact bucket match for TT data
 
+
+
+import re
 import pandas as pd
 
 
 def main():
-    # Read the source CSV
+    # load raw age data
     df = pd.read_csv('reference/13-24.csv')
 
-    # Extract age from the "indicator name" column (e.g., "Age population, age 15, male")
-    # Assumes there is a column named 'indicator name' or similar; adjust if different
-    if 'indicator name' in df.columns:
-        ind_col = 'indicator name'
-    elif 'indicator_name' in df.columns:
-        ind_col = 'indicator_name'
-    else:
-        raise KeyError("No 'indicator name' column found")
+    # ensure the key column exists
+    if 'Series Name' not in df.columns:
+        raise KeyError("No 'Series Name' column found")
 
-    # Pull out the numeric age
-    df['age'] = df[ind_col].str.extract(r'age\s*(\d+)', expand=False).astype(int)
-    # Determine gender
-    df['gender'] = df[ind_col].str.contains('female', case=False).map({True: 'female', False: 'male'})
+    # extract age and gender from the series name
+    def parse_age_gender(text):
+        m = re.search(r'age\s*(\d+),\s*(male|female)', text, flags=re.IGNORECASE)
+        if not m:
+            return None, None
+        return int(m.group(1)), m.group(2).lower()
 
-    # Identify the population value column (assuming it's the last one)
-    value_col = df.columns[-1]
+    df[['age', 'gender']] = df['Series Name'] \
+        .apply(lambda s: pd.Series(parse_age_gender(s)))
 
-    # Define age buckets
-    buckets = {
-        '1317': (13, 17),
-        '1824': (18, 24)
-    }
+    # drop any rows we couldn't parse
+    df = df.dropna(subset=['age', 'gender'])
 
-    # Prepare aggregation
-    results = []
-    for country in df['country_code'].unique():
-        sub = df[df['country_code'] == country]
-        row = {'country_code': country}
-        for gender in ['female', 'male']:
-            for suffix, (low, high) in buckets.items():
-                mask = (sub['gender'] == gender) & sub['age'].between(low, high)
-                total = sub.loc[mask, value_col].sum()
-                row[f'{gender}{suffix}'] = total
-        results.append(row)
+    # assign buckets based on age and gender
+    def make_bucket(row):
+        age = row['age']
+        gender = row['gender']
+        if 13 <= age <= 17:
+            return f"{gender}1317"
+        elif 18 <= age <= 24:
+            return f"{gender}1824"
+        else:
+            return None
 
-    # Convert to DataFrame and save
-    out_df = pd.DataFrame(results)
-    out_df.to_csv('reference/13_17_18_24.csv', index=False)
+    df['bucket'] = df.apply(make_bucket, axis=1)
+    df = df.dropna(subset=['bucket'])
+
+    # select the year columns (e.g. '2021 [YR2021]', etc.)
+    year_cols = [c for c in df.columns if re.match(r"^\d{4} \[YR\d{4}\]$", c)]
+
+    # aggregate sums by country code and bucket across years
+    out = (
+        df
+        .groupby(['Country Code', 'bucket'])[year_cols]
+        .sum()
+        .reset_index()
+    )
+
+    # write out
+    out.to_csv('reference/13_17_18_24.csv', index=False)
 
 
 if __name__ == '__main__':
