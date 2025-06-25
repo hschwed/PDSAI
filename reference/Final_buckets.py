@@ -1,5 +1,5 @@
-# Input: [13_17_18_24.csv]
-# Input: [pop_by_country_buckets_stripped.csv]
+# Input: [reference/13_17_18_24.csv]
+# Input: [reference/pop_by_country_buckets_stripped.csv]
 # Output: [final_WB_buckets.csv]
 
 """
@@ -20,10 +20,10 @@ def main():
     output_file = os.path.join(output_dir, 'data/final_WB_buckets.csv')
 
     # Read the existing stripped buckets
-    df_stripped = pd.read_csv(input_stripped)
+    df_stripped = pd.read_csv(reference/pop_by_country_buckets_stripped.csv)
 
     # Read the new 13–17 and 18–24 buckets
-    df_new = pd.read_csv(input_new_buckets)
+    df_new = pd.read_csv(reference/13_17_18_24.csv)
 
     # Rename the new bucket columns to match snake_case style
     rename_map = {
