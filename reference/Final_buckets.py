@@ -1,7 +1,6 @@
 # Input: [reference/13_17_18_24.csv]
 # Input: [reference/pop_by_country_buckets_stripped.csv]
 # Output: [final_WB_buckets.csv]
-
 """
 reference/Final_buckets.py
 
@@ -12,18 +11,21 @@ import os
 import pandas as pd
 
 def main():
+    # Base directory is the 'reference' folder containing this script
+    base_dir = os.path.dirname(__file__)
+
     # Define input and output file paths
-    input_stripped = os.path.join(os.path.dirname(__file__), '..', 'pop_by_country_buckets_stripped.csv')
-    input_new_buckets = os.path.join(os.path.dirname(__file__), '..', '13_17_18_24.csv')
-    output_dir = os.path.join(os.path.dirname(__file__), '..', 'outputs')
+    input_stripped = os.path.join(base_dir, 'pop_by_country_buckets_stripped.csv')
+    input_new_buckets = os.path.join(base_dir, '13_17_18_24.csv')
+    output_dir = os.path.join(base_dir, '..', 'outputs')
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, 'data/final_WB_buckets.csv')
+    output_file = os.path.join(output_dir, 'final_WB_buckets.csv')
 
     # Read the existing stripped buckets
-    df_stripped = pd.read_csv(reference/pop_by_country_buckets_stripped.csv)
+    df_stripped = pd.read_csv(input_stripped)
 
     # Read the new 13–17 and 18–24 buckets
-    df_new = pd.read_csv(reference/13_17_18_24.csv)
+    df_new = pd.read_csv(input_new_buckets)
 
     # Rename the new bucket columns to match snake_case style
     rename_map = {
@@ -42,10 +44,9 @@ def main():
     ]
     df_clean = df_stripped.drop(columns=cols_to_drop, errors='ignore')
 
-    # Combine by index (assuming both files align row-wise)
-    # If there's a country or key column to join on, replace this with a merge on that key
+    # Combine dataframes on their index (row-wise alignment)
     new_cols = list(rename_map.values())
-    df_final = pd.concat([df_clean, df_new[new_cols]], axis=1)
+    df_final = pd.concat([df_clean.reset_index(drop=True), df_new[new_cols].reset_index(drop=True)], axis=1)
 
     # Write out the final buckets
     df_final.to_csv(output_file, index=False)
