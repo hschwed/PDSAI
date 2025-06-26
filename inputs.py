@@ -76,14 +76,16 @@ def generate_inputs():
     countries = country['country_code'].to_list()
     location_ids = country['region_id'].to_list()
 
-    combine = list(itertools.product(countries,location_ids,gender,age))
+    age_gender_df = pd.DataFrame(itertools.product(gender, age), columns=["gender", "age"])
+
+    combine = country.merge(age_gender_df,how='cross')
 
     #save input as csv for reference
     df = pd.DataFrame(combine)
     df.to_csv('input.csv',encoding='utf-8-sig')
     #files.download('input.csv')
 
-    inputs = [{"country": country,"location_id":location, "gender": gender, "age": age} for country,location,gender,age in combine]
+    inputs = [{"country": row.country_code,"location_id":row.region_id, "gender": row.gender, "age": row.age} for row in combine.itertuples(index=False)]
     #save as json for use in client.py
     with open("input_json.json", "w", encoding="utf-8") as f:
         json.dump({"inputs": inputs}, f, ensure_ascii=False, indent=2)

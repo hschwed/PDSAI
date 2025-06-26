@@ -15,7 +15,15 @@ reference/worldbank_population_by_age.csv
   → scripts/build_population_buckets.py  
           → reference/pop_by_country_buckets.csv  
                   → analysis/clean_pop_buckets.py  
-                          → reference/pop_by_country_buckets_stripped.csv  
+                          → reference/pop_by_country_buckets_stripped.csv 
+
+--------------------------------------
+   2. Population data cleaning
+--------------------------------------
+_______________
+reference/pop_by_country_buckets_stripped.csv 
+  → analysis/edit_output_pop.py  
+          → outputs/pop_clean.csv 
 
 
 --------------------------------------
@@ -25,8 +33,7 @@ reference/worldbank_population_by_age.csv
 
 ____ToDO_______
 
-- edis output.csv in a way that makes it usable, get rid of 58k rows
-- use countries.csv to get the region id for the country in output.csv
+- edit output.csv in a way that makes it usable, get rid of 58k rows
 
 _______________
 output.csv  

@@ -51,10 +51,14 @@ NUMERIC_OPTS = {"errors": "coerce"}  # for pd.to_numeric
 # ────────────────────────── helpers ──────────────────────────────
 
 def iso3_to_iso2(code):
-    if not isinstance(code, str) or len(code) != 3 or pycountry is None:
+    if not isinstance(code, str) or pycountry is None:
+        return None
+    code = code.strip().upper()
+    if len(code) != 3:
         return None
     try:
-        return pycountry.countries.get(alpha_3=code.upper()).alpha_2
+        match = next((c.alpha_2 for c in pycountry.countries if c.alpha_3 == code), None)
+        return match
     except Exception:
         return None
 

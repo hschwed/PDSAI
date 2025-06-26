@@ -10,6 +10,7 @@
 from pathlib import Path
 import pandas as pd
 import re
+import pycountry
 
 # ───────────────────────── file paths ───────────────────────────
 RAW            = Path("output.csv")
@@ -28,7 +29,19 @@ def normal(s: str) -> str:
 df = pd.read_csv(RAW, thousands=",")
 
 # -------------------------------------------------------------------
-# 2) Keep only male/female, estimate audience & map sex
+# 2) Slim columns & rename for consistency
+# -------------------------------------------------------------------
+keep = [
+    "name", "ages_ranges",
+    "genders", "lower_end", "upper_end"
+]
+df = df[keep].rename(columns={
+    "name": "country_iso2",
+    "ages_ranges": "age_bucket"
+})
+
+# -------------------------------------------------------------------
+# 3) Keep only male/female, estimate audience & map sex
 # -------------------------------------------------------------------
 df = df[df["genders"].isin(["GENDER_MALE", "GENDER_FEMALE"])].copy()
 df["est_users"] = (df["lower_end"] + df["upper_end"]) / 2
@@ -38,42 +51,59 @@ df["sex"] = df["genders"].map({
 })
 
 # -------------------------------------------------------------------
-# 3) Map to ISO-3 country codes
+# 4) Map to ISO-3 country codes
 # -------------------------------------------------------------------
-if "code" in df.columns:
-    df["country_code"] = df["code"].astype(str).str.strip()
-else:
-    pop = pd.read_csv(POP)[["country_code", "country_name"]]
-    lookup = {normal(name): code for code, name in pop.values}
-    df["country_code"] = df["name"].map(lambda x: lookup.get(normal(x), ""))
-
-df["country_code"].replace("", "UNK", inplace=True)
-
-# -------------------------------------------------------------------
-# 4) Filter to the 57 valid countries by ISO code
-# -------------------------------------------------------------------
-countries = pd.read_csv(COUNTRIES_FILE)
-valid_codes = countries.loc[
-    countries["region_level"] == "COUNTRY",
-    "country_code"
-].tolist()
-
-df = df[df["country_code"].isin(valid_codes)].copy()
+def iso2_to_iso3(iso2):
+    try:
+        return pycountry.countries.get(alpha_2=iso2.upper()).alpha_3
+    except:
+        return "UNK"
+    
+df["country_code"] = df["country_iso2"].map(iso2_to_iso3)
+#print(df.head())
 
 # -------------------------------------------------------------------
-# 5) Slim columns & rename for consistency
+# 5) Map age buckets
 # -------------------------------------------------------------------
-keep = [
-    "name", "country_code", "ages_ranges",
-    "sex", "lower_end", "upper_end", "est_users"
-]
-df = df[keep].rename(columns={
-    "name": "country_name",
-    "ages_ranges": "age_bucket"
+RANGE_MAP = {
+    "AGE_13_17":  "1014",
+    "AGE_18_24":  "2024",
+    "AGE_25_34":  "2534",
+    "AGE_35_44":  "3544",
+    "AGE_45_54":  "4554",
+    "AGE_55_100": "55plus",
+}
+
+df["age_bucket"] = df["age_bucket"].str.replace('-', '_')
+df["bucket"] = df["age_bucket"].map(RANGE_MAP)
+if df["bucket"].isna().any():
+    raise ValueError(f"Unknown age_bucket labels: {df['age_bucket'][df['bucket'].isna()].unique()}")
+
+# -------------------------------------------------------------------
+# 6) wide format, columns female and male
+# -------------------------------------------------------------------
+df = df.pivot_table(
+    index=["country_code", "bucket"],
+    columns="sex",
+    values="est_users",
+    aggfunc="first"  # or 'sum' if you may have duplicates
+).reset_index()
+
+# Rename columns
+df.columns.name = None  # remove the pivot column name
+df = df.rename(columns={
+    "male": "tiktok_male",
+    "female": "tiktok_female"
 })
 
 # -------------------------------------------------------------------
 # 6) Save cleaned & filtered output
 # -------------------------------------------------------------------
+keep = [
+    "country_code", "bucket","tiktok_male","tiktok_female"
+]
+df = df[keep]
+
 df.to_csv(OUT, index=False)
-print(f"✓ {OUT} written with {len(df):,} rows (filtered to {len(valid_codes)} countries)")
+#print(df.head())
+print(f"✓ {OUT} written with {len(df):,}")

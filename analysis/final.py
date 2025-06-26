@@ -6,18 +6,8 @@ import unicodedata
 
 # ───────────────────────────── file paths ───────────────────────────
 TT_FILE   = Path("outputs/tt_clean.csv")
-POP_FILE  = Path("reference/pop_by_country_buckets_stripped.csv")
+POP_FILE  = Path("outputs/pop_clean.csv")
 OUT_DIR   = Path("outputs"); OUT_DIR.mkdir(exist_ok=True)
-
-# ─────────────────────────── age-bucket map ─────────────────────────
-RANGE_MAP = {
-    "AGE_13_17":  "1014",
-    "AGE_18_24":  "2024",
-    "AGE_25_34":  "2534",
-    "AGE_35_44":  "3544",
-    "AGE_45_54":  "4554",
-    "AGE_55_100": "55plus",
-}
 
 # ────────────────────── helper functions ────────────────────────────
 def _normal(s: str) -> str:
@@ -26,92 +16,15 @@ def _normal(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 # -------------------------------------------------------------------
-#  STEP A · read population file (absolute headcounts)
+#  STEP A · merge and compute metrics
 # -------------------------------------------------------------------
 pop = pd.read_csv(POP_FILE)
+tt = pd.read_csv(TT_FILE)
 
-# reshape to long form and tidy
-pop_long = (
-    pop.set_index(["country_code", "country_name"]).stack()
-       .reset_index().rename(columns={"level_2": "tmp", 0: "pop"})
-)
-pop_long[["sex", "bucket"]] = pop_long["tmp"].str.split("_", n=1, expand=True)
-pop_tidy = (
-    pop_long.pivot_table(index=["country_code","bucket"],
-                         columns="sex", values="pop")
-            .reset_index()
-            .rename(columns={"male": "pop_male", "female": "pop_female"})
-)
-
-# dictionary for country-name fallbacks
-NAME2ISO = { _normal(n): c for n,c in zip(pop["country_name"], pop["country_code"]) }
-
-# -------------------------------------------------------------------
-#  STEP B · read TikTok data
-# -------------------------------------------------------------------
-# The following line was corrected to remove `thousands=','`
-aud = pd.read_csv(TT_FILE)
-
-# normalize age_bucket labels
-aud["age_bucket"] = aud["age_bucket"].str.replace('-', '_')
-aud["bucket"] = aud["age_bucket"].map(RANGE_MAP)
-if aud["bucket"].isna().any():
-    raise ValueError(f"Unknown age_bucket labels: {aud['age_bucket'][aud['bucket'].isna()].unique()}")
-
-# -------------------------------------------------------------------
-#  STEP C · ensure ISO-3 codes
-# -------------------------------------------------------------------
-try:
-    import pycountry
-    def _try_pycountry(name: str) -> str | None:
-        try:
-            return pycountry.countries.lookup(name).alpha_3
-        except LookupError:
-            return None
-except ImportError:
-    def _try_pycountry(_: str) -> None:
-        return None
-
-MANUAL = {
-    "cotedivoire": "CIV", "ivorycoast": "CIV",
-    "russia": "RUS", "russianfederation": "RUS",
-    "southkorea": "KOR", "northkorea": "PRK",
-    "northmacedonia": "MKD",
-    "viet": "VNM", "laos": "LAO",
-    "bolivia": "BOL", "venezuela": "VEN",
-}
-
-aud["country_code"] = aud.get("country_code", "").fillna("").str.strip()
-mask = aud["country_code"] == ""
-aud.loc[mask, "country_code"] = (
-    aud.loc[mask, "country_name"].apply(lambda n: _try_pycountry(n)
-                                        or MANUAL.get(_normal(n))
-                                        or NAME2ISO.get(_normal(n)))
-)
-# drop any remaining missing
-aud = aud.dropna(subset=["country_code"])
-
-# -------------------------------------------------------------------
-#  STEP D · aggregate TikTok audience
-# -------------------------------------------------------------------
-if "est_users" not in aud.columns:
-    aud["est_users"] = (aud["lower_end"] + aud["upper_end"]) / 2
-
-aud_tidy = (
-    aud.groupby(["country_code","bucket","sex"], as_index=False)["est_users"]
-       .sum()
-       .pivot(index=["country_code","bucket"], columns="sex", values="est_users")
-       .fillna(0)
-       .reset_index()
-       .rename(columns={"male": "tiktok_male", "female": "tiktok_female"})
-)
-
-# -------------------------------------------------------------------
-#  STEP E · merge and compute metrics
-# -------------------------------------------------------------------
-merged = aud_tidy.merge(pop_tidy, on=["country_code","bucket"], how="inner")
+merged = tt.merge(pop, on=["country_code","bucket"], how="inner")
 if merged.empty:
     raise RuntimeError("Merged table is empty – check ISO codes & bucket labels in your input files")
+merged.to_csv("merged.csv")
 
 # penetration and gap
 merged["pen_male"] = np.where(merged["pop_male"]>0,
