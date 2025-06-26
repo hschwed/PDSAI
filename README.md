@@ -54,9 +54,24 @@ reference/pop_by_country_buckets_stripped.csv + outputs/tt_clean.csv
           → outputs/overall_gap.csv  
           → outputs/gap_by_country.csv  
 
+--------------------------------------
+      4. Facebook data cleaning
+--------------------------------------
+### adjust format to match Tiktok and Population data ###
+
+____ToDO_______
+
+- currently no data for age buckets and only final computations of female-to-male ratio available, therefore cannot relate to population data
+- later include in gender gap computation
+
+_______________
+dgg_facebook_national 
+  → analysis/edit_fb.py  
+          → outputs/fb_clean.csv  
+
 
 --------------------------------------
-   4. Penetration summary & ranking
+   5. Penetration summary & ranking
 --------------------------------------
 
 ### summarize country-level results & rank buckets by gap size ###
