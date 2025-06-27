@@ -20,15 +20,6 @@ df["tiktok_total"] = df["tiktok_male"] + df["tiktok_female"]
 df["pop_total"]    = df["pop_male"]    + df["pop_female"]
 df["pen_total"]    = df["tiktok_total"] / df["pop_total"]
 
-# ── 2 · summary file (one row per country × bucket) ────────────────
-summary_cols = [
-    "country_code", "bucket",
-    "pen_total", "pen_male", "pen_female",
-    "gap_abs", "gap_pct"
-]
-summary = df[summary_cols].copy()
-summary.to_csv(OUT_DIR / "penetration_summary.csv", index=False)
-print("✓ penetration_summary.csv written →", len(summary), "rows")
 
 # ── 3 · per-bucket ranking by gender gap ───────────────────────────
 ranks = []

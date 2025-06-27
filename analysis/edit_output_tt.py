@@ -99,6 +99,7 @@ df = df.rename(columns={
 # -------------------------------------------------------------------
 # 6) Save cleaned & filtered output
 # -------------------------------------------------------------------
+df = df[df["bucket"]!="1519"]
 keep = [
     "country_code", "bucket","tiktok_male","tiktok_female"
 ]

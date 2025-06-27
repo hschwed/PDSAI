@@ -36,7 +36,7 @@ pop = pop.rename(columns={
     "male": "pop_male",
     "female": "pop_female"
 })
-
+pop = pop[pop["bucket"]!="1519"]
 keep = [
     "country_code", "bucket","pop_male","pop_female"
 ]
