@@ -36,8 +36,8 @@ print("✓ ranking_by_bucket.csv   written →", len(ranking), "rows")
 
 # ── 3 · overall summary ───────────────────────────
 tbl = pd.read_csv("outputs/penetration_by_country.csv")
-tbl["tiktok_total"] = tbl["tiktok_male"] + tbl["tiktok_female"]
-tbl["pop_total"]    = tbl["pop_male"]    + tbl["pop_female"]
+tbl["tiktok_total"] = tbl["tiktok_male"].sum() + tbl["tiktok_female"].sum()
+tbl["pop_total"]    = tbl["pop_male"].sum()    + tbl["pop_female"].sum()
 tbl["pen_total"]    = tbl["tiktok_total"] / tbl["pop_total"]
 tbl = tbl.describe().T
 tbl = tbl.reset_index().rename(columns={'index': 'Variable'})
