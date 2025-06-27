@@ -39,7 +39,7 @@ merged["gap_pct"] = np.where(den>0, 100*merged["gap_abs"]/den, 0)
 
 merged["tt_fm"] = np.where(merged["tiktok_male"]>0,  merged["tiktok_female"]/merged["tiktok_male"], 0).round(4)
 merged["pop_fm"] = np.where(merged["pop_male"]>0,  merged["pop_female"]/merged["pop_male"], 0).round(4)
-merged["gap_index"] = np.where(merged["pop_fm"]>0, merged["tt_fm"]/merged["pop_fm"], 0).round(4)
+merged["relative_gap"] = np.where(merged["pop_fm"]>0, merged["tt_fm"]/merged["pop_fm"], 0).round(4)
 
 # round
 merged[["pen_male","pen_female","gap_abs","gap_pct"]] = \
