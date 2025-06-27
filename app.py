@@ -43,7 +43,7 @@ headers = {
 results = []
 output_columns = ["name", "ages_ranges", "geo_location", "genders", "interests", "behavior", "scholarities", "languages", "family_statuses", "all_fields", "targeting", "response", "lower_end","upper_end","user_count_stage"]
 retries = 3
-sleep = 0.2
+sleep = 0.3
 
 def get_audience_estimate(data):
     for attempt in range(retries):
@@ -96,7 +96,7 @@ def process_input(input):
         print(f"Request failed: {e}")
         return None
 
-MAX_WORKERS = 5
+MAX_WORKERS = 3
 @app.post("/audience_estimate/")
 
 def audience_estimate(input_list: InputList):

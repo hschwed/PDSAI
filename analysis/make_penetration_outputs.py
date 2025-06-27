@@ -42,3 +42,13 @@ for bucket, grp in df.groupby("bucket"):
 ranking = pd.concat(ranks, ignore_index=True)
 ranking.to_csv(OUT_DIR / "ranking_by_bucket.csv", index=False)
 print("✓ ranking_by_bucket.csv   written →", len(ranking), "rows")
+
+# ── 3 · overall summary ───────────────────────────
+tbl = pd.read_csv("outputs/penetration_by_country.csv")
+tbl["tiktok_total"] = tbl["tiktok_male"] + tbl["tiktok_female"]
+tbl["pop_total"]    = tbl["pop_male"]    + tbl["pop_female"]
+tbl["pen_total"]    = tbl["tiktok_total"] / tbl["pop_total"]
+tbl = tbl.describe().T
+tbl = tbl.reset_index().rename(columns={'index': 'Variable'})
+tbl.to_csv(OUT_DIR / "summary_table.csv")
+print("✓ summary_table.csv   written →", len(ranking), "rows")

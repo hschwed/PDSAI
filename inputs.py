@@ -90,5 +90,5 @@ def generate_inputs():
     with open("input_json.json", "w", encoding="utf-8") as f:
         json.dump({"inputs": inputs}, f, ensure_ascii=False, indent=2)
 
-    print(inputs)
+    #print(inputs)
     print(f"Input has {len(inputs)} rows")
