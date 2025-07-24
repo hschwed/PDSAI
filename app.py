@@ -47,7 +47,7 @@ sleep = 0.3
 
 def get_audience_estimate(data):
     for attempt in range(retries):
-        response = requests.post(url, headers=headers, json=data).json()
+        response = requests.post(url, headers=headers, json=data).json() #if should use multiple IP addresses, need proxy servers and specify inside requests.post()
         if response.get("code") == 0:
             return response
         elif response.get("code") == 51052:
@@ -96,7 +96,7 @@ def process_input(input):
         print(f"Request failed: {e}")
         return None
 
-MAX_WORKERS = 3
+MAX_WORKERS = 3 # handle multiple I/O-bound tasks concurrently, request.post() blocks thread while waiting for response, using threads allows to start multiple requests in parallel and wait for them simultaneously. so total runtime != sum of individual requests
 @app.post("/audience_estimate/")
 
 def audience_estimate(input_list: InputList):
@@ -105,8 +105,8 @@ def audience_estimate(input_list: InputList):
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         for inp in input_list.inputs:
-            futures.append(executor.submit(process_input, inp)) 
-        for future in tqdm(as_completed(futures),total=len(futures),desc="Processing inputs"):
+            futures.append(executor.submit(process_input, inp)) # submit multiple tasks into thread pool, parallelize API requests in thread
+        for future in tqdm(as_completed(futures),total=len(futures),desc="Processing inputs"): #as_completed waits for each task to finish
             res = future.result()
             if res:
                 results.append(res)
