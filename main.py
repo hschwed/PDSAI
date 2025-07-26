@@ -1,19 +1,8 @@
 import uvicorn
-import nest_asyncio
-from fastapi import FastAPI
-from pydantic import BaseModel
-import requests
 import pandas as pd
-from datetime import datetime
 import time
-import itertools
-import json
-nest_asyncio.apply()
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from fastapi.responses import FileResponse
-from tqdm import tqdm
 import threading
-from inputs import generate_inputs
+from src.get_data.inputs import generate_inputs
 from client import run_client
 
 # Credentials
@@ -24,7 +13,7 @@ auth_code = 'f57f9e8b140d03312509d43a9e70a96e65fde888' ## need to open link from
 access_token = '7e4105012622ac077282d8a3e4bd6f937cbdec70'
 
 def server():
-    uvicorn.run("app:app", host="0.0.0.0", port=8000,log_level="info")
+    uvicorn.run("src.get_data.app:app", host="0.0.0.0", port=8000,log_level="info")
 
 if __name__ == "__main__":
     generate_inputs()
