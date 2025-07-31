@@ -1,0 +1,88 @@
+
+import requests
+import pandas as pd
+import itertools
+import json
+
+
+# Credentials
+advertiser_id = '7381489555305775105'
+secret = '01bebffff7dd4469b207a1622ad3892dfdf862a0'
+app_id = '7384250931329630225'
+auth_code = 'f57f9e8b140d03312509d43a9e70a96e65fde888' ## need to open link from App once reviewed; only valid for 1 hour, can only be used once
+access_token = '7e4105012622ac077282d8a3e4bd6f937cbdec70'
+
+################# PREPARING INPUT ######################
+def generate_inputs():
+    #get values for locations, age_ranges and gender and build json formatted input
+
+    #location_id or region_code. Research API lets you use region_code = country_codes
+    url = ' https://business-api.tiktok.com/open_api/v1.3/search/region/'
+
+    headers = {
+        'Access-Token': access_token,
+        'Content-Type': 'application/json'
+    }
+    params = {
+        'advertiser_id': advertiser_id,
+    }
+
+    response = requests.get(url, headers=headers, params=params)
+
+    results = response.json()['data']['region_list'] #return json object of result of get request
+    #geolist.to_csv('./config/specs/specs_explore/tiktok_regions_list.csv')
+
+    results = pd.json_normalize(results)
+    results = results.drop(['area_type','parent_id'],axis=1)
+    #print(countries_df)
+
+    country = results[results['region_level']=='COUNTRY'][['country_code','region_id']]
+    #.drop_duplicates().reset_index(drop=True)
+    #countries_df['country_code'].unique()
+    #print(country)
+
+    province = results[results['region_level']=='PROVINCE'][['country_code','region_name','region_id']]
+    #print(province)
+
+
+    district = results[results['region_level']=='DISTRICT'][['country_code','region_name','region_id']]
+    #print(district)
+
+    city = results[results['region_level']=='CITY'][['country_code','region_name','region_id']]
+    #print(city)
+
+    results.to_csv('data/raw/location_ids.csv',encoding='utf-8-sig')
+    #files.download('countries.csv')
+
+    #need ad group id for this, to get this id we would need to create a campaign and ad --> refer to fixed values for now
+    #if targeting_info and "age" in targeting_info:
+    #    age_buckets = list(targeting_info["age"].keys())
+    #else:
+
+    # reduce to one group for test, full: ["AGE_13_17", "AGE_18_24", "AGE_25_34", "AGE_35_44", "AGE_45_54", "AGE_55_100"]
+    age = ["AGE_13_17", "AGE_18_24", "AGE_25_34", "AGE_35_44", "AGE_45_54", "AGE_55_100"]
+
+    #excluding "GENDER_UNLIMITED" as this is just female+male
+    gender = ["GENDER_FEMALE", "GENDER_MALE"]
+
+    #create input as json with all country, gender, age combinations
+    countries = country['country_code'].to_list()
+    location_ids = country['region_id'].to_list()
+
+    age_gender_df = pd.DataFrame(itertools.product(gender, age), columns=["gender", "age"])
+
+    combine = country.merge(age_gender_df,how='cross')
+
+    #save input as csv for reference
+    df = pd.DataFrame(combine)
+    df.to_csv('data/raw/input.csv',encoding='utf-8-sig')
+    #files.download('input.csv')
+
+    # country here is ISO2 code
+    inputs = [{"country": row.country_code,"location_id":row.region_id, "gender": row.gender, "age": row.age} for row in combine.itertuples(index=False)]
+    #save as json for use in client.py
+    with open("data/raw/input_json.json", "w", encoding="utf-8") as f:
+        json.dump({"inputs": inputs}, f, ensure_ascii=False, indent=2)
+
+    #print(inputs)
+    print(f"Input has {len(inputs)} rows")

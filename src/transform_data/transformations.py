@@ -1,0 +1,132 @@
+from pathlib import Path
+import pandas as pd
+from src.utils.country import get_iso2,get_iso3
+
+
+INST_FILE = Path("data/cleaned/inst_clean.csv")
+POP_FILE = Path("data/cleaned/pop_clean.csv")
+TT_FILE = Path("data/cleaned/tt_clean.csv")
+FB_FILE = Path("data/cleaned/fb_clean.csv")
+
+FILE_NAMES = {INST_FILE: "inst", POP_FILE: "pop", TT_FILE: "tt", FB_FILE: "fb"}
+
+def check_empty(df,name):
+    """
+    Drops rows with missing values in 'iso2' or 'iso3' columns as this leads to errors later on.
+
+    Parameters:
+        df (pd.DataFrame): Input DataFrame.
+        name (str): Optional name for logging.
+
+    Returns:
+        pd.DataFrame: DataFrame with blank ISO rows removed.
+    """
+    if "iso2" in df.columns:
+        before = len(df)
+        df = df[df["iso2"].notnull()]
+        after = len(df)
+        print(f"Removed {before - after} rows with blank 'iso2' in: {name}")
+    elif "iso3" in df.columns:
+        before = len(df)
+        df = df[df["iso3"].notnull()]
+        after = len(df)
+        print(f"Removed {before - after} rows with blank 'iso3' in: {name}")
+    else:
+        print(f"Neither 'iso2' nor 'iso3' column found. No rows removed.")
+
+    return df
+
+
+def add_iso2(df,name):
+    if "iso2" not in df.columns:
+        if "iso3" not in df.columns:
+            print("Cannot add iso2: 'iso3' column missing.")
+            return df  
+        df["iso2"] = df["iso3"].apply(get_iso2)
+
+        unmapped = df[df["iso2"].isnull()]
+        if not unmapped.empty:
+            print(f"Unmapped ISO3 codes: {unmapped['iso3'].tolist()} in: {name}")
+        print(f"Done: iso2 codes in: {name}")
+
+    return df
+
+def add_iso3(df,name):
+    if "iso3" not in df.columns:
+        if "iso2" not in df.columns:
+            print("Cannot add iso3: 'iso2' column missing.")
+            return df  
+        df["iso3"] = df["iso2"].apply(get_iso3)
+
+        unmapped = df[df["iso3"].isnull()]
+        if not unmapped.empty:
+            print(f"Unmapped ISO2 codes: {unmapped['iso2'].tolist()} in: {name}")
+        print(f"Done: iso3 codes in: {name}")
+
+    return df
+    
+def add_standardized_ratio(pop_df,df,name):
+
+    ratio_cols = [col for col in df.columns if col.endswith("_ratio")]
+
+    for col in ratio_cols:
+        def compute_std(row):
+            country = row["iso3"]
+            value = row[col]
+                
+            if country in pop_df.index:
+                pop_value = pop_df.at[country, col]
+                if pd.notnull(pop_value) and pop_value != 0:
+                    return value / pop_value
+                return float('nan')
+
+        df[col+"_std"] = df.apply(compute_std,axis=1)
+    print(f"Added standardized ratios in: {name}") 
+
+    return df
+
+def add_penetration_ratio(pop_df,df,name):
+
+    cols = [col for col in df.columns if col.endswith(("_women","_men","_all"))]
+
+    for col in cols:
+        def compute_pen(row):
+            country = row["iso3"]
+            value = row[col]
+                
+            if country in pop_df.index:
+                pop_value = pop_df.at[country, col]
+                if pd.notnull(pop_value) and pop_value != 0:
+                    return value / pop_value
+                return float('nan')
+
+        df[col+"_pen"] = df.apply(compute_pen,axis=1)
+    print(f"Added penetration ratios in: {name}") 
+
+    return df
+
+#process population data first as this is needed for others
+pop_df = pd.read_csv(POP_FILE,sep=";")
+pop_df = add_iso2(pop_df,"pop")
+pop_df = add_iso3(pop_df,"pop")
+pop_df.to_csv(f'data/transformed/pop_final.csv', index=False, encoding='utf-8-sig', sep=";")
+print(f"Saved file: data/transformed/pop_final.csv \n")
+pop_df_indexed = pop_df.set_index("iso3")
+
+#process each of the main data files
+FILES = [INST_FILE, TT_FILE, FB_FILE]
+for file in FILES:
+    df = pd.read_csv(file,sep=";")
+    name = FILE_NAMES[file]
+    print(f"Processing: {name}")
+
+    df = check_empty(df,name)
+
+    df = add_iso2(df,name)
+    df = add_iso3(df,name)
+
+    df = add_standardized_ratio(pop_df_indexed,df,name)
+    df = add_penetration_ratio(pop_df_indexed,df,name)
+    
+    df = df.to_csv(f'data/transformed/{name}_final.csv', index=False, encoding='utf-8-sig', sep=";")
+    print(f"Saved file: data/transformed/{name}_final.csv \n")
