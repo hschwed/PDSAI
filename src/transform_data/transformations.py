@@ -145,7 +145,7 @@ def run_transform():
         df = add_standardized_ratio(pop_df_indexed,df,name)
         df = add_penetration_ratio(pop_df_indexed,df,name)
 
-        df = df.to_csv(output_path, index=False, encoding='utf-8-sig', sep=";")
+        df.to_csv(output_path, index=False, encoding='utf-8-sig', sep=";")
         if os.path.isfile(output_path):
             logger.info(f"Transformation done. Saved: {output_path}")
         else:
