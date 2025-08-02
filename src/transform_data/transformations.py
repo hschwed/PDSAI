@@ -1,6 +1,6 @@
 from pathlib import Path
 import pandas as pd
-from src.utils.country import get_iso2,get_iso3
+from utils.country_code import get_iso2,get_iso3
 
 
 INST_FILE = Path("data/cleaned/inst_clean.csv")

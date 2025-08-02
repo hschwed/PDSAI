@@ -1,5 +1,5 @@
 """
-
+copy .env.example: cp .env.example .env. fill in your credentials.   run the app.
       ======================================
                 Pipeline Overview
       ======================================

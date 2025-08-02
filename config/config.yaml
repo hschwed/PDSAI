@@ -1,0 +1,12 @@
+api:
+  base_url: "https://business-api.tiktok.com"
+  region_endpoint: "/open_api/v1.3/search/region/"
+  estimates_endpoint: "/open_api/v1.3/ad/audience_size/estimate/"
+  max_workers: 3
+
+paths:
+  log_file: "logging/log.txt"
+  input_csv: "data/raw/input.csv"
+  input_json: "data/raw/input_json.json"
+  location_ids: "data/raw/location_ids.csv"
+  tt_output: "data/raw/tt_estimates.csv"

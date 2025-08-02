@@ -1,23 +1,31 @@
 
+from config.config import Config
 import requests
 import pandas as pd
 import itertools
 import json
+import os
+from src.utils.logger import get_logger
 
+config = Config()
+logger = get_logger(__name__)
 
-# Credentials
-advertiser_id = '7381489555305775105'
-secret = '01bebffff7dd4469b207a1622ad3892dfdf862a0'
-app_id = '7384250931329630225'
-auth_code = 'f57f9e8b140d03312509d43a9e70a96e65fde888' ## need to open link from App once reviewed; only valid for 1 hour, can only be used once
-access_token = '7e4105012622ac077282d8a3e4bd6f937cbdec70'
+advertiser_id = config.advertiser_id
+access_token = config.access_token
+
+if not advertiser_id or not access_token:
+    logger.error("Missing ADVERTISER_ID or ACCESS_TOKEN in .env")
+    raise EnvironmentError("Missing required environment variables.")
+else:
+    logger.info("Environment variables loaded successfully.")
 
 ################# PREPARING INPUT ######################
 def generate_inputs():
+    logger.info("Generating inputs...")
     #get values for locations, age_ranges and gender and build json formatted input
 
     #location_id or region_code. Research API lets you use region_code = country_codes
-    url = ' https://business-api.tiktok.com/open_api/v1.3/search/region/'
+    url = config.api_base_url + config.region_endpoint
 
     headers = {
         'Access-Token': access_token,
@@ -51,7 +59,12 @@ def generate_inputs():
     city = results[results['region_level']=='CITY'][['country_code','region_name','region_id']]
     #print(city)
 
-    results.to_csv('data/raw/location_ids.csv',encoding='utf-8-sig')
+    results.to_csv(config.location_ids,encoding='utf-8-sig')
+    if os.path.isfile(config.location_ids):
+        logger.info(f"Saved: {config.location_ids}")
+    else:
+        logger.error(f"Failed to save: {config.location_ids}")
+
     #files.download('countries.csv')
 
     #need ad group id for this, to get this id we would need to create a campaign and ad --> refer to fixed values for now
@@ -75,14 +88,25 @@ def generate_inputs():
 
     #save input as csv for reference
     df = pd.DataFrame(combine)
-    df.to_csv('data/raw/input.csv',encoding='utf-8-sig')
+    df.to_csv(config.input_csv,encoding='utf-8-sig')
     #files.download('input.csv')
+    if os.path.isfile(config.input_csv):
+        logger.info(f"Saved: {config.input_csv}")
+    else:
+        logger.error(f"Failed to save: {config.input_csv}")
 
     # country here is ISO2 code
     inputs = [{"country": row.country_code,"location_id":row.region_id, "gender": row.gender, "age": row.age} for row in combine.itertuples(index=False)]
     #save as json for use in client.py
-    with open("data/raw/input_json.json", "w", encoding="utf-8") as f:
-        json.dump({"inputs": inputs}, f, ensure_ascii=False, indent=2)
+    try:
+        with open(config.input_json, "w", encoding="utf-8") as f:
+            json.dump({"inputs": inputs}, f, ensure_ascii=False, indent=2)
+        if os.path.isfile(config.input_json):
+            logger.info(f"Successfully saved: {config.input_json}")
+        else:
+            logger.error(f"Failed to save {config.input_json}: file does not exist after writing.")
+    except Exception as e:
+        logger.error(f"Error saving {config.input_json}: {e}")
 
     #print(inputs)
-    print(f"Input has {len(inputs)} rows")
+    logger.info(f"Input has {len(inputs)} rows")

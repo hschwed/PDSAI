@@ -1,4 +1,5 @@
 
+from config.config import Config
 from fastapi import FastAPI
 from pydantic import BaseModel
 import requests
@@ -8,14 +9,20 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 import os
-from dotenv import load_dotenv
+from src.utils.logger import get_logger
+
+config = Config()
+logger = get_logger(__name__)
 
 # Credentials
-advertiser_id = os.get_env("ADVERTISER_ID")
-secret = os.get_env("SECRET")
-app_id = os.get_env("APP_ID")
-auth_code = os.get_env("AUTH_CODE")
-access_token = os.get_env("ACCESS_TOKEN")
+advertiser_id = config.advertiser_id
+access_token = config.access_token
+
+if not advertiser_id or not access_token:
+    logger.error("Missing ADVERTISER_ID or ACCESS_TOKEN in .env")
+    raise EnvironmentError("Missing required environment variables.")
+else:
+    logger.info("Environment variables loaded successfully.")
 
 ################ EXTRACT DATA VIA API REQUESTS####################
 # Define input schema for FastAPI
@@ -28,12 +35,10 @@ class InputItem(BaseModel):
 class InputList(BaseModel):
     inputs: list[InputItem]
 
-load_dotenv()  # Load environment variables from .env file
-
 app = FastAPI()
 
 #get audience estimate
-url = 'https://business-api.tiktok.com/open_api/v1.3/ad/audience_size/estimate/'
+url = config.api_base_url + config.estimates_endpoint
 headers = {
     'Access-Token': access_token,
     'Content-Type': 'application/json'
@@ -50,13 +55,13 @@ def get_audience_estimate(data):
         if response.get("code") == 0:
             return response
         elif response.get("code") == 51052:
-            print(f"Error on attempt {attempt+1}, retrying {data}")
+            logger.warning(f"Error on attempt {attempt+1}, retrying {data}")
             time.sleep(sleep)
         else:
-            print(f"API error {response.get('code')}: {response.get('message')} for input {data}")
+            logger.error(f"API error {response.get('code')}: {response.get('message')} for input {data}")
             time.sleep(sleep)
             return None
-    print("Max retries reached, skipping.")
+    logger.error("Max retries reached, skipping.")
     return None
 
 def process_input(input):
@@ -72,6 +77,7 @@ def process_input(input):
     try:
         response = get_audience_estimate(data)
         if not response:
+            logger.warning(f"No valid response for input: {data}")
             return None
         entry = {
             "name": input.country,
@@ -92,7 +98,7 @@ def process_input(input):
         }
         return entry
     except requests.exceptions.RequestException as e:
-        print(f"Request failed: {e}")
+        logger.error(f"Request failed: {e}")
         return None
 
 MAX_WORKERS = 3 # handle multiple I/O-bound tasks concurrently, request.post() blocks thread while waiting for response, using threads allows to start multiple requests in parallel and wait for them simultaneously. so total runtime != sum of individual requests
@@ -109,10 +115,19 @@ def audience_estimate(input_list: InputList):
             res = future.result()
             if res:
                 results.append(res)
+    logger.info("Finished processing all inputs and submitting tasks into thread pool.")
+
+    logger.info("Saving results...")
     if results:
         results_df = pd.DataFrame(results)
         results_df['timestamp'] = datetime.now()
-        results_df.to_csv('data/raw/tt_estimates.csv', encoding='utf-8-sig')
-        print(f"Results to csv done")
-        return {"message":f"Processed {len(results)} inputs", "output_file": "tt_estimates.csv"}
+        results_df.to_csv(config.tt_output, encoding='utf-8-sig')
+        if os.path.isfile(config.tt_output):
+            logger.info(f"Saved: {config.tt_output}")
+        else:
+            logger.error(f"Failed to save: {config.tt_output}")
+        
+        logger.info(f"Processed {len(results)} inputs. Output_file: {config.tt_output}")
+
+        return {"message": "No results to save"}
 
