@@ -60,4 +60,22 @@ PDSAI/
 4. **Build Docker image and start container**
     ```bash
     docker-compose up --build
+    ```
+   This will run the program and get country-level estimates from TikTok API. If you want to get different granularity level, specify the level first. Choose from: country, province, city or dma.
+   Specify the level and run bash command:
+   ```bash
+   LEVEL=city docker-compose up --build
+   ```
+   or in PowerShell:
+   ```shell
+   $env:LEVEL = "city"; docker-compose up --build
+   ```
 
+   Alternatively, override the following value in docker-compose.yaml.
+   ```yaml
+   environment:
+      - LEVEL=${LEVEL:-country}
+   ```
+
+5. **Analysis**
+Either run the analysis in the Jupyter notebooks in src/analyze_data or build you own analysis based on the final datasets stored in data/transformed.

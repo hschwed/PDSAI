@@ -30,7 +30,7 @@ class InputItem(BaseModel):
     location_id: str
     age: str
     gender: str
-    country: str
+    name: str
 
 class InputList(BaseModel):
     inputs: list[InputItem]
@@ -45,7 +45,8 @@ headers = {
 }
 
 results = []
-output_columns = ["name", "ages_ranges", "geo_location", "genders", "interests", "behavior", "scholarities", "languages", "family_statuses", "all_fields", "targeting", "response", "lower_end","upper_end","user_count_stage"]
+level = config.level
+output_columns = ["level","name", "ages_ranges", "geo_location", "genders", "interests", "behavior", "scholarities", "languages", "family_statuses", "all_fields", "targeting", "response", "lower_end","upper_end","user_count_stage"]
 retries = 3
 sleep = 0.3
 
@@ -69,7 +70,7 @@ def process_input(input):
         "advertiser_id": advertiser_id,
         "objective_type": "REACH",
         "optimization_goal": "REACH",
-        "placements": ["PLACEMENT_TIKTOK", "PLACEMENT_PANGLE", "PLACEMENT_GLOBAL_APP_BUNDLE"],
+        "placements": ["PLACEMENT_TIKTOK", "PLACEMENT_GLOBAL_APP_BUNDLE"], # removed "PLACEMENT_PANGLE" as this is targeting users in other apps and websites and inflates the numbers
         "location_ids": [input.location_id],
         "gender": input.gender,
         "age_groups": [input.age]
@@ -80,7 +81,8 @@ def process_input(input):
             logger.warning(f"No valid response for input: {data}")
             return None
         entry = {
-            "name": input.country,
+            "level": f"{level}",
+            "name": input.name,
             "ages_ranges": input.age,
             "geo_location": input.location_id,
             "genders": input.gender,
@@ -101,7 +103,7 @@ def process_input(input):
         logger.error(f"Request failed: {e}")
         return None
 
-MAX_WORKERS = 3 # handle multiple I/O-bound tasks concurrently, request.post() blocks thread while waiting for response, using threads allows to start multiple requests in parallel and wait for them simultaneously. so total runtime != sum of individual requests
+MAX_WORKERS = config.max_workers # handle multiple I/O-bound tasks concurrently, request.post() blocks thread while waiting for response, using threads allows to start multiple requests in parallel and wait for them simultaneously. so total runtime != sum of individual requests
 @app.post("/audience_estimate/")
 
 def audience_estimate(input_list: InputList):
@@ -121,13 +123,13 @@ def audience_estimate(input_list: InputList):
     if results:
         results_df = pd.DataFrame(results)
         results_df['timestamp'] = datetime.now()
-        results_df.to_csv(config.tt_output, encoding='utf-8-sig')
-        if os.path.isfile(config.tt_output):
-            logger.info(f"Saved: {config.tt_output}")
+        results_df.to_csv(config.tt, encoding='utf-8-sig')
+        if os.path.isfile(config.tt):
+            logger.info(f"Saved: {config.tt}")
         else:
-            logger.error(f"Failed to save: {config.tt_output}")
+            logger.error(f"Failed to save: {config.tt}")
         
-        logger.info(f"Processed {len(results)} inputs. Output_file: {config.tt_output}")
+        logger.info(f"Processed {len(results)} inputs. Output_file: {config.tt}")
 
         return {"message": "No results to save"}
 
