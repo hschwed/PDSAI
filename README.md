@@ -1,97 +1,63 @@
-"""
-copy .env.example: cp .env.example .env. fill in your credentials.   run the app.
-      ======================================
-                Pipeline Overview
-      ======================================
+# PDSAI Project Documentation
 
+## Project Overview
 
---------------------------------------
-   1. Population buckets generation
---------------------------------------
- ### reshape World Bank age-by-sex data into TikTok-style buckets ###
+This project focuses on fetching TikTok data to compute gender gaps and compare to Facebook and Instagram Data. It uses population data to compute standardized rations for comparison. The processing pipeline includes:
 
- 
-reference/worldbank_population_by_age.csv  
-  → scripts/build_population_buckets.py  
-          → reference/pop_by_country_buckets.csv  
-                  → analysis/clean_pop_buckets.py  
-                          → reference/pop_by_country_buckets_stripped.csv 
+1. **Data Cleaning**  
+   Cleaning the raw data so all files are in the same format.
 
---------------------------------------
-   2. Population data cleaning
---------------------------------------
-_______________
-reference/pop_by_country_buckets_stripped.csv 
-  → analysis/edit_output_pop.py  
-          → outputs/pop_clean.csv 
+2. **Data Transformation**  
+   Transform the data, adding computations for ratios, adding columns so files have same structure.
 
+3. **Data Analysis and Visualization**  
+   Analyzing the cleaned data, statistical tests, descriptive analysis. Creating visual representations of the data and models.
 
---------------------------------------
-       2. TikTok data cleaning
---------------------------------------
-### normalize raw TikTok export & map country codes ###
+---
+## Repository Structure
+```
+PDSAI/
+├── config/                # Configuration files, specifying paths, apis,
+├── data/                  # Raw and processed data
+│   ├── cleaned/           # Data after running clean_data scripts
+│   ├── raw/               # Raw input data
+│   ├── transformed/       # Final output files
+├── logging/               # Log file
+├── poster_input/          # Input data for presentation session
+├── src/                   # Source code for data processing and analysis
+│   ├── analyze_data/    
+│   ├── check_data/     
+│   ├── clean_data/        
+│   ├── get_data/          # source for TikTok API request
+│   ├── transform_data/      
+│   ├── utils/             # Helper functions
+├── .dockerignore          # Docker ignore file
+├── .env.example           # Example environment variables file
+├── .gitignore             # Git ignore file
+├── DockerFile             # Docker container setup
+├── README.md              # Documentation
+├── client.py              # Client interaction with local server endpoint
+├── docker-compose.yaml    # Define container and configurations
+├── main.py                # Main application entry point
+└── requirements.txt       # Python dependencies list
+```
 
-____ToDO_______
+---
 
-- edit output.csv in a way that makes it usable, get rid of 58k rows
+## Getting Started
 
-_______________
-output.csv  
-  → analysis/edit_output_tt.py  
-          → outputs/tt_clean.csv  
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hschwed/PDSAI.git
+   cd PDSAI
 
+2.  **Copy .env.example:** 
+    ```bash
+    cp .env.example .env.
 
---------------------------------------
-       3. Gender-gap computation
---------------------------------------
-### combine population buckets & cleaned TikTok data to compute penetration & gaps ###
+3.  **Fill in your credentials in .env**
 
+4. **Build Docker image and start container**
+    ```bash
+    docker-compose up --build
 
-reference/pop_by_country_buckets_stripped.csv + outputs/tt_clean.csv  
-  → analysis/gender_gap_tables.py  
-          → outputs/penetration_by_country.csv  
-          → outputs/penetration_by_bucket.csv  
-          → outputs/overall_gap.csv  
-          → outputs/gap_by_country.csv  
-
---------------------------------------
-      4. Facebook data cleaning
---------------------------------------
-### adjust format to match Tiktok and Population data ###
-
-____ToDO_______
-
-- currently no data for age buckets and only final computations of female-to-male ratio available, therefore cannot relate to population data
-- later include in gender gap computation
-
-_______________
-dgg_facebook_national 
-  → analysis/edit_fb.py  
-          → outputs/fb_clean.csv  
-
-
---------------------------------------
-   5. Penetration summary & ranking
---------------------------------------
-
-### summarize country-level results & rank buckets by gap size ###
-
-
-outputs/penetration_by_country.csv  
-  → analysis/make_penetration_outputs.py  
-          → outputs/penetration_summary.csv  
-          → outputs/ranking_by_bucket.csv  
-
-
---------------------------------------
-       5. Pipeline diagnostics
---------------------------------------
-### run all steps with logging to catch failures ###
-
-
-analysis/diagnose_gender_pipeline.py  
-  → outputs/pipeline_diagnostics.txt
-  
-  
-  
-  """

@@ -42,7 +42,7 @@ if __name__ == "__main__":
     server_thread.daemon = True
     server_thread.start()
     logger.info("Starting FastAPI server thread.")
-    time.sleep(2)
+    time.sleep(5)
     if server_up():
         logger.info("FastAPI server up and running.")
     else:

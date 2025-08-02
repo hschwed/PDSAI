@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  data-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tt-data-pipeline
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data       #link host folder data to data folder inside container
+    command: ["python", "main.py"]
