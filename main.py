@@ -6,6 +6,8 @@ from src.get_data.inputs import generate_inputs
 from client import run_client
 from src.utils.logger import get_logger
 import requests
+from src.clean_data import clean_fb,clean_inst,clean_pop,clean_tt
+from src.transform_data import transformations
 
 config = Config()
 logger = get_logger(__name__) # name of module, to show which module message came from
@@ -49,6 +51,18 @@ if __name__ == "__main__":
     
     logger.info("Running client...")
     run_client()
+
+    logger.info("STARTING: DATA CLEANING")
+    logger.info("="*60)
+    clean_fb.clean_facebook()
+    clean_inst.clean_insta()
+    clean_pop.clean_population()
+    clean_tt.clean_tiktok()
+
+    logger.info("STARTING: DATA TRANSFORMATION")
+    logger.info("="*60)
+    transformations.run_transform()
+
 
 #go to http://localhost:8000/docs to check
 #http://localhost:8000/download_csv/ for download

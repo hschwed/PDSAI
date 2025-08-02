@@ -50,3 +50,40 @@ class Config:
     @property
     def tt_output(self):
         return self._config["paths"]["tt_output"]
+    @property
+    def tt_clean(self):
+        return self._config["paths"]["tt_clean"]
+    @property
+    def tt_final(self):
+        return self._config["paths"]["tt_final"]
+
+    @property
+    def fb(self):
+        return self._config["paths"]["fb_csv"]
+    @property
+    def fb_clean(self):
+        return self._config["paths"]["fb_clean"]
+    @property
+    def fb_final(self):
+        return self._config["paths"]["fb_final"]
+       
+    @property
+    def insta(self):
+        return self._config["paths"]["insta_csv"]
+    @property
+    def insta_clean(self):
+        return self._config["paths"]["insta_clean"]
+    @property
+    def insta_final(self):
+        return self._config["paths"]["insta_final"]
+      
+    @property
+    def pop(self):
+        return self._config["paths"]["pop_csv"]
+
+    @property
+    def pop_clean(self):
+        return self._config["paths"]["pop_clean"]
+    @property
+    def pop_final(self):
+        return self._config["paths"]["pop_final"]
