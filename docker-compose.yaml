@@ -11,5 +11,6 @@ services:
     environment:
       - LEVEL=${LEVEL:-country}          # override here to be used in file name: country, province, city, dma
     volumes:
-      - ./data:/app/data       #link host folder data to data folder inside container
+      - ./data:/app/data                 # link host folder data to data folder inside container
+      - ./logging:/app/logging
     command: ["python", "main.py"]

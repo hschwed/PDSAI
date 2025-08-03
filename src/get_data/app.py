@@ -135,5 +135,7 @@ def audience_estimate(input_list: InputList):
         
         logger.info(f"Processed {len(results)} inputs. Output_file: {config.tt}")
 
+        return {"message": f"Processed {len(results)} inputs."}
+    else:
         return {"message": "No results to save"}
 

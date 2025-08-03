@@ -83,14 +83,15 @@ PDSAI/
 
 ## Data Glossary
 **Detail Level**
-- Country: 
-- Province:
-- City:
-- DMA:
+- Country: currently data available for 164 countries.
+- Province: is a mid-level between city and country. What it refers to depends on the country, e.g. in Germany = Bundesländer, Canada = Province, US = States, Italy = Region, France = Departments etc. Currently province level data is available for 23 countries.
+- City: Currently city level data is available for xx countries.
+- DMA: Designated Market Area. It’s a geographic region used in the United States to define television and media markets.
 
 **Age**
 - ["AGE_13_17", "AGE_18_24", "AGE_25_34", "AGE_35_44", "AGE_45_54", "AGE_55_100"]
 - age groups are pre-defined by TikTok. Other data (facebook, instagram) is adjusted to match the age buckets.
+- Remark: due to security restrictions on TikTok side, data on age < 18 years is not reliable and should be disregarded.
 
 **Location id**
 - field used in the audience_estimate endpoint in TikTok API to make request

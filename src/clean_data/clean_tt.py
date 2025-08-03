@@ -16,13 +16,16 @@ def clean_tiktok():
     else:
         logger.error(f"Failed to load: {config.tt}")
 
-    tt = tt[["country_code","name","ages_ranges","genders","lower_end","upper_end"]]
+    tt = tt[["level","country_code","name","ages_ranges","genders","lower_end","upper_end"]]
     tt["tt_estimate"] = (tt["lower_end"]+ tt["upper_end"]) / 2
 
     tt.drop(columns=["lower_end", "upper_end"], inplace=True)
+
+    if config.level == "dma":
+        tt["country_code"] = tt["country_code"].fillna("US") # only for DMA as it is for US only and None causes problems when flattening, pivoting
     tt.rename(columns={"country_code": "iso2"}, inplace=True)
 
-    tt = tt.pivot_table(index="iso2", columns=["ages_ranges","genders"], values ="tt_estimate")
+    tt = tt.pivot_table(index=["level", "iso2", "name"], columns=["ages_ranges","genders"], values ="tt_estimate")
     #flatten columns
     tt.columns = [f"{age.lower()}_{'women' if gender == 'GENDER_FEMALE' else 'men'}" 
                 for age, gender in tt.columns]
