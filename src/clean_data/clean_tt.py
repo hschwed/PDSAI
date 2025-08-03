@@ -8,19 +8,19 @@ config = Config()
 logger = get_logger(__name__)
 
 def clean_tiktok():
-    logger.info("Cleaning Population data...")
-    TT_FILE = config.tt_output
+    logger.info("Cleaning TikTok data...")
+    TT_FILE = config.tt
     tt = pd.read_csv(TT_FILE)
-    if os.path.isfile(config.pop):
-        logger.info(f"Loaded: {config.tt_output}")
+    if os.path.isfile(config.tt):
+        logger.info(f"Loaded: {config.tt}")
     else:
-        logger.error(f"Failed to load: {config.tt_output}")
+        logger.error(f"Failed to load: {config.tt}")
 
-    tt = tt[["name","ages_ranges","genders","lower_end","upper_end"]]
+    tt = tt[["country_code","name","ages_ranges","genders","lower_end","upper_end"]]
     tt["tt_estimate"] = (tt["lower_end"]+ tt["upper_end"]) / 2
 
     tt.drop(columns=["lower_end", "upper_end"], inplace=True)
-    tt.rename(columns={"name": "iso2"}, inplace=True)
+    tt.rename(columns={"country_code": "iso2"}, inplace=True)
 
     tt = tt.pivot_table(index="iso2", columns=["ages_ranges","genders"], values ="tt_estimate")
     #flatten columns

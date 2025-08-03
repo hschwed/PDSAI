@@ -7,15 +7,12 @@ api:
 paths:
   log_file: "logging/log.txt"
   input_csv: "data/raw/input.csv"
-  input_country: "data/raw/input_country.json"
-  input_city: "data/raw/input_city.json"
-  input_province: "data/raw/input_province.json"
-  input_dma: "data/raw/input_dma.json"
+  input_path: "data/raw/"           # only path, without file ending to make it dynamic depending on level
   location_ids_api: "data/raw/location_ids.csv"
   locations_json: "data/raw/locations.json"
-  tt_out: "data/raw/tt_estimates"
-  tt_clean: "data/cleaned/tt_clean"
-  tt_final: "data/transformed/tt_final"
+  tt_out: "data/raw/"               # only path, without file ending to make it dynamic depending on level
+  tt_clean: "data/cleaned/"         # only path, without file ending to make it dynamic depending on level
+  tt_final: "data/transformed/"     # only path, without file ending to make it dynamic depending on level
   fb_csv: "data/raw/FB_mau_upper_202501_averaged.csv"
   fb_clean: "data/cleaned/fb_clean.csv"
   fb_final: "data/transformed/fb_final.csv"

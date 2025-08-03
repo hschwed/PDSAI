@@ -31,8 +31,9 @@ def generate_location_inputs(region_list, region_type):
     for loc in region_list:
         for g, a in age_gender_combined:
             entry = {
-                "country": loc.get("country_code", None),
-                "location_id": loc["id"],
+                "name": loc.get("name", None),
+                "country_code": str(loc.get("country_code", None)),
+                "location_id": str(loc["id"]),
                 "gender": g,
                 "age": a
             }
@@ -45,20 +46,22 @@ def generate_inputs():
     with open(config.locations_json, encoding="utf-8") as f:
         locations = json.load(f)
 
-    output_map = {
-        "countries": ("input_country", locations.get("countries", [])),
-        "provinces": ("input_province", locations.get("provinces", [])),
-        "DMA": ("input_dma", locations.get("DMA", [])),
-        "cities": ("input_city", locations.get("cities", []))
-    }
+    base_path = config.input_path + "input"
 
-    for level, (filename, region_list) in output_map.items():
+    output_map = {
+        "countries": (f"{base_path}_country.json", locations.get("countries", [])),
+        "provinces": (f"{base_path}_province.json", locations.get("provinces", [])),
+        "DMA": (f"{base_path}_dma.json", locations.get("DMA", [])),
+        "cities": (f"{base_path}_city.json", locations.get("cities", []))
+    }
+  
+
+    for level, (filepath, region_list) in output_map.items():
         inputs = generate_location_inputs(region_list, level)
-        path = getattr(config, filename)
         try:
-            with open(path, "w", encoding="utf-8") as f:
+            with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(inputs, f, ensure_ascii=False, indent=2)
-            logger.info(f"Saved {level} input JSON to: {path}. File has {len(inputs)} rows.")
+            logger.info(f"Saved {level} input JSON to: {filepath}. File has {len(inputs.get('inputs', []))} entries.")
         except Exception as e:
             logger.error(f"Error saving {level} input JSON: {e}")
 

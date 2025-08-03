@@ -20,8 +20,10 @@ def run_client():
 
     level = config.level
     logger.info(f"Running client request for {level}-level input...")
+
     response = requests.post("http://localhost:8000/audience_estimate/", json=payload)
-    
+
     logger.info(f"Client received response: {response.status_code}")
+    logger.info(f"Response content: {response.text}")
 
     #print(response.json())

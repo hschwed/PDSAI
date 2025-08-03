@@ -9,6 +9,7 @@ This project focuses on fetching TikTok data to compute gender gaps and compare 
 
 2. **Data Transformation**  
    Transform the data, adding computations for ratios, adding columns so files have same structure.
+   Remark: this currently only works on country level as we do not yet have population data matching subnational levels.
 
 3. **Data Analysis and Visualization**  
    Analyzing the cleaned data, statistical tests, descriptive analysis. Creating visual representations of the data and models.
@@ -64,11 +65,11 @@ PDSAI/
    This will run the program and get country-level estimates from TikTok API. If you want to get different granularity level, specify the level first. Choose from: country, province, city or dma.
    Specify the level and run bash command:
    ```bash
-   LEVEL=city docker-compose up --build
+    LEVEL="province"; docker compose run --build --service-ports --rm -it api-data-pipeline
    ```
    or in PowerShell:
    ```shell
-   $env:LEVEL = "city"; docker-compose up --build
+    $env:LEVEL="province"; docker compose run --build --service-ports --rm -it api-data-pipeline
    ```
 
    Alternatively, override the following value in docker-compose.yaml.
@@ -78,4 +79,27 @@ PDSAI/
    ```
 
 5. **Analysis**
-Either run the analysis in the Jupyter notebooks in src/analyze_data or build you own analysis based on the final datasets stored in data/transformed.
+   Either run the analysis in the Jupyter notebooks in src/analyze_data or build your own analysis based on the final datasets stored in data/transformed. Currently provided analyses are focused on country-level data
+
+## Data Glossary
+**Detail Level**
+- Country: 
+- Province:
+- City:
+- DMA:
+
+**Age**
+- ["AGE_13_17", "AGE_18_24", "AGE_25_34", "AGE_35_44", "AGE_45_54", "AGE_55_100"]
+- age groups are pre-defined by TikTok. Other data (facebook, instagram) is adjusted to match the age buckets.
+
+**Location id**
+- field used in the audience_estimate endpoint in TikTok API to make request
+- defined by TikTok
+- available information is different depending on level
+- full json list of locations is downloaded from https://business-api.tiktok.com/portal/docs?id=1739311040498689. Remarkt: contrary to what is suggested in the documentation, the /tool/region endpoint does not provide a comprehensive list.
+
+**Ratios**
+- in the final transformed data, gender gap ratio is the female-to-male ratio
+- standardized ratio = platform gender gap / population gender gap
+
+

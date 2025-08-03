@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   api-data-pipeline:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: tt-data-pipeline
+    container_name: api-data-pipeline
     ports:
       - "8000:8000"
     env_file:

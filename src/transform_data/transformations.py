@@ -1,7 +1,7 @@
 from config.config import Config
 from pathlib import Path
 import pandas as pd
-from utils.country_code import get_iso2,get_iso3
+from src.utils.country_code import get_iso2,get_iso3
 from src.utils.logger import get_logger
 import os
 

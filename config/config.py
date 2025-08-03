@@ -12,7 +12,6 @@ class Config:
         self.advertiser_id = os.getenv("ADVERTISER_ID")
         self.access_token = os.getenv("ACCESS_TOKEN")
         self.level = os.getenv("LEVEL", "country")  # default to 'country' if not set
-        self.input_json = f"/app/data/raw/input_{self.level}.json"
 
         if not self.advertiser_id or not self.access_token:
             raise EnvironmentError("Missing ADVERTISER_ID or ACCESS_TOKEN in .env")
@@ -40,6 +39,14 @@ class Config:
     @property
     def input_csv(self):
         return self._config["paths"]["input_csv"]
+    
+    @property
+    def input_path(self):
+        return self._config["paths"]["input_path"]
+    @property
+    def input_json(self):
+        base_path = self._config["paths"]["input_path"]
+        return os.path.join(base_path, f"input_{self.level}.json")
 
     @property
     def locations_json(self):
@@ -78,12 +85,12 @@ class Config:
     @property
     def tt_clean(self):
         base_path = self._config["paths"]["tt_clean"]
-        return os.path.join(base_path, f"_{self.level}.csv")
+        return os.path.join(base_path, f"tt_clean_{self.level}.csv")
     @property
     def tt_final(self):
         base_path =  self._config["paths"]["tt_final"]
-        return os.path.join(base_path, f"_{self.level}.csv")
+        return os.path.join(base_path, f"tt_final_{self.level}.csv")
     @property
     def tt(self):
         base_path = self._config["paths"]["tt_out"] 
-        return os.path.join(base_path, f"_{self.level}.csv")
+        return os.path.join(base_path, f"tt_estimates_{self.level}.csv")

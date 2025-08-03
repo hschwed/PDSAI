@@ -58,11 +58,13 @@ if __name__ == "__main__":
     clean_inst.clean_insta()
     clean_pop.clean_population()
     clean_tt.clean_tiktok()
+    if config.level == "country":
+        logger.info("STARTING: DATA TRANSFORMATION")
+        logger.info("="*60)
+        transformations.run_transform()
 
-    logger.info("STARTING: DATA TRANSFORMATION")
-    logger.info("="*60)
-    transformations.run_transform()
-
+    logger.info("="*60)    
+    logger.info("FINISHED")
 
 #go to http://localhost:8000/docs to check
 #http://localhost:8000/download_csv/ for download

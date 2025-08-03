@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 import os
 from src.utils.logger import get_logger
+import sys
 
 config = Config()
 logger = get_logger(__name__)
@@ -27,10 +28,12 @@ else:
 ################ EXTRACT DATA VIA API REQUESTS####################
 # Define input schema for FastAPI
 class InputItem(BaseModel):
+    name: str
+    country_code: str
     location_id: str
     age: str
     gender: str
-    name: str
+    
 
 class InputList(BaseModel):
     inputs: list[InputItem]
@@ -46,7 +49,7 @@ headers = {
 
 results = []
 level = config.level
-output_columns = ["level","name", "ages_ranges", "geo_location", "genders", "interests", "behavior", "scholarities", "languages", "family_statuses", "all_fields", "targeting", "response", "lower_end","upper_end","user_count_stage"]
+output_columns = ["level","name", "country_code", "ages_ranges", "geo_location", "genders", "interests", "behavior", "scholarities", "languages", "family_statuses", "all_fields", "targeting", "response", "lower_end","upper_end","user_count_stage"]
 retries = 3
 sleep = 0.3
 
@@ -83,6 +86,7 @@ def process_input(input):
         entry = {
             "level": f"{level}",
             "name": input.name,
+            "country_code": input.country_code,
             "ages_ranges": input.age,
             "geo_location": input.location_id,
             "genders": input.gender,
@@ -113,7 +117,7 @@ def audience_estimate(input_list: InputList):
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         for inp in input_list.inputs:
             futures.append(executor.submit(process_input, inp)) # submit multiple tasks into thread pool, parallelize API requests in thread
-        for future in tqdm(as_completed(futures),total=len(futures),desc="Processing inputs"): #as_completed waits for each task to finish
+        for future in tqdm(as_completed(futures),total=len(futures),desc="Processing inputs", file=sys.stdout): #as_completed waits for each task to finish
             res = future.result()
             if res:
                 results.append(res)
