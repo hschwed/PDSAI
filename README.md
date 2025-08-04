@@ -77,6 +77,10 @@ PDSAI/
    environment:
       - LEVEL=${LEVEL:-country}
    ```
+   Remarkt: to run some of the scripts individually, use
+   ```
+   python -m src.folder_name.script_name
+   ```
 
 5. **Analysis**
    Either run the analysis in the Jupyter notebooks in src/analyze_data or build your own analysis based on the final datasets stored in data/transformed. Currently provided analyses are focused on country-level data
@@ -85,7 +89,7 @@ PDSAI/
 **Detail Level**
 - Country: currently data available for 164 countries.
 - Province: is a mid-level between city and country. What it refers to depends on the country, e.g. in Germany = Bundesländer, Canada = Province, US = States, Italy = Region, France = Departments etc. Currently province level data is available for 23 countries.
-- City: Currently city level data is available for xx countries.
+- City: Currently city level data seems only available for India.
 - DMA: Designated Market Area. It’s a geographic region used in the United States to define television and media markets.
 
 **Age**

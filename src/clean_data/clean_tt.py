@@ -17,7 +17,7 @@ def clean_tiktok():
         logger.error(f"Failed to load: {config.tt}")
 
     tt = tt[["level","country_code","name","ages_ranges","genders","lower_end","upper_end"]]
-    tt["tt_estimate"] = (tt["lower_end"]+ tt["upper_end"]) / 2
+    tt["tt_estimate"] = ((tt["lower_end"]+ tt["upper_end"]) / 2).round(0).astype(int)
 
     tt.drop(columns=["lower_end", "upper_end"], inplace=True)
 
@@ -38,7 +38,7 @@ def clean_tiktok():
         men_col = f'age_{group}_men'
         women_col = f'age_{group}_women'
         ratio_col = f'age_{group}_ratio' 
-        tt[ratio_col] = tt[women_col] / tt[men_col]
+        tt[ratio_col] = (tt[women_col] / tt[men_col]).round(4)
 
     #print(tt.head())
     #print(tt.columns.tolist())
@@ -47,10 +47,13 @@ def clean_tiktok():
     tt["total_men"] = tt[[f'age_{group}_men' for group in age_groups]].sum(axis=1)
     tt["total_women"] = tt[[f'age_{group}_women' for group in age_groups]].sum(axis=1)
     tt["total_all"] = tt["total_men"]+ tt["total_women"]
-    tt["total_ratio"] = tt["total_women"] / tt["total_men"]
+    tt["total_ratio"] = (tt["total_women"] / tt["total_men"]).round(4)
 
     tt.to_csv(config.tt_clean, index=False, encoding='utf-8-sig', sep=";") # use -sig for Excel compatibility, add and strip out BOM
     if os.path.isfile(config.tt_clean):
         logger.info(f"Saved: {config.tt_clean}")
     else:
         logger.error(f"Failed to save: {config.tt_clean}")
+
+if __name__ == "__main__":
+    clean_tiktok()

@@ -86,7 +86,7 @@ def add_standardized_ratio(pop_df,df,name):
             if country in pop_df.index:
                 pop_value = pop_df.at[country, col]
                 if pd.notnull(pop_value) and pop_value != 0:
-                    return value / pop_value
+                    return (value / pop_value).round(4)
                 return float('nan')
 
         df[col+"_std"] = df.apply(compute_std,axis=1)
@@ -107,7 +107,7 @@ def add_penetration_ratio(pop_df,df,name):
             if country in pop_df.index:
                 pop_value = pop_df.at[country, col]
                 if pd.notnull(pop_value) and pop_value != 0:
-                    return value / pop_value
+                    return (value / pop_value).round(4)
                 return float('nan')
 
         df[col+"_pen"] = df.apply(compute_pen,axis=1)
