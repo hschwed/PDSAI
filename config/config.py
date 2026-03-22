@@ -11,6 +11,7 @@ class Config:
 
         self.advertiser_id = os.getenv("ADVERTISER_ID")
         self.access_token = os.getenv("ACCESS_TOKEN")
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.level = os.getenv("LEVEL", "country")  # default to 'country' if not set
 
         if not self.advertiser_id or not self.access_token:
@@ -59,6 +60,14 @@ class Config:
     @property
     def interest_json(self):
         return self._config["paths"]["interest_json"]
+
+    @property
+    def interest_trim_json(self):
+        return self._config["paths"]["interest_trim_json"]
+
+    @property
+    def interest_matched_json(self):
+        return self._config["paths"]["interest_matched_json"]
 
     @property
     def fb(self):
