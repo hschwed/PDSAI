@@ -1,0 +1,8248 @@
+[
+  {
+    "id": "25999011005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Lane",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Eye Care",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hotels & Accommodation",
+    "children_ids": [
+      "17103100",
+      "17103101",
+      "17103104"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998021002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Western American Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Movie",
+    "children_ids": [
+      "23119100",
+      "23119101",
+      "23119102",
+      "23119103",
+      "23119104",
+      "23119107",
+      "23119109",
+      "23119110",
+      "23119111",
+      "23119113",
+      "23119114",
+      "23119115"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14102104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wigs & Accessories",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "27100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Food",
+    "children_ids": [
+      "27100103",
+      "27100106",
+      "27100111",
+      "27100114",
+      "27100122"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Breeding",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Kitchen & Bathroom Appliances",
+    "children_ids": [
+      "16101100",
+      "16101112",
+      "16101113",
+      "16101115",
+      "16101118",
+      "16101119",
+      "16101123",
+      "16101125",
+      "16101129"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999008003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "PvE Shooting Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23116",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Culture & Art",
+    "children_ids": [
+      "10106102",
+      "23116100",
+      "23116101",
+      "23116107",
+      "23116999"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Simulation",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999008002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cover Fire",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10106102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dance",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Brick Breaker",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Live Events",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "13114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Third-Party Payments",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Child Car Seats",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20111100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Parenting",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dress Up & Lifestyle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999010001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Arcade Sports",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Survival",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coloring",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Minesweeper",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Artillery Shooter Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports & Outdoors",
+    "children_ids": [
+      "28100",
+      "28101"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Gifts & Flowers",
+    "children_ids": [
+      "26104100",
+      "26104101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101125",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coffee Makers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sedans",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wig & Hair Styling",
+    "children_ids": [
+      "14102100",
+      "14102102",
+      "14102103",
+      "14102104"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "15101104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Laptops",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Marketing Management Education",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23116107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Karaoke",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Logistics",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998019002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Maritime",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100116",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Combat Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tower Defense RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coin Pusher",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Drama",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "RTS",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Instant Cameras",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tactics",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24116",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "IT Services",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100101101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Care Simulation Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Driving Schools & Pilot Training",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999010004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Team Manager",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sweatshirts & Hoodies",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22111104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Flats",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Slots",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Lip Care",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Facial Cleansers & Make-up Remover",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Animal Avatar",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998020",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Western Fantasy",
+    "children_ids": [
+      "25998020001"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Block",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vacuums",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018019",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Games for Women",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "13112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Foreign Exchange Transactions",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23131",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Relationships",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100103102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Air Combat Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101123",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Knee Protectors",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shooting",
+    "children_ids": [
+      "25100103100",
+      "25100103101",
+      "25100103102"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Frozen Food",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fantasy",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beauty Tools",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "19",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pets",
+    "children_ids": [
+      "19100",
+      "19101",
+      "19102",
+      "19103",
+      "19105",
+      "19106"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018017",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tennis",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "13",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Financial Services",
+    "children_ids": [
+      "13101",
+      "13102",
+      "13108",
+      "13112",
+      "13114"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101115",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Egg Cookers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Men's Clothing",
+    "children_ids": [
+      "22108100",
+      "22108101",
+      "22108102",
+      "22108103",
+      "22108104",
+      "22108105",
+      "22108106",
+      "22108107",
+      "22108108",
+      "22108109",
+      "22108110",
+      "22108112"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pants & Jeans",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports Equipment",
+    "children_ids": [
+      "28101100",
+      "28101106",
+      "28101107",
+      "28101111",
+      "28101114",
+      "28101115",
+      "28101116",
+      "28101117",
+      "28101123",
+      "28101124"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Document Management",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Simulation",
+    "children_ids": [
+      "25999009001",
+      "25999009002",
+      "25999009003",
+      "25999009004",
+      "25999009005",
+      "25999009006",
+      "25999009007",
+      "25999009008",
+      "25999009009",
+      "25999009010",
+      "25999009011",
+      "25999009012",
+      "25999009013",
+      "25999009014",
+      "25999009015",
+      "25999009016",
+      "25999009017",
+      "25999009018"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Idol Raising",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Jigsaw",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Basketball",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Skirts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Business & Productivity",
+    "children_ids": [
+      "20110100",
+      "20110104"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Scooters",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Face Lotions & Moisturizers",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Appliances",
+    "children_ids": [
+      "16104100",
+      "16104102",
+      "16104104",
+      "16104105",
+      "16104106",
+      "16104107",
+      "16104108",
+      "16104112",
+      "16104113",
+      "16104114",
+      "16104117",
+      "16104118",
+      "16104119"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Othello",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action",
+    "children_ids": [
+      "25999002001",
+      "25999002002",
+      "25999002003",
+      "25999002004",
+      "25999002005",
+      "25999002006",
+      "25999002007",
+      "25999002008",
+      "25999002009",
+      "25999002010",
+      "25999002011",
+      "25999002012",
+      "25999002013",
+      "25999002014",
+      "25999002015",
+      "25999002016",
+      "25999002017"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Body Cleansing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10103103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "ESL Testing",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beauty & Personal Care",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999008001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Battle Royale",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coffee",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Idle RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Platformer",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Watches",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "13102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Insurance",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Jackets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tea",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Detective",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998003001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chinese History",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Online Shopping",
+    "children_ids": [
+      "20105101",
+      "20105103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Asian Cultural",
+    "children_ids": [
+      "25998001001"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action-adventure Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Auto Chess",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Turn-based Strategy Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Poultry, Eggs & Meat",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dresses",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26104101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Flower Delivery",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shoulder Bags",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Office Equipment",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shirts & Tops",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Audio players",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beverage",
+    "children_ids": [
+      "27102100",
+      "27102101",
+      "27102102",
+      "27102103",
+      "27102104",
+      "27102105"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Golf",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Housekeeping",
+    "children_ids": [
+      "26105101",
+      "26105104",
+      "26105107"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chef Training & Examinations",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Simulation Games",
+    "children_ids": [
+      "25100101100",
+      "25100101101",
+      "25100101102"
+    ],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26112101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Household Appliances Cleaning & Repair",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998002001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wuxia or Xian Xia",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports",
+    "children_ids": [
+      "25100104100",
+      "25100104102",
+      "25100104103",
+      "25100104104",
+      "25100104105",
+      "25100104106",
+      "25100104999"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Match",
+    "children_ids": [
+      "25999004001",
+      "25999004002",
+      "25999004003",
+      "25999004004",
+      "25999004005",
+      "25999004006",
+      "25999004007",
+      "25999004008",
+      "25999004009",
+      "25999004010"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Food & Fresh Produce",
+    "children_ids": [
+      "27101100",
+      "27101102",
+      "27101103",
+      "27101104",
+      "27101106",
+      "27101107"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998020001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dystopian or Post-Apocalyptic",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Gloves",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998017",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Space",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Gardening",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Design",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bingo",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100102102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "MOBAs",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Brawl Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999010003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Simulation Sports",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Enterprise Management Training",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baby & Kids Products",
+    "children_ids": [
+      "12101",
+      "12102",
+      "12103",
+      "12104",
+      "12105",
+      "12106",
+      "12107",
+      "12108",
+      "12109"
+    ],
+    "level": 1,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cleaning Supplies",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baseball",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Suits",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cooking & Recipes",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10105104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Spanish Language Training",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Freezers & Ice Makers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Roleplaying Games",
+    "children_ids": [
+      "25100100100"
+    ],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Luck Battle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "13101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Securities",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20109102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Healthy Lifestyle",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shirts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Office Equipment & Supplies",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20109100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Physical Fitness",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Mahjong Solitaire",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Idle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Motorcycles",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other-Meta",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Board Game",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "19102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pet Household Products",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16102101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Air Conditioning",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15101103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Desktops",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Business Services",
+    "children_ids": [
+      "24100",
+      "24101",
+      "24102",
+      "24103",
+      "24104",
+      "24106",
+      "24107",
+      "24108",
+      "24109",
+      "24110",
+      "24111",
+      "24112",
+      "24113",
+      "24114",
+      "24116",
+      "24117",
+      "24118",
+      "24119",
+      "24120"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "American Football",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Key Pouches",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hair Growth Products",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shampoos",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998003003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Japanese History",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Storage Products",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Empire Building RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Puzzle",
+    "children_ids": [
+      "25999005001",
+      "25999005002",
+      "25999005003",
+      "25999005004",
+      "25999005005",
+      "25999005006",
+      "25999005007",
+      "25999005008",
+      "25999005009",
+      "25999005010",
+      "25999005011",
+      "25999005012",
+      "25999005013",
+      "25999005014",
+      "25999005015",
+      "25999005016",
+      "25999005017",
+      "25999005018"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Darts",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fragrances & Perfumes",
+    "children_ids": [
+      "14106100",
+      "14106101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports",
+    "children_ids": [
+      "25998018001",
+      "25998018002",
+      "25998018003",
+      "25998018004",
+      "25998018005",
+      "25998018006",
+      "25998018007",
+      "25998018008",
+      "25998018009",
+      "25998018010",
+      "25998018011",
+      "25998018012",
+      "25998018013",
+      "25998018014",
+      "25998018015",
+      "25998018016",
+      "25998018017",
+      "25998018018",
+      "25998018019"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Personal Care Appliances",
+    "children_ids": [
+      "16100100",
+      "16100101",
+      "16100108",
+      "16100110",
+      "16100111",
+      "16100113",
+      "16100114",
+      "16100115"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Water Purifiers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23129",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pets",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Suits",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Genre",
+    "children_ids": [
+      "25999001",
+      "25999002",
+      "25999003",
+      "25999004",
+      "25999005",
+      "25999006",
+      "25999007",
+      "25999008",
+      "25999009",
+      "25999010",
+      "25999011",
+      "25999012",
+      "25999013",
+      "25999014",
+      "25999015"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chess, Cards & Mahjong",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dominoes",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Maze",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25992",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Monetization",
+    "children_ids": [
+      "25992001",
+      "25992002"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002017",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Adventure",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27100111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Japanese Cuisine",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bras",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beauty & Personal Care",
+    "children_ids": [
+      "14100",
+      "14101",
+      "14102",
+      "14103",
+      "14104",
+      "14106",
+      "14107"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Education",
+    "children_ids": [
+      "10100",
+      "10101",
+      "10102",
+      "10103",
+      "10104",
+      "10105",
+      "10106"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Summoning",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Laundry",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pool or Billiards",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hair Dryers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Underwear",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Apps",
+    "children_ids": [
+      "20100",
+      "20101",
+      "20102",
+      "20103",
+      "20104",
+      "20105",
+      "20106",
+      "20107",
+      "20108",
+      "20109",
+      "20110",
+      "20111",
+      "20112"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coats",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20107103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Entertainment",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Auto Decor",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cover Fire",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Real Estate Sales",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24117",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Legal Services",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Rentals",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26105101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "House Cleaning Services",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Roguelike ARPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Body Care Sets",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100103101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Third-person Shooter Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104117",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Heating Appliances",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999006002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Competitive Racing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Animation",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009014",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Life Simulator",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22109104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Loafers & Moccasins",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998012001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Farming",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Underwear",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "High-end Jewelry",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20105103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Express Deliveries",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Juice",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23117101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Singing & Music Competitions",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Social App Analytics",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Diapers & Baby Wipes",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Build and Battle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Outdoor Equipment",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20100103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Messaging",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10106103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Archery",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26104100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Gifts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Business Simulation Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101116",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Swimming",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Socks",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tablets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Racing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coats",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Musical",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Eyebrow Makeup",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cleaning Appliances",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Open World",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23117105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Comedy",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25996002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "3D",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "13108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Credit Bureaus",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Asian Fantasy",
+    "children_ids": [
+      "25998002001"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23123",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports & Fitness",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bubble Shooter",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Kitchen Accessories",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Parenting",
+    "children_ids": [
+      "20111100"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Water Vehicles",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999008005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Team Deathmatch",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "SUVs",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005018",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Word",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hats",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23999",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other News",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20102102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "E-books",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Recruitment & Job Searching",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Rice, Wheat, Cooking Oil, Spices & Seasonings",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "18112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pest Control",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "27100103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fast Food",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Farming",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Toys",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wallpapers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Facial Care Sets",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "19101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pet Healthcare",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104119",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Washers & Dryers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Marketing & Advertising",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11102101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car Maintenance",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105100102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Digital Cameras",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shaving & Body Hair Removal",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Instant Food",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Business & Economy",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Makeup Bags",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999006001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Arcade Racing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20108101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bus & Metro",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Escape",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sustainability",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "18109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Leather Care",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14106100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Men's Fragrances & Perfumes",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Travel Agencies & Services",
+    "children_ids": [
+      "17106100"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Garment Steamers & Irons",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002016",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Stealth",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100115",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Board Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "VPNs",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "TV Drama / TV Series",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bowling",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shark",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Financial Services",
+    "children_ids": [
+      "20106100",
+      "20106102",
+      "20106103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hair Clippers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Interactive Story",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998014",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Palace",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24120",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Individual Entrepreneurship",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Blast-Meta",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999015",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other",
+    "children_ids": [
+      "25999015001"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Skin Care",
+    "children_ids": [
+      "14103100",
+      "14103101",
+      "14103102",
+      "14103103",
+      "14103105"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23117100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Reality Shows",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Overseas Education",
+    "children_ids": [
+      "10103101",
+      "10103103"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wallets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tabletop",
+    "children_ids": [
+      "25999013001",
+      "25999013002",
+      "25999013003",
+      "25999013004",
+      "25999013005",
+      "25999013006",
+      "25999013007",
+      "25999013008",
+      "25999013009",
+      "25999013010",
+      "25999013011"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Claw Machine",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998012003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Romance",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Astrology",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "News & Entertainment",
+    "children_ids": [
+      "23102",
+      "23103",
+      "23104",
+      "23105",
+      "23106",
+      "23107",
+      "23108",
+      "23109",
+      "23110",
+      "23111",
+      "23112",
+      "23113",
+      "23114",
+      "23116",
+      "23117",
+      "23118",
+      "23119",
+      "23122",
+      "23123",
+      "23124",
+      "23126",
+      "23129",
+      "23131",
+      "23133",
+      "23999",
+      "29101",
+      "20107105"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10106100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music & Instruments",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101123",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Blenders",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vehicles & Transportation",
+    "children_ids": [
+      "11100",
+      "11101",
+      "11102",
+      "11103",
+      "11104",
+      "11105",
+      "11106",
+      "11107",
+      "11108",
+      "11109",
+      "11111",
+      "11112"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Steam Cleaners",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "18",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Household Products",
+    "children_ids": [
+      "18100",
+      "18102",
+      "18104",
+      "18105",
+      "18106",
+      "18107",
+      "18108",
+      "18109",
+      "18110",
+      "18111",
+      "18112"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Scrubs & Body Exfoliation",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20109101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Medical Care",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20106102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Money Management & Bookkeeping",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hanafuda",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Lifestyle",
+    "children_ids": [
+      "25998012001",
+      "25998012002",
+      "25998012003"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Robotic Vacuums",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Jeans",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "T-shirts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Makeup Sets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "12101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Strollers & Cribs",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Facial Care",
+    "children_ids": [
+      "14103101100",
+      "14103101101",
+      "14103101102",
+      "14103101103",
+      "14103101104",
+      "14103101105",
+      "14103101106",
+      "14103101107"
+    ],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Deodorants & Antiperspirants",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "ARPGs",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Okey",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104100102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Makeup Bases & Primers",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cosmetics",
+    "children_ids": [
+      "14104100",
+      "14104101",
+      "14104102",
+      "14104103",
+      "14104104",
+      "14104105",
+      "14104107",
+      "14104108"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100102103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tower Defense Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Line-Saga",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car Dealerships",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Makeup Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Digital Devices",
+    "children_ids": [
+      "16105100",
+      "16105101",
+      "16105102"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Travel",
+    "children_ids": [
+      "20108100",
+      "20108101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20108100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Maps & Navigation",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Consumer Services",
+    "children_ids": [
+      "26112101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "21102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Construction Materials & Lighting",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Snow Sports",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Facial Masks",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "12106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Toys for Kids",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25993002001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "PC",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tattoos",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22111101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Boots",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wedding Photography",
+    "children_ids": [
+      "26100101"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Guessing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Athleisure",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25996001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "2D",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Network Products",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20104101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Exam Preparation",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999015001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "21103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hardware & Electrical",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Scarves",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sandbox",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17105107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Scenic Viewpoints",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14102102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Styling Products",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Appliances",
+    "children_ids": [
+      "16100",
+      "16101",
+      "16102",
+      "16104",
+      "16105"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Skateboarding",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vocational Training",
+    "children_ids": [
+      "10104100",
+      "10104101",
+      "10104103",
+      "10104104",
+      "10104105",
+      "10104108",
+      "10104109",
+      "10104112"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Polo Shirts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vests",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Design",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999014",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Kids Games",
+    "children_ids": [
+      "25999014001",
+      "25999014002"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Food & Beverage",
+    "children_ids": [
+      "27100",
+      "27101",
+      "27102",
+      "27104"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": ".io",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Computer Components",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22111102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "High Heels",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Runner",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fighting Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Life Simulation Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Backpacks",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23122",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beauty & Personal Care",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Audio & Video Players",
+    "children_ids": [
+      "20101101",
+      "20101102"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tennis",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "17103100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Luxury Hotels",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Connect Tiles",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25993002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "PC",
+    "children_ids": [
+      "25993002001"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10102101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "College Education",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Women's Shoes",
+    "children_ids": [
+      "22111100",
+      "22111101",
+      "22111102",
+      "22111103",
+      "22111104"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Football (American)",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Design Training & Education",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "MMORPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Auto Services",
+    "children_ids": [
+      "11102100",
+      "11102101"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Foundation",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Brain",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998003002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Three Kingdoms",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Gaming Devices",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baby Shoes",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Jackets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Machinery & Equipment",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shooting Games",
+    "children_ids": [
+      "25999008001",
+      "25999008002",
+      "25999008003",
+      "25999008004",
+      "25999008005"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tennis",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104999",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Sports Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car Seat Organizers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Puzzle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Drones",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Local Photography",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Puzzle Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20102101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "News",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22109102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sandals & Slippers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Tabletop",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101119",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Grills",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "27100114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chinese Cuisine",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14106101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Women's Fragrances & Perfumes",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Merge-Saga",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Truth or Dare",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Science & Technology",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Lottery or Scratchers",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electronic Scales",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Skin Moisturizer",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10106101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Calligraphy & Art",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104100103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Blush, Highlighters & Contouring",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Avatar Life",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Irons",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Games (By Type)",
+    "children_ids": [
+      "25100100",
+      "25100101",
+      "25100102",
+      "25100103",
+      "25100104",
+      "25100105",
+      "25100106",
+      "25100107",
+      "25100108",
+      "25100109",
+      "25100110",
+      "25100111",
+      "25100112",
+      "25100115",
+      "25100116"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Charity",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26105104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Moving Services",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018015",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hockey",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Teeth Whitening",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Anime",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Seafood",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27100106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Desserts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Ordinary Jewelry",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "System Cleanup Software",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Franchising",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action Camera",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999008004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sniper Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Motocross",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Internet Services",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998016",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sniper Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Action",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009015",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Manager",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Water",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002014",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shoot'em Up Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shopping Services",
+    "children_ids": [
+      "26106100",
+      "26106101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Oral Care",
+    "children_ids": [
+      "14100100",
+      "14100101",
+      "14100102",
+      "14100103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Traditional & Ceremonial Clothing",
+    "children_ids": [
+      "22112109",
+      "22112110"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dating",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "4X",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wallets, Coin Purses & Business Card Holders",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Fans",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fishing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Massagers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Theme",
+    "children_ids": [
+      "25998001",
+      "25998002",
+      "25998003",
+      "25998005",
+      "25998006",
+      "25998007",
+      "25998008",
+      "25998009",
+      "25998010",
+      "25998011",
+      "25998012",
+      "25998013",
+      "25998014",
+      "25998015",
+      "25998016",
+      "25998017",
+      "25998018",
+      "25998019",
+      "25998020",
+      "25998021"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14100102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Oral Care Kits",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vacuums & Dust Mite Controllers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100115",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pedicure Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Klotski",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23117",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Variety Shows",
+    "children_ids": [
+      "23117100",
+      "23117101",
+      "23117104",
+      "23117105",
+      "23117999"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Thrillers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Keyboard Apps & Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Romance",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Safety & Security",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Accessories for 2/3-Wheeled Vehicles",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Go-Stop",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20110104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Email",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119115",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dance",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Mahjong",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17103101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Economy Hotels",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Detective",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Education",
+    "children_ids": [
+      "20104100",
+      "20104101",
+      "20104102",
+      "20104103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Comedy",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports",
+    "children_ids": [
+      "25999010001",
+      "25999010002",
+      "25999010003",
+      "25999010004"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Driving",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baby Bedding",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Soccer",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24119",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Investment Planning & Management",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Match",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Team Battle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22112109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cosplay",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Large Appliances",
+    "children_ids": [
+      "16102100",
+      "16102101",
+      "16102102"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "M3-Meta",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14100103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Toothbrushes & Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Face Makeup",
+    "children_ids": [
+      "14104100100",
+      "14104100101",
+      "14104100102",
+      "14104100103"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Belts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018018",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Sport",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Life & Leisure",
+    "children_ids": [
+      "20107102",
+      "20107103",
+      "20107107"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Mob/Crime Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999010002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Sports",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Automobiles",
+    "children_ids": [
+      "11100100",
+      "11100101"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dance",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shorts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Nonogram",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Adventure Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hyper-Casual",
+    "children_ids": [
+      "25999001001",
+      "25999001002",
+      "25999001003",
+      "25999001004",
+      "25999001005",
+      "25999001006",
+      "25999001007",
+      "25999001008",
+      "25999001009",
+      "25999001010",
+      "25999001011"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sunscreens",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Party Royale",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100103100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "First-person Shooter Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101118",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Multi-purpose Pots",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Soccer",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Idol Training",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20107105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car News",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Energy Conservation & Sustainability",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hidden Object",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20103100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Image Editing",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "15",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tech & Electronics",
+    "children_ids": [
+      "15100",
+      "15101",
+      "15102",
+      "15104",
+      "15105",
+      "15106",
+      "15107"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Puzzle RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Ball",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14102103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hairstyling Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Racing",
+    "children_ids": [
+      "25999006001",
+      "25999006002",
+      "25999006003"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26105107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Repair",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Face Powders",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Card Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018014",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wrestling",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hair Dye Products",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10105101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "English Language Training",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car Modification",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "MOBA",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Lip Makeup",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baby Formula",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23118103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Comics",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Legion",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Travel Bags",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Asymmetric",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20104102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Foreign Language Learning",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baby Feeding Supplies",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Racing Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20101101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23118",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Reading",
+    "children_ids": [
+      "23118100",
+      "23118103",
+      "23118106"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fantasy",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23124",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Food & Cooking",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Primary & Secondary Education & K-12",
+    "children_ids": [
+      "10101102"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Golf",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110115",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tights",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22109100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sneakers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tower Defense",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fitness Training Supplies",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chess",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Toners",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22109101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Boots",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Asian History",
+    "children_ids": [
+      "25998003001",
+      "25998003002",
+      "25998003003"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Agriculture, Forestry, Animal Husbandry & Fishing",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Medical Licensing Training & Examinations",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22112110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wedding Dresses",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Haircare",
+    "children_ids": [
+      "14101100",
+      "14101101",
+      "14101102",
+      "14101103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20104100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Learning Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Culture & History",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999014002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Kids Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17105105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Museum Exhibits",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "News & Reading",
+    "children_ids": [
+      "20102101",
+      "20102102"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Curling Irons & Straighteners",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "19105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pet Toys",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "30",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "E-Commerce (Non-app)",
+    "children_ids": [
+      "30100"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25992001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "IAA",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101124",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports Underwear",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Used Good Sales Platforms",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "21104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Decor",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018016",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Golf",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25992002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "IAP",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Solitaire",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Language Training",
+    "children_ids": [
+      "10105101",
+      "10105104"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Slow Cookers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hybrid",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Glasses & Lenses",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "18104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Coffee Accessories",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Computers",
+    "children_ids": [
+      "15101102",
+      "15101103",
+      "15101104"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Celebrity",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Body Care",
+    "children_ids": [
+      "14103100100",
+      "14103100101",
+      "14103100102",
+      "14103100103",
+      "14103100104",
+      "14103100105"
+    ],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Exhibition Services",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Photography",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Party",
+    "children_ids": [
+      "25999012001",
+      "25999012002",
+      "25999012003",
+      "25999012004",
+      "25999012005",
+      "25999012006",
+      "25999012007",
+      "25999012008",
+      "25999012009",
+      "25999012010"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22109103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Casual Shoes",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fishing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Handbags",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vegetables",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009018",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Time Management",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car Rentals",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11101103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Windshield Repair",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Early Childhood & Preschool Education",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002015",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Slasher Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "18107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tissues & Wet Wipes",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Location RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Social",
+    "children_ids": [
+      "20100100",
+      "20100101",
+      "20100103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999006003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Simulation Racing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dairy Products",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101117",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Yoga & Dance",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101129",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Food Processors",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "24113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Professional Consultation",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10101102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "High School Tutoring",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baseball",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shooting Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "21101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Furniture",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103101103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Facial Essence",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998001001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Nijigen",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Real Estate & Home Rentals",
+    "children_ids": [
+      "24100100",
+      "24100101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Non-academic Training (Hobbies)",
+    "children_ids": [
+      "10106100",
+      "10106101",
+      "10106103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "17105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tours & Attractions",
+    "children_ids": [
+      "17105105",
+      "17105107"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Socks",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14101101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Haircare Products",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Nail Art Products",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23133",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tourism",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Teeth Cleaning",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Law",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20106100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Payment",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23117104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Talk Shows",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tools",
+    "children_ids": [
+      "20112101",
+      "20112102",
+      "20112103",
+      "20112105",
+      "20112109",
+      "20112110"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Women's Clothing",
+    "children_ids": [
+      "22110100",
+      "22110101",
+      "22110102",
+      "22110103",
+      "22110104",
+      "22110105",
+      "22110106",
+      "22110107",
+      "22110108",
+      "22110109",
+      "22110110",
+      "22110111",
+      "22110112",
+      "22110113",
+      "22110114",
+      "22110115"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25996",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dimension",
+    "children_ids": [
+      "25996001",
+      "25996002"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998015",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sci-Fi",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005014",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Escape Room",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17103104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Villas",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Apparel & Accessories",
+    "children_ids": [
+      "22101",
+      "22102",
+      "22105",
+      "22106",
+      "22107",
+      "22108",
+      "22109",
+      "22110",
+      "22111",
+      "22112",
+      "22113"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "30100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Big Box Retailers",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998019001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Modern Military Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Higher Education",
+    "children_ids": [
+      "10102100",
+      "10102101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23118106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Children's Books",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bicycles",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Casino",
+    "children_ids": [
+      "25999003001",
+      "25999003002",
+      "25999003003",
+      "25999003004",
+      "25999003005",
+      "25999003006",
+      "25999003007",
+      "25999003008",
+      "25999003009",
+      "25999003010",
+      "25999003011",
+      "25999003012",
+      "25999003013"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Construction Engineering",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23116101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Painting",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119110",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sci-Fi",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Ties, Bowties & Tie Clips",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "21100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Interior Design & Decorating Services",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Adult Education",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Clothing Accessories",
+    "children_ids": [
+      "22101100",
+      "22101101",
+      "22101102",
+      "22101103",
+      "22101104",
+      "22101105",
+      "22101106"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005016",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sudoku",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Ear Cleaners",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "18102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Glasses & Drinkware",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20107107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Ride Sharing",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16102102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "TVs & Home Theaters",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Minigames",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "19106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pet Travel Accessories",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Hyper-Casual",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "12109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Children's Apparel",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23116999",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Culture & Art",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Puzzle",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cameras & Video Cameras",
+    "children_ids": [
+      "16105100100",
+      "16105100101",
+      "16105100102"
+    ],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16105101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Speakers & Audio",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Men's Shoes",
+    "children_ids": [
+      "22109100",
+      "22109101",
+      "22109102",
+      "22109103",
+      "22109104"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "29101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Health & Wellness",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cell Phone Accessories",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005017",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tile-Matching",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music or Rhythm",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005015",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Spot the Difference",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20110100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Office Software",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Collectables & Antiques",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "19103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pet Grooming",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999005013",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Physics",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Auto Accessories",
+    "children_ids": [
+      "11101100",
+      "11101101",
+      "11101102",
+      "11101103"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25993001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Mobile",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16100113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electric Combs",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pants",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998021",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Western Historical",
+    "children_ids": [
+      "25998021001",
+      "25998021002"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998012002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hunting",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Action",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20107102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Job Hunting",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018008",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Boxing",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20105101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Group Buying & Discounts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Crime",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22101106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Face Masks",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Air Purifiers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Run & Gun",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20104103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dictionaries & Translation Tools",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009016",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Simulation",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11101101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Car Interior Accessories",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Refrigerators",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104118",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Household Appliance Accessories",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Life Services",
+    "children_ids": [
+      "26100",
+      "26101",
+      "26104",
+      "26105",
+      "26106",
+      "26107",
+      "26108",
+      "26111",
+      "26112",
+      "26113",
+      "26114"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "15105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Computer Accessories",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "T-Shirts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Lifestyle News",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "CCG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999014001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Educational Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Bags",
+    "children_ids": [
+      "22102100",
+      "22102101",
+      "22102102",
+      "22102103",
+      "22102105",
+      "22102106",
+      "22102107",
+      "22102108"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16101112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Heated Lunch Boxes",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Building",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pachinko",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Wearable Tech Devices",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14101103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shampoo-Conditioning Sets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16104106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Humidifiers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100104106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Ball Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100111",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Match-three",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27100122",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Middle Eastern Cuisine",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14103105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Hand & Foot Care",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14107",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Feminine Care",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22110114",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pajamas",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Auto Parts",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007006",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Open World RPG",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20106103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Investment",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "15100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cell Phones",
+    "children_ids": [
+      "15100100"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998021001",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Medieval",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "19100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Petfood",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26106101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Supermarkets",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26106100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shopping Malls",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20100100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chatting",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24104",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Electronics & Electrical",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Party",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10103101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Overseas Study for Undergraduate Education",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998019",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "War Games",
+    "children_ids": [
+      "25998019001",
+      "25998019002"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23117999",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Variety Shows",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999001011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22111100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sandals",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100102",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Strategy Games",
+    "children_ids": [
+      "25100102100",
+      "25100102102",
+      "25100102103"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20103101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cameras",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "28101115",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Fishing",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Strategy",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22111103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sneakers",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "14104103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Eye Makeup",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "RPG",
+    "children_ids": [
+      "25999007001",
+      "25999007002",
+      "25999007003",
+      "25999007004",
+      "25999007005",
+      "25999007006",
+      "25999007007",
+      "25999007008",
+      "25999007009",
+      "25999007010",
+      "25999007011",
+      "25999007012",
+      "25999007013"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Other Casino",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Blast-Saga",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003002",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Chinese Card or Board",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24118",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Business Auction Services",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Horror",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012009",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Quiz",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Travel",
+    "children_ids": [
+      "17103",
+      "17105",
+      "17106"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20100101",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Marriage",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23116100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Music & Instruments",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999004007",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "M3-Saga",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Games",
+    "children_ids": [
+      "25100",
+      "25992",
+      "25993",
+      "25996",
+      "25998",
+      "25999"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999011",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Strategy",
+    "children_ids": [
+      "25999011001",
+      "25999011002",
+      "25999011003",
+      "25999011004",
+      "25999011005",
+      "25999011006",
+      "25999011007",
+      "25999011008",
+      "25999011009",
+      "25999011010"
+    ],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "22108106",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Shorts",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Health & Fitness",
+    "children_ids": [
+      "20109100",
+      "20109101",
+      "20109102"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25998018004",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Basketball",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23119109",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Horror",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999003012",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Poker or Card",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23118100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Romantic Fiction",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999012005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Mafia/Betrayal Games",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "23126",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Cars",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "11105",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Used Cars",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "17106100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vacation Packages",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25100112",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Educational Games",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "20103",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Photography",
+    "children_ids": [
+      "20103100",
+      "20103101"
+    ],
+    "level": 2,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999002010",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Battle Royale",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104108",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beauty Education",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999013005",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Dice",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "21",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Improvement",
+    "children_ids": [
+      "21100",
+      "21101",
+      "21102",
+      "21103",
+      "21104"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25999009017",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pet",
+    "children_ids": [],
+    "level": 4,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "26113",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Exercise & Fitness",
+    "children_ids": [],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "25993",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Platform",
+    "children_ids": [
+      "25993001",
+      "25993002"
+    ],
+    "level": 2,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "27102100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Instant Drinks",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10104100",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "IT Training & Examinations",
+    "children_ids": [],
+    "level": 3,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  }
+]

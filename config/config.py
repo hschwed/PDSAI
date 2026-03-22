@@ -23,6 +23,10 @@ class Config:
     @property
     def region_endpoint(self):
         return self._config["api"]["region_endpoint"]
+
+    @property
+    def interest_endpoint(self):
+        return self._config["api"]["interest_endpoint"]
     
     @property
     def estimates_endpoint(self):
@@ -51,6 +55,10 @@ class Config:
     @property
     def locations_json(self):
         return self._config["paths"]["locations_json"]
+
+    @property
+    def interest_json(self):
+        return self._config["paths"]["interest_json"]
 
     @property
     def fb(self):

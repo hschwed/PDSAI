@@ -2,6 +2,7 @@ from config.config import Config
 from pathlib import Path
 import pandas as pd
 from src.utils.logger import get_logger
+from src.utils.country_code import get_iso3
 import os
 
 config = Config()
@@ -30,6 +31,7 @@ def clean_tiktok():
     tt.columns = [f"{age.lower()}_{'women' if gender == 'GENDER_FEMALE' else 'men'}" 
                 for age, gender in tt.columns]
     tt.reset_index(inplace=True)
+    tt.insert(tt.columns.get_loc("iso2") + 1, "iso3", tt["iso2"].map(get_iso3))
 
     # compute female-to-male ratio per age group
     age_groups = ['13_17', '18_24', '25_34', '35_44', '45_54', '55_100']

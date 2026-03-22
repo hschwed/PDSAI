@@ -2,6 +2,7 @@ api:
   base_url: "https://business-api.tiktok.com"
   region_endpoint: "/open_api/v1.3/search/region/"
   estimates_endpoint: "/open_api/v1.3/ad/audience_size/estimate/"
+  interest_endpoint: "/open_api/v1.3/targeting/search/"
   max_workers: 3
 
 paths:
@@ -10,6 +11,7 @@ paths:
   input_path: "data/raw/"           # only path, without file ending to make it dynamic depending on level
   location_ids_api: "data/raw/location_ids.csv"
   locations_json: "data/raw/locations.json"
+  interest_json: "data/raw/interest.json"
   tt_out: "data/raw/"               # only path, without file ending to make it dynamic depending on level
   tt_clean: "data/cleaned/"         # only path, without file ending to make it dynamic depending on level
   tt_final: "data/transformed/"     # only path, without file ending to make it dynamic depending on level

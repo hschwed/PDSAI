@@ -73,7 +73,7 @@ def process_input(input):
         "advertiser_id": advertiser_id,
         "objective_type": "REACH",
         "optimization_goal": "REACH",
-        "placements": ["PLACEMENT_TIKTOK", "PLACEMENT_GLOBAL_APP_BUNDLE"], # removed "PLACEMENT_PANGLE" as this is targeting users in other apps and websites and inflates the numbers
+        "placements": ["PLACEMENT_TIKTOK"], # removed "PLACEMENT_PANGLE" as this is targeting users in other apps and websites and inflates the numbers, removed "PLACEMENT_GLOBAL_APP_BUNDLE" as this targets bytedance other apps such as capcut, fizzo, melolo
         "location_ids": [input.location_id],
         "gender": input.gender,
         "age_groups": [input.age]
