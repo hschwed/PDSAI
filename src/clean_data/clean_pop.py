@@ -53,6 +53,9 @@ def clean_population():
     pop["total_women"] = pop[[f'age_{group}_women' for group in age_groups]].sum(axis=1)
     pop["total_all"] = pop["total_men"]+ pop["total_women"]
     pop["total_ratio"] = (pop["total_women"] / pop["total_men"]).round(4)
+    pop["total_18_44_men"] = pop["age_18_24_men"] + pop["age_25_34_men"] + pop["age_35_44_men"]
+    pop["total_18_44_women"] = pop["age_18_24_women"] + pop["age_25_34_women"] + pop["age_35_44_women"]
+    pop["total_18_44_ratio"] = (pop["total_18_44_women"] / pop["total_18_44_men"]).round(4)
 
     pop.to_csv(config.pop_clean, index=False, encoding='utf-8-sig', sep=";") # use -sig for Excel compatibility, add and strip out BOM
     if os.path.isfile(config.pop_clean):

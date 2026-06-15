@@ -17,6 +17,9 @@ paths:
   tt_out: "data/raw/"               # only path, without file ending to make it dynamic depending on level
   tt_clean: "data/cleaned/"         # only path, without file ending to make it dynamic depending on level
   tt_final: "data/transformed/"     # only path, without file ending to make it dynamic depending on level
+  tt_interest_out: "data/raw/"
+  tt_interest_clean: "data/cleaned/"
+  tt_interest_final: "data/transformed/"
   fb_csv: "data/raw/FB_mau_upper_202501_averaged.csv"
   fb_clean: "data/cleaned/fb_clean.csv"
   fb_final: "data/transformed/fb_final.csv"

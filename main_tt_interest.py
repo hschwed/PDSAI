@@ -2,15 +2,15 @@ from config.config import Config
 import uvicorn
 import time
 import threading
-from src.get_data.inputs import generate_inputs
-from client import run_client
+from src.get_data.inputs import generate_input_interest
+from client import run_client_interest
 from src.utils.logger import get_logger
 import requests
-from src.clean_data import clean_fb,clean_inst,clean_pop,clean_tt
+from src.clean_data import clean_pop,clean_tt
 from src.transform_data import transformations
 
 config = Config()
-logger = get_logger(__name__) # name of module, to show which module message came from
+logger = get_logger(__name__)
 
 def server():
     uvicorn.run("src.get_data.app:app", host="0.0.0.0", port=8000,log_level="info")
@@ -32,11 +32,51 @@ if not advertiser_id or not access_token:
 else:
     logger.info("Environment variables loaded successfully.")
 
+# keep only selected ids, selected top level (2-digit) unless too broad
+INTEREST_IDS = [
+    "20111100",      # Parenting, App                    (childcare)   -> used
+    "13",            # Financial Services (top-level) (finance)   -> used (matches "Financial Services" by name)
+    "20109102",      # Healthy Lifestyle , App           (healthcare)  -> used
+    "24",            # Business Services            (business)    -> used
+    "10",            # Education                    (education)   -> used
+    "20109101",       # Medical Care                 (healthcare)  -> used
+    "17",        # Travel
+    "19",        # Pets
+    "12",        # Baby & Kids Products
+    "27",        # Food & Beverage
+    "29101",     # Health & Wellness
+    "20109"    # Health & Fitness
+]
+
+# keep only top level, no children interest ids
+INTEREST_IDS_ALL_TOP_LEVEL = [
+    "10",        # Education                    
+    "11",        # Vehicles & Transportation
+    "12",        # Baby & Kids Products
+    "13",        # Financial Services
+    "14",        # Beauty & Personal Care
+    "15",        # Tech & Electronics
+    "16",        # Appliances
+    "17",        # Travel
+    "18",        # Household Products
+    "19",        # Pets
+    "20",        # Apps
+    "21",        # Home Improvement
+    "22",        # Apparel 
+    "23",        # News & Entertainment
+    "24",        # Business Services
+    "25",        # Games
+    "26",        # Life Services (flowers, photography, used goods, etc)
+    "27",        # Food & Beverage
+    "28",        # Sports & Outdoors
+    "29"        # E Commerce (Non app)
+]
+
 if __name__ == "__main__":
-    logger.info("STARTING: DATA COLLECTION")
+    logger.info("STARTING: INTEREST DATA COLLECTION")
     logger.info("="*60)
 
-    generate_inputs()
+    generate_input_interest(INTEREST_IDS)
 
     server_thread = threading.Thread(target=server)
     server_thread.daemon = True
@@ -48,22 +88,19 @@ if __name__ == "__main__":
     else:
         logger.error("FastAPI server failed to respond.")
         raise RuntimeError("FastAPI server did not start or does not respond.")
-    
-    logger.info("Running client...")
-    run_client()
+
+    logger.info("Running interest client...")
+    run_client_interest()
 
     logger.info("STARTING: DATA CLEANING")
     logger.info("="*60)
     clean_pop.clean_population()
-    clean_tt.clean_tiktok()
+    clean_tt.clean_tiktok_interest()
+
     if config.level == "country":
         logger.info("STARTING: DATA TRANSFORMATION")
         logger.info("="*60)
-        transformations.run_transform()
+        transformations.run_transform_interest()
 
-    logger.info("="*60)    
+    logger.info("="*60)
     logger.info("FINISHED")
-
-#go to http://localhost:8000/docs to check
-#http://localhost:8000/download_csv/ for download
-

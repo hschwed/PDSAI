@@ -52,6 +52,9 @@ def clean_facebook():
     fb["total_women"] = fb[[f'age_{group}_women' for group in age_groups]].sum(axis=1)
     fb["total_all"] = fb["total_men"]+ fb["total_women"]
     fb["total_ratio"] = (fb["total_women"] / fb["total_men"]).round(4)
+    fb["total_18_44_men"] = fb["age_18_24_men"] + fb["age_25_34_men"] + fb["age_35_44_men"]
+    fb["total_18_44_women"] = fb["age_18_24_women"] + fb["age_25_34_women"] + fb["age_35_44_women"]
+    fb["total_18_44_ratio"] = (fb["total_18_44_women"] / fb["total_18_44_men"]).round(4)
 
     fb.to_csv(config.fb_clean, index=False, encoding='utf-8-sig', sep=";") # use -sig for Excel compatibility, add and strip out BOM
     if os.path.isfile(config.fb_clean):

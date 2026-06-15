@@ -51,6 +51,9 @@ def clean_insta():
     inst["total_women"] = inst[[f'age_{group}_women' for group in age_groups]].sum(axis=1)
     inst["total_all"] = inst["total_men"]+ inst["total_women"]
     inst["total_ratio"] = (inst["total_women"] / inst["total_men"]).round(4)
+    inst["total_18_44_men"] = inst["age_18_24_men"] + inst["age_25_34_men"] + inst["age_35_44_men"]
+    inst["total_18_44_women"] = inst["age_18_24_women"] + inst["age_25_34_women"] + inst["age_35_44_women"]
+    inst["total_18_44_ratio"] = (inst["total_18_44_women"] / inst["total_18_44_men"]).round(4)
 
     inst.to_csv(config.insta_clean, index=False, encoding='utf-8-sig', sep=";") # use -sig for Excel compatibility, add and strip out BOM
     if os.path.isfile(config.insta_clean):

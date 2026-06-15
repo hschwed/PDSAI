@@ -38,6 +38,26 @@ class InputItem(BaseModel):
 class InputList(BaseModel):
     inputs: list[InputItem]
 
+class InputItemInterest(BaseModel):
+    name: str
+    country_code: str
+    location_id: str
+    age: str
+    gender: str
+    interest_id: str
+
+class InputListInterest(BaseModel):
+    inputs: list[InputItemInterest]
+
+class InputItemInterestCheck(BaseModel):
+    name: str
+    country_code: str
+    location_id: str
+    interest_id: str
+
+class InputListInterestCheck(BaseModel):
+    inputs: list[InputItemInterestCheck]
+
 app = FastAPI()
 
 #get audience estimate
@@ -136,6 +156,159 @@ def audience_estimate(input_list: InputList):
         logger.info(f"Processed {len(results)} inputs. Output_file: {config.tt}")
 
         return {"message": f"Processed {len(results)} inputs."}
+    else:
+        return {"message": "No results to save"}
+
+def process_input_interest(input):
+    data = {
+        "advertiser_id": advertiser_id,
+        "objective_type": "REACH",
+        "optimization_goal": "REACH",
+        "placements": ["PLACEMENT_TIKTOK"],
+        "location_ids": [input.location_id],
+        "gender": input.gender,
+        "age_groups": [input.age],
+        "interest_category_ids": [input.interest_id]
+    }
+    try:
+        response = get_audience_estimate(data)
+        if not response:
+            logger.warning(f"No valid response for interest input: {data}")
+            return None
+        entry = {
+            "level": f"{level}",
+            "name": input.name,
+            "country_code": input.country_code,
+            "ages_ranges": input.age,
+            "geo_location": input.location_id,
+            "genders": input.gender,
+            "interest_id": input.interest_id,
+            "all_fields": data,
+            "response": response,
+            "lower_end": response["data"]["user_count"]["lower_end"],
+            "upper_end": response["data"]["user_count"]["upper_end"],
+            "user_count_stage": response["data"]["user_count_stage"]
+        }
+        return entry
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Request failed: {e}")
+        return None
+
+@app.post("/audience_estimate_interest/")
+def audience_estimate_interest(input_list: InputListInterest):
+    results = []
+    futures = []
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        for inp in input_list.inputs:
+            futures.append(executor.submit(process_input_interest, inp))
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Processing interest inputs", file=sys.stdout):
+            res = future.result()
+            if res:
+                results.append(res)
+    logger.info("Finished processing all interest inputs.")
+
+    logger.info("Saving interest results...")
+    if results:
+        results_df = pd.DataFrame(results)
+        results_df['timestamp'] = datetime.now()
+        results_df.to_csv(config.tt_interest, encoding='utf-8-sig')
+        if os.path.isfile(config.tt_interest):
+            logger.info(f"Saved: {config.tt_interest}")
+        else:
+            logger.error(f"Failed to save: {config.tt_interest}")
+
+        logger.info(f"Processed {len(results)} interest inputs. Output_file: {config.tt_interest}")
+        return {"message": f"Processed {len(results)} interest inputs."}
+    else:
+        return {"message": "No results to save"}
+
+def process_input_interest_check(input):
+    """
+    Send an estimate request filtered by location and interest_category_ids
+    (no age_groups, no gender). Used to check which interest categories return data per country.
+    """
+    data = {
+        "advertiser_id": advertiser_id,
+        "objective_type": "REACH",
+        "optimization_goal": "REACH",
+        "placements": ["PLACEMENT_TIKTOK"],
+        "location_ids": [input.location_id],
+        "interest_category_ids": [input.interest_id]
+    }
+    try:
+        response = get_audience_estimate(data)
+        if not response:
+            logger.warning(f"No valid response for interest-check input: {data}")
+            return {
+                "level": f"{level}",
+                "name": input.name,
+                "country_code": input.country_code,
+                "geo_location": input.location_id,
+                "interest_id": input.interest_id,
+                "all_fields": data,
+                "response": None,
+                "lower_end": None,
+                "upper_end": None,
+                "user_count_stage": None
+            }
+        entry = {
+            "level": f"{level}",
+            "name": input.name,
+            "country_code": input.country_code,
+            "geo_location": input.location_id,
+            "interest_id": input.interest_id,
+            "all_fields": data,
+            "response": response,
+            "lower_end": response["data"]["user_count"]["lower_end"],
+            "upper_end": response["data"]["user_count"]["upper_end"],
+            "user_count_stage": response["data"]["user_count_stage"]
+        }
+        return entry
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Request failed: {e}")
+        return None
+
+@app.post("/audience_estimate_interest_check/")
+def audience_estimate_interest_check(input_list: InputListInterestCheck):
+    results = []
+    futures = []
+    flush_every = 100
+
+    def flush(rows):
+        if not rows:
+            return
+        df = pd.DataFrame(rows)
+        df['timestamp'] = datetime.now()
+        write_header = not os.path.isfile(config.tt_interest_check)
+        df.to_csv(config.tt_interest_check, mode='a', header=write_header, index=False, encoding='utf-8-sig')
+
+    # Start fresh — remove any prior partial file so headers align
+    if os.path.isfile(config.tt_interest_check):
+        os.remove(config.tt_interest_check)
+
+    buffer = []
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        for inp in input_list.inputs:
+            futures.append(executor.submit(process_input_interest_check, inp))
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Processing interest-check inputs", file=sys.stdout):
+            res = future.result()
+            if res:
+                results.append(res)
+                buffer.append(res)
+                if len(buffer) >= flush_every:
+                    flush(buffer)
+                    buffer = []
+    flush(buffer)
+    logger.info("Finished processing all interest-check inputs.")
+
+    if results:
+        if os.path.isfile(config.tt_interest_check):
+            logger.info(f"Saved: {config.tt_interest_check}")
+        else:
+            logger.error(f"Failed to save: {config.tt_interest_check}")
+        logger.info(f"Processed {len(results)} interest-check inputs. Output_file: {config.tt_interest_check}")
+        return {"message": f"Processed {len(results)} interest-check inputs."}
     else:
         return {"message": "No results to save"}
 

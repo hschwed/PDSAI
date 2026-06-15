@@ -109,5 +109,35 @@ class Config:
         return os.path.join(base_path, f"tt_final_{self.level}.csv")
     @property
     def tt(self):
-        base_path = self._config["paths"]["tt_out"] 
+        base_path = self._config["paths"]["tt_out"]
         return os.path.join(base_path, f"tt_estimates_{self.level}.csv")
+
+    @property
+    def input_interest_json(self):
+        base_path = self._config["paths"]["input_path"]
+        return os.path.join(base_path, f"input_interest_{self.level}.json")
+
+    @property
+    def tt_interest(self):
+        base_path = self._config["paths"]["tt_interest_out"]
+        return os.path.join(base_path, f"tt_interest_estimates_{self.level}.csv")
+
+    @property
+    def tt_interest_clean(self):
+        base_path = self._config["paths"]["tt_interest_clean"]
+        return os.path.join(base_path, f"tt_interest_clean_{self.level}.csv")
+
+    @property
+    def tt_interest_final(self):
+        base_path = self._config["paths"]["tt_interest_final"]
+        return os.path.join(base_path, f"tt_interest_final_{self.level}.csv")
+
+    @property
+    def input_interest_check_json(self):
+        base_path = self._config["paths"]["input_path"]
+        return os.path.join(base_path, "input_interest_check.json")
+
+    @property
+    def tt_interest_check(self):
+        base_path = self._config["paths"]["tt_interest_out"]
+        return os.path.join(base_path, "tt_interest_check.csv")
