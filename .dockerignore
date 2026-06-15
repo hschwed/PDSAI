@@ -1,9 +1,3 @@
-# Exclude node_modules directory
-node_modules
-
-# Exclude all log files
-*.log
-
 # Exclude environment files
 .env
 .env.local
@@ -11,9 +5,16 @@ env/
 venv/
 
 # Ignore build directories
-/build
-/dist
+build/
+dist/
 
-*.sys
-*.syd
-pip-log.txt
+# Bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# System/IDE files
+.DS_Store
+.vscode/
+.idea/

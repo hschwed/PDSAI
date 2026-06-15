@@ -1,0 +1,31 @@
+api:
+  base_url: "https://business-api.tiktok.com"
+  region_endpoint: "/open_api/v1.3/search/region/"
+  estimates_endpoint: "/open_api/v1.3/ad/audience_size/estimate/"
+  interest_endpoint: "/open_api/v1.3/targeting/search/"
+  max_workers: 3
+
+paths:
+  log_file: "logging/log.txt"
+  input_csv: "data/raw/input.csv"
+  input_path: "data/raw/"           # only path, without file ending to make it dynamic depending on level
+  location_ids_api: "data/raw/location_ids.csv"
+  locations_json: "data/raw/locations.json"
+  interest_json: "data/raw/interest.json"
+  interest_trim_json: "data/raw/interest_trim.json"
+  interest_matched_json: "data/raw/interest_matched.json"
+  tt_out: "data/raw/"               # only path, without file ending to make it dynamic depending on level
+  tt_clean: "data/cleaned/"         # only path, without file ending to make it dynamic depending on level
+  tt_final: "data/transformed/"     # only path, without file ending to make it dynamic depending on level
+  tt_interest_out: "data/raw/"
+  tt_interest_clean: "data/cleaned/"
+  tt_interest_final: "data/transformed/"
+  fb_csv: "data/raw/FB_mau_upper_202501_averaged.csv"
+  fb_clean: "data/cleaned/fb_clean.csv"
+  fb_final: "data/transformed/fb_final.csv"
+  insta_csv: "data/raw/Ins_2025-01_averaged.csv"
+  insta_clean: "data/cleaned/insta_clean.csv"
+  insta_final: "data/transformed/insta_final.csv"
+  pop_csv: "data/raw/un_1950_2023_processed.csv"
+  pop_clean: "data/cleaned/pop_clean.csv"
+  pop_final: "data/transformed/pop_final.csv"

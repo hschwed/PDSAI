@@ -1,0 +1,4298 @@
+[
+  {
+    "id": "23102",
+    "name": "Business & Economy",
+    "category": "business",
+    "score": 0.6322
+  },
+  {
+    "id": "24",
+    "name": "Business Services",
+    "category": "business",
+    "score": 0.5557
+  },
+  {
+    "id": "20110",
+    "name": "Business & Productivity",
+    "category": "business",
+    "score": 0.554
+  },
+  {
+    "id": "10106103",
+    "name": "Sports",
+    "category": "business",
+    "score": 0.4514
+  },
+  {
+    "id": "25100104",
+    "name": "Sports",
+    "category": "business",
+    "score": 0.4513
+  },
+  {
+    "id": "25998018",
+    "name": "Sports",
+    "category": "business",
+    "score": 0.4513
+  },
+  {
+    "id": "25999010",
+    "name": "Sports",
+    "category": "business",
+    "score": 0.4513
+  },
+  {
+    "id": "25999001011",
+    "name": "Sports",
+    "category": "business",
+    "score": 0.4513
+  },
+  {
+    "id": "25998018019",
+    "name": "Car",
+    "category": "business",
+    "score": 0.4406
+  },
+  {
+    "id": "25999009006",
+    "name": "Dating",
+    "category": "business",
+    "score": 0.4351
+  },
+  {
+    "id": "25100101100",
+    "name": "Business Simulation Games",
+    "category": "business",
+    "score": 0.4312
+  },
+  {
+    "id": "25999009015",
+    "name": "Manager",
+    "category": "business",
+    "score": 0.4221
+  },
+  {
+    "id": "24118",
+    "name": "Business Auction Services",
+    "category": "business",
+    "score": 0.3991
+  },
+  {
+    "id": "20108",
+    "name": "Travel",
+    "category": "business",
+    "score": 0.397
+  },
+  {
+    "id": "17",
+    "name": "Travel",
+    "category": "business",
+    "score": 0.397
+  },
+  {
+    "id": "23126",
+    "name": "Cars",
+    "category": "business",
+    "score": 0.3939
+  },
+  {
+    "id": "23119104",
+    "name": "Crime",
+    "category": "business",
+    "score": 0.3836
+  },
+  {
+    "id": "24112",
+    "name": "Marketing & Advertising",
+    "category": "business",
+    "score": 0.3829
+  },
+  {
+    "id": "23116107",
+    "name": "Music",
+    "category": "business",
+    "score": 0.3723
+  },
+  {
+    "id": "25999001005",
+    "name": "Music",
+    "category": "business",
+    "score": 0.3723
+  },
+  {
+    "id": "20101101",
+    "name": "Music",
+    "category": "business",
+    "score": 0.3723
+  },
+  {
+    "id": "25993002001",
+    "name": "PC",
+    "category": "business",
+    "score": 0.3708
+  },
+  {
+    "id": "25993002",
+    "name": "PC",
+    "category": "business",
+    "score": 0.3708
+  },
+  {
+    "id": "25",
+    "name": "Games",
+    "category": "business",
+    "score": 0.3708
+  },
+  {
+    "id": "25999009004",
+    "name": "Building",
+    "category": "business",
+    "score": 0.3694
+  },
+  {
+    "id": "20100",
+    "name": "Social",
+    "category": "business",
+    "score": 0.3682
+  },
+  {
+    "id": "25999012",
+    "name": "Party",
+    "category": "business",
+    "score": 0.3653
+  },
+  {
+    "id": "23131",
+    "name": "Relationships",
+    "category": "business",
+    "score": 0.3648
+  },
+  {
+    "id": "20106102",
+    "name": "Money Management & Bookkeeping",
+    "category": "business",
+    "score": 0.3607
+  },
+  {
+    "id": "25999011",
+    "name": "Strategy",
+    "category": "business",
+    "score": 0.3582
+  },
+  {
+    "id": "25999003",
+    "name": "Casino",
+    "category": "business",
+    "score": 0.3537
+  },
+  {
+    "id": "23119102",
+    "name": "Action",
+    "category": "business",
+    "score": 0.353
+  },
+  {
+    "id": "25999002",
+    "name": "Action",
+    "category": "business",
+    "score": 0.353
+  },
+  {
+    "id": "25999001002",
+    "name": "Action",
+    "category": "business",
+    "score": 0.353
+  },
+  {
+    "id": "26114",
+    "name": "Beauty & Personal Care",
+    "category": "business",
+    "score": 0.3475
+  },
+  {
+    "id": "14",
+    "name": "Beauty & Personal Care",
+    "category": "business",
+    "score": 0.3475
+  },
+  {
+    "id": "23122",
+    "name": "Beauty & Personal Care",
+    "category": "business",
+    "score": 0.3475
+  },
+  {
+    "id": "20102101",
+    "name": "News",
+    "category": "business",
+    "score": 0.3468
+  },
+  {
+    "id": "23105",
+    "name": "Charity",
+    "category": "business",
+    "score": 0.3449
+  },
+  {
+    "id": "25993001",
+    "name": "Mobile",
+    "category": "business",
+    "score": 0.3419
+  },
+  {
+    "id": "23123",
+    "name": "Sports & Fitness",
+    "category": "business",
+    "score": 0.3359
+  },
+  {
+    "id": "25999001001",
+    "name": ".io",
+    "category": "business",
+    "score": 0.3349
+  },
+  {
+    "id": "11100",
+    "name": "Automobiles",
+    "category": "business",
+    "score": 0.3304
+  },
+  {
+    "id": "25999001003",
+    "name": "Ball",
+    "category": "business",
+    "score": 0.3304
+  },
+  {
+    "id": "20107",
+    "name": "Life & Leisure",
+    "category": "business",
+    "score": 0.3302
+  },
+  {
+    "id": "24107",
+    "name": "Franchising",
+    "category": "business",
+    "score": 0.33
+  },
+  {
+    "id": "23",
+    "name": "News & Entertainment",
+    "category": "business",
+    "score": 0.3289
+  },
+  {
+    "id": "20108101",
+    "name": "Bus & Metro",
+    "category": "business",
+    "score": 0.3282
+  },
+  {
+    "id": "24120",
+    "name": "Individual Entrepreneurship",
+    "category": "business",
+    "score": 0.3275
+  },
+  {
+    "id": "25999005002",
+    "name": "Brain",
+    "category": "business",
+    "score": 0.3257
+  },
+  {
+    "id": "25999009008",
+    "name": "Driving",
+    "category": "business",
+    "score": 0.3244
+  },
+  {
+    "id": "20107102",
+    "name": "Job Hunting",
+    "category": "business",
+    "score": 0.3237
+  },
+  {
+    "id": "13101",
+    "name": "Securities",
+    "category": "business",
+    "score": 0.323
+  },
+  {
+    "id": "20110100",
+    "name": "Office Software",
+    "category": "business",
+    "score": 0.3206
+  },
+  {
+    "id": "25999005013",
+    "name": "Physics",
+    "category": "business",
+    "score": 0.3204
+  },
+  {
+    "id": "27102",
+    "name": "Beverage",
+    "category": "business",
+    "score": 0.3203
+  },
+  {
+    "id": "23103",
+    "name": "Science & Technology",
+    "category": "business",
+    "score": 0.3185
+  },
+  {
+    "id": "25100104103",
+    "name": "Golf",
+    "category": "business",
+    "score": 0.3174
+  },
+  {
+    "id": "28101106",
+    "name": "Golf",
+    "category": "business",
+    "score": 0.3173
+  },
+  {
+    "id": "25998018016",
+    "name": "Golf",
+    "category": "business",
+    "score": 0.3173
+  },
+  {
+    "id": "25999015",
+    "name": "Other",
+    "category": "business",
+    "score": 0.3157
+  },
+  {
+    "id": "25999015001",
+    "name": "Other",
+    "category": "business",
+    "score": 0.3157
+  },
+  {
+    "id": "25100104100",
+    "name": "Basketball",
+    "category": "business",
+    "score": 0.3135
+  },
+  {
+    "id": "25998018004",
+    "name": "Basketball",
+    "category": "business",
+    "score": 0.3135
+  },
+  {
+    "id": "15107",
+    "name": "Office Equipment",
+    "category": "business",
+    "score": 0.3131
+  },
+  {
+    "id": "28",
+    "name": "Sports & Outdoors",
+    "category": "business",
+    "score": 0.3128
+  },
+  {
+    "id": "25999001008",
+    "name": "Racing",
+    "category": "business",
+    "score": 0.3124
+  },
+  {
+    "id": "25999006",
+    "name": "Racing",
+    "category": "business",
+    "score": 0.3124
+  },
+  {
+    "id": "27",
+    "name": "Food & Beverage",
+    "category": "business",
+    "score": 0.312
+  },
+  {
+    "id": "25999002017",
+    "name": "Adventure",
+    "category": "business",
+    "score": 0.3106
+  },
+  {
+    "id": "23119",
+    "name": "Movie",
+    "category": "business",
+    "score": 0.3027
+  },
+  {
+    "id": "22102",
+    "name": "Bags",
+    "category": "business",
+    "score": 0.3022
+  },
+  {
+    "id": "25999005018",
+    "name": "Word",
+    "category": "business",
+    "score": 0.3019
+  },
+  {
+    "id": "25100104104",
+    "name": "Baseball",
+    "category": "business",
+    "score": 0.3004
+  },
+  {
+    "id": "25998018003",
+    "name": "Baseball",
+    "category": "business",
+    "score": 0.3004
+  },
+  {
+    "id": "10100",
+    "name": "Early Childhood & Preschool Education",
+    "category": "childcare",
+    "score": 0.5316
+  },
+  {
+    "id": "20111100",
+    "name": "Parenting",
+    "category": "childcare",
+    "score": 0.4906
+  },
+  {
+    "id": "20111",
+    "name": "Parenting",
+    "category": "childcare",
+    "score": 0.4906
+  },
+  {
+    "id": "12107",
+    "name": "Child Car Seats",
+    "category": "childcare",
+    "score": 0.4221
+  },
+  {
+    "id": "12108",
+    "name": "Baby Feeding Supplies",
+    "category": "childcare",
+    "score": 0.415
+  },
+  {
+    "id": "12",
+    "name": "Baby & Kids Products",
+    "category": "childcare",
+    "score": 0.3919
+  },
+  {
+    "id": "12101",
+    "name": "Strollers & Cribs",
+    "category": "childcare",
+    "score": 0.3835
+  },
+  {
+    "id": "12109",
+    "name": "Children's Apparel",
+    "category": "childcare",
+    "score": 0.37
+  },
+  {
+    "id": "14103100",
+    "name": "Body Care",
+    "category": "childcare",
+    "score": 0.3694
+  },
+  {
+    "id": "12104",
+    "name": "Baby Bedding",
+    "category": "childcare",
+    "score": 0.3646
+  },
+  {
+    "id": "26105",
+    "name": "Housekeeping",
+    "category": "childcare",
+    "score": 0.3494
+  },
+  {
+    "id": "23118106",
+    "name": "Children's Books",
+    "category": "childcare",
+    "score": 0.3487
+  },
+  {
+    "id": "12102",
+    "name": "Baby Formula",
+    "category": "childcare",
+    "score": 0.3286
+  },
+  {
+    "id": "14107",
+    "name": "Feminine Care",
+    "category": "childcare",
+    "score": 0.3272
+  },
+  {
+    "id": "12103",
+    "name": "Diapers & Baby Wipes",
+    "category": "childcare",
+    "score": 0.3186
+  },
+  {
+    "id": "16105",
+    "name": "Digital Devices",
+    "category": "digital economy",
+    "score": 0.4738
+  },
+  {
+    "id": "30",
+    "name": "E-Commerce (Non-app)",
+    "category": "digital economy",
+    "score": 0.4537
+  },
+  {
+    "id": "20105",
+    "name": "Online Shopping",
+    "category": "digital economy",
+    "score": 0.398
+  },
+  {
+    "id": "20102102",
+    "name": "E-books",
+    "category": "digital economy",
+    "score": 0.3897
+  },
+  {
+    "id": "26111",
+    "name": "Internet Services",
+    "category": "digital economy",
+    "score": 0.3727
+  },
+  {
+    "id": "15",
+    "name": "Tech & Electronics",
+    "category": "digital economy",
+    "score": 0.3219
+  },
+  {
+    "id": "20112105",
+    "name": "Document Management",
+    "category": "digital economy",
+    "score": 0.3123
+  },
+  {
+    "id": "15101",
+    "name": "Computers",
+    "category": "digital economy",
+    "score": 0.312
+  },
+  {
+    "id": "16105100102",
+    "name": "Digital Cameras",
+    "category": "digital economy",
+    "score": 0.3111
+  },
+  {
+    "id": "17103101",
+    "name": "Economy Hotels",
+    "category": "economy",
+    "score": 0.5933
+  },
+  {
+    "id": "20106103",
+    "name": "Investment",
+    "category": "economy",
+    "score": 0.379
+  },
+  {
+    "id": "23133",
+    "name": "Tourism",
+    "category": "economy",
+    "score": 0.3786
+  },
+  {
+    "id": "20107103",
+    "name": "Entertainment",
+    "category": "economy",
+    "score": 0.3682
+  },
+  {
+    "id": "24111",
+    "name": "Logistics",
+    "category": "economy",
+    "score": 0.3189
+  },
+  {
+    "id": "23119100",
+    "name": "Drama",
+    "category": "economy",
+    "score": 0.3088
+  },
+  {
+    "id": "10",
+    "name": "Education",
+    "category": "education",
+    "score": 0.9027
+  },
+  {
+    "id": "20104",
+    "name": "Education",
+    "category": "education",
+    "score": 0.9027
+  },
+  {
+    "id": "10102",
+    "name": "Higher Education",
+    "category": "education",
+    "score": 0.5536
+  },
+  {
+    "id": "10102101",
+    "name": "College Education",
+    "category": "education",
+    "score": 0.5215
+  },
+  {
+    "id": "10102100",
+    "name": "Adult Education",
+    "category": "education",
+    "score": 0.5094
+  },
+  {
+    "id": "10101",
+    "name": "Primary & Secondary Education & K-12",
+    "category": "education",
+    "score": 0.4374
+  },
+  {
+    "id": "10103",
+    "name": "Overseas Education",
+    "category": "education",
+    "score": 0.4309
+  },
+  {
+    "id": "25999014001",
+    "name": "Educational Games",
+    "category": "education",
+    "score": 0.4078
+  },
+  {
+    "id": "25100112",
+    "name": "Educational Games",
+    "category": "education",
+    "score": 0.4078
+  },
+  {
+    "id": "23118",
+    "name": "Reading",
+    "category": "education",
+    "score": 0.4048
+  },
+  {
+    "id": "10104108",
+    "name": "Beauty Education",
+    "category": "education",
+    "score": 0.4
+  },
+  {
+    "id": "10104101",
+    "name": "Design Training & Education",
+    "category": "education",
+    "score": 0.3792
+  },
+  {
+    "id": "10104",
+    "name": "Vocational Training",
+    "category": "education",
+    "score": 0.3785
+  },
+  {
+    "id": "23106",
+    "name": "Law",
+    "category": "education",
+    "score": 0.3665
+  },
+  {
+    "id": "20110104",
+    "name": "Email",
+    "category": "education",
+    "score": 0.3657
+  },
+  {
+    "id": "20104100",
+    "name": "Learning Tools",
+    "category": "education",
+    "score": 0.3655
+  },
+  {
+    "id": "10106",
+    "name": "Non-academic Training (Hobbies)",
+    "category": "education",
+    "score": 0.3637
+  },
+  {
+    "id": "10103101",
+    "name": "Overseas Study for Undergraduate Education",
+    "category": "education",
+    "score": 0.3632
+  },
+  {
+    "id": "10105",
+    "name": "Language Training",
+    "category": "education",
+    "score": 0.3539
+  },
+  {
+    "id": "10105101",
+    "name": "English Language Training",
+    "category": "education",
+    "score": 0.3538
+  },
+  {
+    "id": "25998012",
+    "name": "Lifestyle",
+    "category": "education",
+    "score": 0.3482
+  },
+  {
+    "id": "10104100",
+    "name": "IT Training & Examinations",
+    "category": "education",
+    "score": 0.3452
+  },
+  {
+    "id": "10101102",
+    "name": "High School Tutoring",
+    "category": "education",
+    "score": 0.3237
+  },
+  {
+    "id": "10104112",
+    "name": "Marketing Management Education",
+    "category": "education",
+    "score": 0.3214
+  },
+  {
+    "id": "14104100100",
+    "name": "Foundation",
+    "category": "education",
+    "score": 0.3197
+  },
+  {
+    "id": "20102",
+    "name": "News & Reading",
+    "category": "education",
+    "score": 0.3197
+  },
+  {
+    "id": "20106100",
+    "name": "Payment",
+    "category": "education",
+    "score": 0.3183
+  },
+  {
+    "id": "20112",
+    "name": "Tools",
+    "category": "education",
+    "score": 0.3095
+  },
+  {
+    "id": "10104103",
+    "name": "Chef Training & Examinations",
+    "category": "education",
+    "score": 0.3075
+  },
+  {
+    "id": "23104",
+    "name": "Culture & History",
+    "category": "education",
+    "score": 0.3068
+  },
+  {
+    "id": "20104101",
+    "name": "Exam Preparation",
+    "category": "education",
+    "score": 0.3048
+  },
+  {
+    "id": "20100101",
+    "name": "Marriage",
+    "category": "education",
+    "score": 0.3046
+  },
+  {
+    "id": "10104109",
+    "name": "Driving Schools & Pilot Training",
+    "category": "education",
+    "score": 0.304
+  },
+  {
+    "id": "23116",
+    "name": "Culture & Art",
+    "category": "education",
+    "score": 0.3036
+  },
+  {
+    "id": "27100",
+    "name": "Food",
+    "category": "education",
+    "score": 0.3021
+  },
+  {
+    "id": "25999009012",
+    "name": "Idol Training",
+    "category": "education",
+    "score": 0.3006
+  },
+  {
+    "id": "29101",
+    "name": "Health & Wellness",
+    "category": "healthcare",
+    "score": 0.5346
+  },
+  {
+    "id": "20109",
+    "name": "Health & Fitness",
+    "category": "healthcare",
+    "score": 0.4801
+  },
+  {
+    "id": "19101",
+    "name": "Pet Healthcare",
+    "category": "healthcare",
+    "score": 0.4382
+  },
+  {
+    "id": "14101",
+    "name": "Haircare",
+    "category": "healthcare",
+    "score": 0.3788
+  },
+  {
+    "id": "20109102",
+    "name": "Healthy Lifestyle",
+    "category": "healthcare",
+    "score": 0.3623
+  },
+  {
+    "id": "20109101",
+    "name": "Medical Care",
+    "category": "healthcare services",
+    "score": 0.599
+  },
+  {
+    "id": "26",
+    "name": "Life Services",
+    "category": "healthcare services",
+    "score": 0.5228
+  },
+  {
+    "id": "26112",
+    "name": "Consumer Services",
+    "category": "healthcare services",
+    "score": 0.4887
+  },
+  {
+    "id": "26106",
+    "name": "Shopping Services",
+    "category": "healthcare services",
+    "score": 0.4313
+  },
+  {
+    "id": "24116",
+    "name": "IT Services",
+    "category": "healthcare services",
+    "score": 0.4256
+  },
+  {
+    "id": "24117",
+    "name": "Legal Services",
+    "category": "healthcare services",
+    "score": 0.4238
+  },
+  {
+    "id": "13",
+    "name": "Financial Services",
+    "category": "healthcare services",
+    "score": 0.4155
+  },
+  {
+    "id": "20106",
+    "name": "Financial Services",
+    "category": "healthcare services",
+    "score": 0.4155
+  },
+  {
+    "id": "26105101",
+    "name": "House Cleaning Services",
+    "category": "healthcare services",
+    "score": 0.3526
+  },
+  {
+    "id": "14101101",
+    "name": "Haircare Products",
+    "category": "healthcare services",
+    "score": 0.3449
+  },
+  {
+    "id": "11102",
+    "name": "Auto Services",
+    "category": "healthcare services",
+    "score": 0.3371
+  },
+  {
+    "id": "14103100104",
+    "name": "Body Care Sets",
+    "category": "healthcare services",
+    "score": 0.3286
+  },
+  {
+    "id": "14100",
+    "name": "Oral Care",
+    "category": "healthcare services",
+    "score": 0.3144
+  },
+  {
+    "id": "24114",
+    "name": "Exhibition Services",
+    "category": "healthcare services",
+    "score": 0.3102
+  },
+  {
+    "id": "26105104",
+    "name": "Home Moving Services",
+    "category": "healthcare services",
+    "score": 0.309
+  },
+  {
+    "id": "10104104",
+    "name": "Enterprise Management Training",
+    "category": "other",
+    "score": 0.2996
+  },
+  {
+    "id": "17106",
+    "name": "Travel Agencies & Services",
+    "category": "other",
+    "score": 0.2992
+  },
+  {
+    "id": "23108",
+    "name": "Celebrity",
+    "category": "other",
+    "score": 0.2987
+  },
+  {
+    "id": "20",
+    "name": "Apps",
+    "category": "other",
+    "score": 0.2985
+  },
+  {
+    "id": "26108",
+    "name": "Gardening",
+    "category": "other",
+    "score": 0.2983
+  },
+  {
+    "id": "23117105",
+    "name": "Comedy",
+    "category": "other",
+    "score": 0.2981
+  },
+  {
+    "id": "23119101",
+    "name": "Comedy",
+    "category": "other",
+    "score": 0.2981
+  },
+  {
+    "id": "12106",
+    "name": "Toys for Kids",
+    "category": "other",
+    "score": 0.2973
+  },
+  {
+    "id": "25998018015",
+    "name": "Hockey",
+    "category": "other",
+    "score": 0.297
+  },
+  {
+    "id": "24104",
+    "name": "Electronics & Electrical",
+    "category": "other",
+    "score": 0.2951
+  },
+  {
+    "id": "13102",
+    "name": "Insurance",
+    "category": "other",
+    "score": 0.2948
+  },
+  {
+    "id": "14100102",
+    "name": "Oral Care Kits",
+    "category": "other",
+    "score": 0.2944
+  },
+  {
+    "id": "13108",
+    "name": "Credit Bureaus",
+    "category": "other",
+    "score": 0.2943
+  },
+  {
+    "id": "14103103",
+    "name": "Lip Care",
+    "category": "other",
+    "score": 0.2942
+  },
+  {
+    "id": "10104105",
+    "name": "Medical Licensing Training & Examinations",
+    "category": "other",
+    "score": 0.2938
+  },
+  {
+    "id": "22108112",
+    "name": "Suits",
+    "category": "other",
+    "score": 0.2929
+  },
+  {
+    "id": "22110110",
+    "name": "Suits",
+    "category": "other",
+    "score": 0.2929
+  },
+  {
+    "id": "25999009003",
+    "name": "Breeding",
+    "category": "other",
+    "score": 0.2916
+  },
+  {
+    "id": "23107",
+    "name": "Sustainability",
+    "category": "other",
+    "score": 0.2904
+  },
+  {
+    "id": "14103101",
+    "name": "Facial Care",
+    "category": "other",
+    "score": 0.2902
+  },
+  {
+    "id": "11106",
+    "name": "Motorcycles",
+    "category": "other",
+    "score": 0.29
+  },
+  {
+    "id": "14103101106",
+    "name": "Facial Care Sets",
+    "category": "other",
+    "score": 0.2889
+  },
+  {
+    "id": "15106",
+    "name": "Network Products",
+    "category": "other",
+    "score": 0.2888
+  },
+  {
+    "id": "24100100",
+    "name": "Real Estate Sales",
+    "category": "other",
+    "score": 0.2887
+  },
+  {
+    "id": "25998011",
+    "name": "Idol Raising",
+    "category": "other",
+    "score": 0.2883
+  },
+  {
+    "id": "24101",
+    "name": "Office Equipment & Supplies",
+    "category": "other",
+    "score": 0.2883
+  },
+  {
+    "id": "25999013001",
+    "name": "Board Game",
+    "category": "other",
+    "score": 0.288
+  },
+  {
+    "id": "25100101101",
+    "name": "Care Simulation Games",
+    "category": "other",
+    "score": 0.2876
+  },
+  {
+    "id": "16100",
+    "name": "Personal Care Appliances",
+    "category": "other",
+    "score": 0.2876
+  },
+  {
+    "id": "11",
+    "name": "Vehicles & Transportation",
+    "category": "other",
+    "score": 0.2876
+  },
+  {
+    "id": "14104",
+    "name": "Cosmetics",
+    "category": "other",
+    "score": 0.2853
+  },
+  {
+    "id": "14103102",
+    "name": "Eye Care",
+    "category": "other",
+    "score": 0.2851
+  },
+  {
+    "id": "23109",
+    "name": "Lifestyle News",
+    "category": "other",
+    "score": 0.2851
+  },
+  {
+    "id": "28101111",
+    "name": "Soccer",
+    "category": "other",
+    "score": 0.285
+  },
+  {
+    "id": "25998018002",
+    "name": "Soccer",
+    "category": "other",
+    "score": 0.285
+  },
+  {
+    "id": "16100108",
+    "name": "Electronic Scales",
+    "category": "other",
+    "score": 0.2849
+  },
+  {
+    "id": "25999002005",
+    "name": "MOBA",
+    "category": "other",
+    "score": 0.2842
+  },
+  {
+    "id": "26101",
+    "name": "Photography",
+    "category": "other",
+    "score": 0.2839
+  },
+  {
+    "id": "20103",
+    "name": "Photography",
+    "category": "other",
+    "score": 0.2839
+  },
+  {
+    "id": "26106101",
+    "name": "Supermarkets",
+    "category": "other",
+    "score": 0.2829
+  },
+  {
+    "id": "20104102",
+    "name": "Foreign Language Learning",
+    "category": "other",
+    "score": 0.2812
+  },
+  {
+    "id": "11104",
+    "name": "Car Rentals",
+    "category": "other",
+    "score": 0.2808
+  },
+  {
+    "id": "11107",
+    "name": "Bicycles",
+    "category": "other",
+    "score": 0.2801
+  },
+  {
+    "id": "25998012001",
+    "name": "Farming",
+    "category": "other",
+    "score": 0.28
+  },
+  {
+    "id": "25999009009",
+    "name": "Farming",
+    "category": "other",
+    "score": 0.28
+  },
+  {
+    "id": "25999001",
+    "name": "Hyper-Casual",
+    "category": "other",
+    "score": 0.2792
+  },
+  {
+    "id": "22113",
+    "name": "Wearable Tech Devices",
+    "category": "other",
+    "score": 0.2789
+  },
+  {
+    "id": "25998019002",
+    "name": "Maritime",
+    "category": "other",
+    "score": 0.2786
+  },
+  {
+    "id": "25993",
+    "name": "Platform",
+    "category": "other",
+    "score": 0.2785
+  },
+  {
+    "id": "25100115",
+    "name": "Board Games",
+    "category": "other",
+    "score": 0.2781
+  },
+  {
+    "id": "15101104",
+    "name": "Laptops",
+    "category": "other",
+    "score": 0.2777
+  },
+  {
+    "id": "25998018018",
+    "name": "Other Sport",
+    "category": "other",
+    "score": 0.2773
+  },
+  {
+    "id": "25998018012",
+    "name": "Bowling",
+    "category": "other",
+    "score": 0.2767
+  },
+  {
+    "id": "19",
+    "name": "Pets",
+    "category": "other",
+    "score": 0.2766
+  },
+  {
+    "id": "23129",
+    "name": "Pets",
+    "category": "other",
+    "score": 0.2766
+  },
+  {
+    "id": "25998017",
+    "name": "Space",
+    "category": "other",
+    "score": 0.2763
+  },
+  {
+    "id": "25999009018",
+    "name": "Time Management",
+    "category": "other",
+    "score": 0.2756
+  },
+  {
+    "id": "22102108",
+    "name": "Wallets, Coin Purses & Business Card Holders",
+    "category": "other",
+    "score": 0.2752
+  },
+  {
+    "id": "15105",
+    "name": "Computer Accessories",
+    "category": "other",
+    "score": 0.2749
+  },
+  {
+    "id": "23116101",
+    "name": "Painting",
+    "category": "other",
+    "score": 0.2745
+  },
+  {
+    "id": "12105",
+    "name": "Baby Shoes",
+    "category": "other",
+    "score": 0.2742
+  },
+  {
+    "id": "30100",
+    "name": "Big Box Retailers",
+    "category": "other",
+    "score": 0.2737
+  },
+  {
+    "id": "28101",
+    "name": "Sports Equipment",
+    "category": "other",
+    "score": 0.2735
+  },
+  {
+    "id": "25999",
+    "name": "Genre",
+    "category": "other",
+    "score": 0.2735
+  },
+  {
+    "id": "26106100",
+    "name": "Shopping Malls",
+    "category": "other",
+    "score": 0.2731
+  },
+  {
+    "id": "21",
+    "name": "Home Improvement",
+    "category": "other",
+    "score": 0.2727
+  },
+  {
+    "id": "18110",
+    "name": "Cleaning Supplies",
+    "category": "other",
+    "score": 0.2726
+  },
+  {
+    "id": "23113",
+    "name": "Anime",
+    "category": "other",
+    "score": 0.2726
+  },
+  {
+    "id": "22102100",
+    "name": "Handbags",
+    "category": "other",
+    "score": 0.2726
+  },
+  {
+    "id": "11101102",
+    "name": "Car Seat Organizers",
+    "category": "other",
+    "score": 0.2722
+  },
+  {
+    "id": "25999001004",
+    "name": "Escape",
+    "category": "other",
+    "score": 0.2715
+  },
+  {
+    "id": "25999011004",
+    "name": "CCG",
+    "category": "other",
+    "score": 0.271
+  },
+  {
+    "id": "25998010",
+    "name": "Horror",
+    "category": "other",
+    "score": 0.2701
+  },
+  {
+    "id": "23119109",
+    "name": "Horror",
+    "category": "other",
+    "score": 0.2701
+  },
+  {
+    "id": "11102101",
+    "name": "Car Maintenance",
+    "category": "other",
+    "score": 0.2698
+  },
+  {
+    "id": "24113",
+    "name": "Professional Consultation",
+    "category": "other",
+    "score": 0.2697
+  },
+  {
+    "id": "20100103",
+    "name": "Messaging",
+    "category": "other",
+    "score": 0.2696
+  },
+  {
+    "id": "21100",
+    "name": "Interior Design & Decorating Services",
+    "category": "other",
+    "score": 0.2694
+  },
+  {
+    "id": "22110103",
+    "name": "Athleisure",
+    "category": "other",
+    "score": 0.2693
+  },
+  {
+    "id": "15102",
+    "name": "Computer Components",
+    "category": "other",
+    "score": 0.2693
+  },
+  {
+    "id": "25999009017",
+    "name": "Pet",
+    "category": "other",
+    "score": 0.2691
+  },
+  {
+    "id": "14103105",
+    "name": "Hand & Foot Care",
+    "category": "other",
+    "score": 0.2688
+  },
+  {
+    "id": "14103101107",
+    "name": "Beauty Tools",
+    "category": "other",
+    "score": 0.2682
+  },
+  {
+    "id": "14100100",
+    "name": "Teeth Cleaning",
+    "category": "other",
+    "score": 0.2677
+  },
+  {
+    "id": "25998018008",
+    "name": "Boxing",
+    "category": "other",
+    "score": 0.2672
+  },
+  {
+    "id": "13112",
+    "name": "Foreign Exchange Transactions",
+    "category": "other",
+    "score": 0.2669
+  },
+  {
+    "id": "23119113",
+    "name": "Animation",
+    "category": "other",
+    "score": 0.2668
+  },
+  {
+    "id": "18112",
+    "name": "Pest Control",
+    "category": "other",
+    "score": 0.2667
+  },
+  {
+    "id": "25999005006",
+    "name": "Hybrid",
+    "category": "other",
+    "score": 0.2667
+  },
+  {
+    "id": "25998018001",
+    "name": "Football (American)",
+    "category": "other",
+    "score": 0.2664
+  },
+  {
+    "id": "11112",
+    "name": "Car Dealerships",
+    "category": "other",
+    "score": 0.2662
+  },
+  {
+    "id": "11103",
+    "name": "Auto Parts",
+    "category": "other",
+    "score": 0.266
+  },
+  {
+    "id": "11100100",
+    "name": "Sedans",
+    "category": "other",
+    "score": 0.2657
+  },
+  {
+    "id": "25999002012",
+    "name": "Runner",
+    "category": "other",
+    "score": 0.2651
+  },
+  {
+    "id": "25999014002",
+    "name": "Other Kids Games",
+    "category": "other",
+    "score": 0.2648
+  },
+  {
+    "id": "25999003002",
+    "name": "Chinese Card or Board",
+    "category": "other",
+    "score": 0.2645
+  },
+  {
+    "id": "25999012009",
+    "name": "Quiz",
+    "category": "other",
+    "score": 0.2643
+  },
+  {
+    "id": "13114",
+    "name": "Third-Party Payments",
+    "category": "other",
+    "score": 0.2639
+  },
+  {
+    "id": "25999003005",
+    "name": "Dominoes",
+    "category": "other",
+    "score": 0.2639
+  },
+  {
+    "id": "24106",
+    "name": "Machinery & Equipment",
+    "category": "other",
+    "score": 0.2638
+  },
+  {
+    "id": "25999010004",
+    "name": "Team Manager",
+    "category": "other",
+    "score": 0.2632
+  },
+  {
+    "id": "25998",
+    "name": "Theme",
+    "category": "other",
+    "score": 0.2631
+  },
+  {
+    "id": "18108",
+    "name": "Laundry",
+    "category": "other",
+    "score": 0.2626
+  },
+  {
+    "id": "24119",
+    "name": "Investment Planning & Management",
+    "category": "other",
+    "score": 0.2624
+  },
+  {
+    "id": "25999009007",
+    "name": "Dress Up & Lifestyle",
+    "category": "other",
+    "score": 0.2621
+  },
+  {
+    "id": "15101103",
+    "name": "Desktops",
+    "category": "other",
+    "score": 0.2615
+  },
+  {
+    "id": "23999",
+    "name": "Other News",
+    "category": "other",
+    "score": 0.2615
+  },
+  {
+    "id": "14103",
+    "name": "Skin Care",
+    "category": "other",
+    "score": 0.2613
+  },
+  {
+    "id": "20105101",
+    "name": "Group Buying & Discounts",
+    "category": "other",
+    "score": 0.2611
+  },
+  {
+    "id": "24110",
+    "name": "Safety & Security",
+    "category": "other",
+    "score": 0.2608
+  },
+  {
+    "id": "18111",
+    "name": "Toys",
+    "category": "other",
+    "score": 0.2605
+  },
+  {
+    "id": "27101100",
+    "name": "Seafood",
+    "category": "other",
+    "score": 0.2605
+  },
+  {
+    "id": "25998012003",
+    "name": "Romance",
+    "category": "other",
+    "score": 0.2599
+  },
+  {
+    "id": "23119103",
+    "name": "Romance",
+    "category": "other",
+    "score": 0.2599
+  },
+  {
+    "id": "18",
+    "name": "Household Products",
+    "category": "other",
+    "score": 0.2594
+  },
+  {
+    "id": "27102105",
+    "name": "Coffee",
+    "category": "other",
+    "score": 0.2588
+  },
+  {
+    "id": "24103",
+    "name": "Construction Engineering",
+    "category": "other",
+    "score": 0.2587
+  },
+  {
+    "id": "24100101",
+    "name": "Home Rentals",
+    "category": "other",
+    "score": 0.2586
+  },
+  {
+    "id": "25999013003",
+    "name": "Chess",
+    "category": "other",
+    "score": 0.2585
+  },
+  {
+    "id": "26113",
+    "name": "Exercise & Fitness",
+    "category": "other",
+    "score": 0.2585
+  },
+  {
+    "id": "25999003006",
+    "name": "Fishing",
+    "category": "other",
+    "score": 0.2584
+  },
+  {
+    "id": "25998018009",
+    "name": "Fishing",
+    "category": "other",
+    "score": 0.2584
+  },
+  {
+    "id": "28101115",
+    "name": "Fishing",
+    "category": "other",
+    "score": 0.2584
+  },
+  {
+    "id": "25999003001",
+    "name": "Bingo",
+    "category": "other",
+    "score": 0.2575
+  },
+  {
+    "id": "25998018017",
+    "name": "Tennis",
+    "category": "other",
+    "score": 0.2574
+  },
+  {
+    "id": "28101107",
+    "name": "Tennis",
+    "category": "other",
+    "score": 0.2574
+  },
+  {
+    "id": "25100104102",
+    "name": "Tennis",
+    "category": "other",
+    "score": 0.2574
+  },
+  {
+    "id": "24102",
+    "name": "Recruitment & Job Searching",
+    "category": "other",
+    "score": 0.2572
+  },
+  {
+    "id": "20107105",
+    "name": "Car News",
+    "category": "other",
+    "score": 0.257
+  },
+  {
+    "id": "25999004",
+    "name": "Match",
+    "category": "other",
+    "score": 0.2569
+  },
+  {
+    "id": "16105102",
+    "name": "Drones",
+    "category": "other",
+    "score": 0.2569
+  },
+  {
+    "id": "25992",
+    "name": "Monetization",
+    "category": "other",
+    "score": 0.2567
+  },
+  {
+    "id": "23119114",
+    "name": "Musical",
+    "category": "other",
+    "score": 0.2566
+  },
+  {
+    "id": "25999007012",
+    "name": "Team Battle",
+    "category": "other",
+    "score": 0.2565
+  },
+  {
+    "id": "24109",
+    "name": "Energy Conservation & Sustainability",
+    "category": "other",
+    "score": 0.2555
+  },
+  {
+    "id": "25999009005",
+    "name": "Sandbox",
+    "category": "other",
+    "score": 0.2552
+  },
+  {
+    "id": "25998009",
+    "name": "Home Design",
+    "category": "other",
+    "score": 0.255
+  },
+  {
+    "id": "25999009010",
+    "name": "Home Design",
+    "category": "other",
+    "score": 0.255
+  },
+  {
+    "id": "25999009011",
+    "name": "Idle",
+    "category": "other",
+    "score": 0.254
+  },
+  {
+    "id": "25999013005",
+    "name": "Dice",
+    "category": "other",
+    "score": 0.2537
+  },
+  {
+    "id": "22102105",
+    "name": "Travel Bags",
+    "category": "other",
+    "score": 0.2536
+  },
+  {
+    "id": "22110107",
+    "name": "Jeans",
+    "category": "other",
+    "score": 0.253
+  },
+  {
+    "id": "27100114",
+    "name": "Chinese Cuisine",
+    "category": "other",
+    "score": 0.2526
+  },
+  {
+    "id": "25999002002",
+    "name": "Asymmetric",
+    "category": "other",
+    "score": 0.2526
+  },
+  {
+    "id": "25998014",
+    "name": "Palace",
+    "category": "other",
+    "score": 0.2522
+  },
+  {
+    "id": "25996",
+    "name": "Dimension",
+    "category": "other",
+    "score": 0.2521
+  },
+  {
+    "id": "25999014",
+    "name": "Kids Games",
+    "category": "other",
+    "score": 0.2518
+  },
+  {
+    "id": "25100102",
+    "name": "Strategy Games",
+    "category": "other",
+    "score": 0.2518
+  },
+  {
+    "id": "25999007010",
+    "name": "Survival",
+    "category": "other",
+    "score": 0.2498
+  },
+  {
+    "id": "10106102",
+    "name": "Dance",
+    "category": "other",
+    "score": 0.2497
+  },
+  {
+    "id": "23119115",
+    "name": "Dance",
+    "category": "other",
+    "score": 0.2497
+  },
+  {
+    "id": "25999012003",
+    "name": "Dance",
+    "category": "other",
+    "score": 0.2497
+  },
+  {
+    "id": "22111101",
+    "name": "Boots",
+    "category": "other",
+    "score": 0.2495
+  },
+  {
+    "id": "22109101",
+    "name": "Boots",
+    "category": "other",
+    "score": 0.2495
+  },
+  {
+    "id": "10103103",
+    "name": "ESL Testing",
+    "category": "other",
+    "score": 0.249
+  },
+  {
+    "id": "21101",
+    "name": "Furniture",
+    "category": "other",
+    "score": 0.2486
+  },
+  {
+    "id": "26104100",
+    "name": "Gifts",
+    "category": "other",
+    "score": 0.2479
+  },
+  {
+    "id": "20100100",
+    "name": "Chatting",
+    "category": "other",
+    "score": 0.247
+  },
+  {
+    "id": "25999012004",
+    "name": "Luck Battle",
+    "category": "other",
+    "score": 0.2461
+  },
+  {
+    "id": "19103",
+    "name": "Pet Grooming",
+    "category": "other",
+    "score": 0.2461
+  },
+  {
+    "id": "25999011007",
+    "name": "Other Strategy",
+    "category": "other",
+    "score": 0.2461
+  },
+  {
+    "id": "25999003013",
+    "name": "Slots",
+    "category": "other",
+    "score": 0.246
+  },
+  {
+    "id": "25999006002",
+    "name": "Competitive Racing",
+    "category": "other",
+    "score": 0.2451
+  },
+  {
+    "id": "26105107",
+    "name": "Home Repair",
+    "category": "other",
+    "score": 0.245
+  },
+  {
+    "id": "28101124",
+    "name": "Sports Underwear",
+    "category": "other",
+    "score": 0.245
+  },
+  {
+    "id": "25996002",
+    "name": "3D",
+    "category": "other",
+    "score": 0.2447
+  },
+  {
+    "id": "25998018014",
+    "name": "Wrestling",
+    "category": "other",
+    "score": 0.2446
+  },
+  {
+    "id": "25999012007",
+    "name": "Other Party",
+    "category": "other",
+    "score": 0.2441
+  },
+  {
+    "id": "16",
+    "name": "Appliances",
+    "category": "other",
+    "score": 0.2428
+  },
+  {
+    "id": "24108",
+    "name": "Agriculture, Forestry, Animal Husbandry & Fishing",
+    "category": "other",
+    "score": 0.2426
+  },
+  {
+    "id": "19100",
+    "name": "Petfood",
+    "category": "other",
+    "score": 0.2423
+  },
+  {
+    "id": "27101",
+    "name": "Food & Fresh Produce",
+    "category": "other",
+    "score": 0.2419
+  },
+  {
+    "id": "19102",
+    "name": "Pet Household Products",
+    "category": "other",
+    "score": 0.2415
+  },
+  {
+    "id": "25999011005",
+    "name": "Lane",
+    "category": "other",
+    "score": 0.2414
+  },
+  {
+    "id": "25100104105",
+    "name": "American Football",
+    "category": "other",
+    "score": 0.2413
+  },
+  {
+    "id": "25998021",
+    "name": "Western Historical",
+    "category": "other",
+    "score": 0.2413
+  },
+  {
+    "id": "25999003010",
+    "name": "Other Casino",
+    "category": "other",
+    "score": 0.2413
+  },
+  {
+    "id": "25999001010",
+    "name": "Simulation",
+    "category": "other",
+    "score": 0.2412
+  },
+  {
+    "id": "25999009",
+    "name": "Simulation",
+    "category": "other",
+    "score": 0.2412
+  },
+  {
+    "id": "28100",
+    "name": "Outdoor Equipment",
+    "category": "other",
+    "score": 0.2406
+  },
+  {
+    "id": "23117104",
+    "name": "Talk Shows",
+    "category": "other",
+    "score": 0.2401
+  },
+  {
+    "id": "23114",
+    "name": "Astrology",
+    "category": "other",
+    "score": 0.2399
+  },
+  {
+    "id": "25999013004",
+    "name": "Coloring",
+    "category": "other",
+    "score": 0.2397
+  },
+  {
+    "id": "25999007005",
+    "name": "MMORPG",
+    "category": "other",
+    "score": 0.2395
+  },
+  {
+    "id": "25998003",
+    "name": "Asian History",
+    "category": "other",
+    "score": 0.2395
+  },
+  {
+    "id": "26107",
+    "name": "Used Good Sales Platforms",
+    "category": "other",
+    "score": 0.2395
+  },
+  {
+    "id": "25999005",
+    "name": "Puzzle",
+    "category": "other",
+    "score": 0.2387
+  },
+  {
+    "id": "25999001007",
+    "name": "Puzzle",
+    "category": "other",
+    "score": 0.2387
+  },
+  {
+    "id": "25999002007",
+    "name": "Open World",
+    "category": "other",
+    "score": 0.2383
+  },
+  {
+    "id": "25999010001",
+    "name": "Arcade Sports",
+    "category": "other",
+    "score": 0.2376
+  },
+  {
+    "id": "25999005004",
+    "name": "Detective",
+    "category": "other",
+    "score": 0.2373
+  },
+  {
+    "id": "25998006",
+    "name": "Detective",
+    "category": "other",
+    "score": 0.2373
+  },
+  {
+    "id": "10105104",
+    "name": "Spanish Language Training",
+    "category": "other",
+    "score": 0.2372
+  },
+  {
+    "id": "20105103",
+    "name": "Express Deliveries",
+    "category": "other",
+    "score": 0.2368
+  },
+  {
+    "id": "25999013",
+    "name": "Tabletop",
+    "category": "other",
+    "score": 0.2368
+  },
+  {
+    "id": "17106100",
+    "name": "Vacation Packages",
+    "category": "other",
+    "score": 0.2367
+  },
+  {
+    "id": "23110",
+    "name": "Live Events",
+    "category": "other",
+    "score": 0.2365
+  },
+  {
+    "id": "25999002008",
+    "name": "Other Action",
+    "category": "other",
+    "score": 0.2363
+  },
+  {
+    "id": "21103",
+    "name": "Hardware & Electrical",
+    "category": "other",
+    "score": 0.2355
+  },
+  {
+    "id": "11100101",
+    "name": "SUVs",
+    "category": "other",
+    "score": 0.2352
+  },
+  {
+    "id": "23116999",
+    "name": "Other Culture & Art",
+    "category": "other",
+    "score": 0.2344
+  },
+  {
+    "id": "25999003012",
+    "name": "Poker or Card",
+    "category": "other",
+    "score": 0.2339
+  },
+  {
+    "id": "17103100",
+    "name": "Luxury Hotels",
+    "category": "other",
+    "score": 0.2337
+  },
+  {
+    "id": "15100",
+    "name": "Cell Phones",
+    "category": "other",
+    "score": 0.2336
+  },
+  {
+    "id": "25999011006",
+    "name": "Legion",
+    "category": "other",
+    "score": 0.2335
+  },
+  {
+    "id": "23118103",
+    "name": "Comics",
+    "category": "other",
+    "score": 0.233
+  },
+  {
+    "id": "25999003009",
+    "name": "Okey",
+    "category": "other",
+    "score": 0.2329
+  },
+  {
+    "id": "22110106",
+    "name": "Pants",
+    "category": "other",
+    "score": 0.2329
+  },
+  {
+    "id": "16104",
+    "name": "Home Appliances",
+    "category": "other",
+    "score": 0.2322
+  },
+  {
+    "id": "25998001",
+    "name": "Asian Cultural",
+    "category": "other",
+    "score": 0.2322
+  },
+  {
+    "id": "27102103",
+    "name": "Water",
+    "category": "other",
+    "score": 0.2322
+  },
+  {
+    "id": "27102104",
+    "name": "Juice",
+    "category": "other",
+    "score": 0.2318
+  },
+  {
+    "id": "25999011003",
+    "name": "Build and Battle",
+    "category": "other",
+    "score": 0.2314
+  },
+  {
+    "id": "25999012005",
+    "name": "Mafia/Betrayal Games",
+    "category": "other",
+    "score": 0.231
+  },
+  {
+    "id": "22110108",
+    "name": "Shorts",
+    "category": "other",
+    "score": 0.2309
+  },
+  {
+    "id": "22108106",
+    "name": "Shorts",
+    "category": "other",
+    "score": 0.2309
+  },
+  {
+    "id": "25999007",
+    "name": "RPG",
+    "category": "other",
+    "score": 0.2303
+  },
+  {
+    "id": "25999007011",
+    "name": "Tactics",
+    "category": "other",
+    "score": 0.2298
+  },
+  {
+    "id": "22101102",
+    "name": "Gloves",
+    "category": "other",
+    "score": 0.2294
+  },
+  {
+    "id": "16101123",
+    "name": "Blenders",
+    "category": "other",
+    "score": 0.2294
+  },
+  {
+    "id": "25999001006",
+    "name": "Other Hyper-Casual",
+    "category": "other",
+    "score": 0.2294
+  },
+  {
+    "id": "25998012002",
+    "name": "Hunting",
+    "category": "other",
+    "score": 0.2282
+  },
+  {
+    "id": "26100101",
+    "name": "Local Photography",
+    "category": "other",
+    "score": 0.2281
+  },
+  {
+    "id": "26112101",
+    "name": "Household Appliances Cleaning & Repair",
+    "category": "other",
+    "score": 0.2277
+  },
+  {
+    "id": "22110111",
+    "name": "Bras",
+    "category": "other",
+    "score": 0.2276
+  },
+  {
+    "id": "18106",
+    "name": "Cleaning Appliances",
+    "category": "other",
+    "score": 0.2272
+  },
+  {
+    "id": "15104",
+    "name": "Gaming Devices",
+    "category": "other",
+    "score": 0.2272
+  },
+  {
+    "id": "25999011010",
+    "name": "RTS",
+    "category": "other",
+    "score": 0.227
+  },
+  {
+    "id": "22109103",
+    "name": "Casual Shoes",
+    "category": "other",
+    "score": 0.2265
+  },
+  {
+    "id": "22108105",
+    "name": "Pants & Jeans",
+    "category": "other",
+    "score": 0.2254
+  },
+  {
+    "id": "20107107",
+    "name": "Ride Sharing",
+    "category": "other",
+    "score": 0.2249
+  },
+  {
+    "id": "11101",
+    "name": "Auto Accessories",
+    "category": "other",
+    "score": 0.2236
+  },
+  {
+    "id": "25100102102",
+    "name": "MOBAs",
+    "category": "other",
+    "score": 0.2235
+  },
+  {
+    "id": "16101115",
+    "name": "Egg Cookers",
+    "category": "other",
+    "score": 0.2229
+  },
+  {
+    "id": "11108",
+    "name": "Electric Scooters",
+    "category": "other",
+    "score": 0.2226
+  },
+  {
+    "id": "22101106",
+    "name": "Face Masks",
+    "category": "other",
+    "score": 0.2226
+  },
+  {
+    "id": "22111103",
+    "name": "Sneakers",
+    "category": "other",
+    "score": 0.2224
+  },
+  {
+    "id": "22109100",
+    "name": "Sneakers",
+    "category": "other",
+    "score": 0.2223
+  },
+  {
+    "id": "25998003001",
+    "name": "Chinese History",
+    "category": "other",
+    "score": 0.222
+  },
+  {
+    "id": "22107",
+    "name": "High-end Jewelry",
+    "category": "other",
+    "score": 0.222
+  },
+  {
+    "id": "17105",
+    "name": "Tours & Attractions",
+    "category": "other",
+    "score": 0.2216
+  },
+  {
+    "id": "22109",
+    "name": "Men's Shoes",
+    "category": "other",
+    "score": 0.2216
+  },
+  {
+    "id": "25998013",
+    "name": "Mob/Crime Games",
+    "category": "other",
+    "score": 0.2215
+  },
+  {
+    "id": "27102101",
+    "name": "Dairy Products",
+    "category": "other",
+    "score": 0.2213
+  },
+  {
+    "id": "23117100",
+    "name": "Reality Shows",
+    "category": "other",
+    "score": 0.2205
+  },
+  {
+    "id": "16102101",
+    "name": "Air Conditioning",
+    "category": "other",
+    "score": 0.2204
+  },
+  {
+    "id": "16100110",
+    "name": "Massagers",
+    "category": "other",
+    "score": 0.2202
+  },
+  {
+    "id": "19105",
+    "name": "Pet Toys",
+    "category": "other",
+    "score": 0.2202
+  },
+  {
+    "id": "25992001",
+    "name": "IAA",
+    "category": "other",
+    "score": 0.2194
+  },
+  {
+    "id": "21104",
+    "name": "Home Decor",
+    "category": "other",
+    "score": 0.2193
+  },
+  {
+    "id": "25999013002",
+    "name": "Card Games",
+    "category": "other",
+    "score": 0.219
+  },
+  {
+    "id": "25999010002",
+    "name": "Other Sports",
+    "category": "other",
+    "score": 0.2188
+  },
+  {
+    "id": "27100103",
+    "name": "Fast Food",
+    "category": "other",
+    "score": 0.2187
+  },
+  {
+    "id": "25999009014",
+    "name": "Life Simulator",
+    "category": "other",
+    "score": 0.2183
+  },
+  {
+    "id": "25998018010",
+    "name": "Skateboarding",
+    "category": "other",
+    "score": 0.2182
+  },
+  {
+    "id": "26104",
+    "name": "Gifts & Flowers",
+    "category": "other",
+    "score": 0.2181
+  },
+  {
+    "id": "23119111",
+    "name": "Fantasy",
+    "category": "other",
+    "score": 0.2177
+  },
+  {
+    "id": "11101100",
+    "name": "Auto Decor",
+    "category": "other",
+    "score": 0.2177
+  },
+  {
+    "id": "25998007",
+    "name": "Fantasy",
+    "category": "other",
+    "score": 0.2177
+  },
+  {
+    "id": "25999010003",
+    "name": "Simulation Sports",
+    "category": "other",
+    "score": 0.2176
+  },
+  {
+    "id": "17105105",
+    "name": "Museum Exhibits",
+    "category": "other",
+    "score": 0.2174
+  },
+  {
+    "id": "22108",
+    "name": "Men's Clothing",
+    "category": "other",
+    "score": 0.2172
+  },
+  {
+    "id": "27104",
+    "name": "Cooking & Recipes",
+    "category": "other",
+    "score": 0.2171
+  },
+  {
+    "id": "17103",
+    "name": "Hotels & Accommodation",
+    "category": "other",
+    "score": 0.217
+  },
+  {
+    "id": "20109100",
+    "name": "Physical Fitness",
+    "category": "other",
+    "score": 0.2155
+  },
+  {
+    "id": "22106",
+    "name": "Ordinary Jewelry",
+    "category": "other",
+    "score": 0.2149
+  },
+  {
+    "id": "25999002013",
+    "name": "Shark",
+    "category": "other",
+    "score": 0.2148
+  },
+  {
+    "id": "25999007002",
+    "name": "Empire Building RPG",
+    "category": "other",
+    "score": 0.2145
+  },
+  {
+    "id": "20108100",
+    "name": "Maps & Navigation",
+    "category": "other",
+    "score": 0.2144
+  },
+  {
+    "id": "22102101",
+    "name": "Wallets",
+    "category": "other",
+    "score": 0.2142
+  },
+  {
+    "id": "14102103",
+    "name": "Hairstyling Tools",
+    "category": "other",
+    "score": 0.214
+  },
+  {
+    "id": "25999012001",
+    "name": "Guessing",
+    "category": "other",
+    "score": 0.2133
+  },
+  {
+    "id": "25998020001",
+    "name": "Dystopian or Post-Apocalyptic",
+    "category": "other",
+    "score": 0.2132
+  },
+  {
+    "id": "25999008001",
+    "name": "Battle Royale",
+    "category": "other",
+    "score": 0.2131
+  },
+  {
+    "id": "25999002010",
+    "name": "Battle Royale",
+    "category": "other",
+    "score": 0.2131
+  },
+  {
+    "id": "25998018013",
+    "name": "Motocross",
+    "category": "other",
+    "score": 0.2127
+  },
+  {
+    "id": "25998015",
+    "name": "Sci-Fi",
+    "category": "other",
+    "score": 0.2127
+  },
+  {
+    "id": "23119110",
+    "name": "Sci-Fi",
+    "category": "other",
+    "score": 0.2127
+  },
+  {
+    "id": "25998003003",
+    "name": "Japanese History",
+    "category": "other",
+    "score": 0.2121
+  },
+  {
+    "id": "22102103",
+    "name": "Backpacks",
+    "category": "other",
+    "score": 0.2112
+  },
+  {
+    "id": "22110112",
+    "name": "Underwear",
+    "category": "other",
+    "score": 0.211
+  },
+  {
+    "id": "22108107",
+    "name": "Underwear",
+    "category": "other",
+    "score": 0.211
+  },
+  {
+    "id": "25999012002",
+    "name": "Karaoke",
+    "category": "other",
+    "score": 0.2102
+  },
+  {
+    "id": "27102102",
+    "name": "Tea",
+    "category": "other",
+    "score": 0.2093
+  },
+  {
+    "id": "25999011002",
+    "name": "Auto Chess",
+    "category": "other",
+    "score": 0.2093
+  },
+  {
+    "id": "18104",
+    "name": "Coffee Accessories",
+    "category": "other",
+    "score": 0.2091
+  },
+  {
+    "id": "10106101",
+    "name": "Calligraphy & Art",
+    "category": "other",
+    "score": 0.209
+  },
+  {
+    "id": "18107",
+    "name": "Tissues & Wet Wipes",
+    "category": "other",
+    "score": 0.2089
+  },
+  {
+    "id": "22101",
+    "name": "Clothing Accessories",
+    "category": "other",
+    "score": 0.2085
+  },
+  {
+    "id": "22112109",
+    "name": "Cosplay",
+    "category": "other",
+    "score": 0.2084
+  },
+  {
+    "id": "23112",
+    "name": "TV Drama / TV Series",
+    "category": "other",
+    "score": 0.2083
+  },
+  {
+    "id": "11102100",
+    "name": "Car Modification",
+    "category": "other",
+    "score": 0.2083
+  },
+  {
+    "id": "28101117",
+    "name": "Yoga & Dance",
+    "category": "other",
+    "score": 0.2082
+  },
+  {
+    "id": "25999003007",
+    "name": "Lottery or Scratchers",
+    "category": "other",
+    "score": 0.2072
+  },
+  {
+    "id": "23124",
+    "name": "Food & Cooking",
+    "category": "other",
+    "score": 0.2072
+  },
+  {
+    "id": "22101103",
+    "name": "Belts",
+    "category": "other",
+    "score": 0.2067
+  },
+  {
+    "id": "22110",
+    "name": "Women's Clothing",
+    "category": "other",
+    "score": 0.2067
+  },
+  {
+    "id": "25100",
+    "name": "Games (By Type)",
+    "category": "other",
+    "score": 0.2064
+  },
+  {
+    "id": "28101116",
+    "name": "Swimming",
+    "category": "other",
+    "score": 0.2062
+  },
+  {
+    "id": "14104105",
+    "name": "Tattoos",
+    "category": "other",
+    "score": 0.206
+  },
+  {
+    "id": "24100",
+    "name": "Real Estate & Home Rentals",
+    "category": "other",
+    "score": 0.206
+  },
+  {
+    "id": "22",
+    "name": "Apparel & Accessories",
+    "category": "other",
+    "score": 0.2054
+  },
+  {
+    "id": "19106",
+    "name": "Pet Travel Accessories",
+    "category": "other",
+    "score": 0.2054
+  },
+  {
+    "id": "11109",
+    "name": "Water Vehicles",
+    "category": "other",
+    "score": 0.2053
+  },
+  {
+    "id": "14100101",
+    "name": "Teeth Whitening",
+    "category": "other",
+    "score": 0.2051
+  },
+  {
+    "id": "16101",
+    "name": "Kitchen & Bathroom Appliances",
+    "category": "other",
+    "score": 0.2043
+  },
+  {
+    "id": "14101102",
+    "name": "Hair Growth Products",
+    "category": "other",
+    "score": 0.2041
+  },
+  {
+    "id": "20103100",
+    "name": "Image Editing",
+    "category": "other",
+    "score": 0.2039
+  },
+  {
+    "id": "22111102",
+    "name": "High Heels",
+    "category": "other",
+    "score": 0.2032
+  },
+  {
+    "id": "14102",
+    "name": "Wig & Hair Styling",
+    "category": "other",
+    "score": 0.2025
+  },
+  {
+    "id": "25999005009",
+    "name": "Maze",
+    "category": "other",
+    "score": 0.2024
+  },
+  {
+    "id": "14104107",
+    "name": "Nail Art Products",
+    "category": "other",
+    "score": 0.2024
+  },
+  {
+    "id": "15100100",
+    "name": "Cell Phone Accessories",
+    "category": "other",
+    "score": 0.2022
+  },
+  {
+    "id": "22108101",
+    "name": "Shirts",
+    "category": "other",
+    "score": 0.2021
+  },
+  {
+    "id": "18109",
+    "name": "Leather Care",
+    "category": "other",
+    "score": 0.2018
+  },
+  {
+    "id": "28101100",
+    "name": "Fitness Training Supplies",
+    "category": "other",
+    "score": 0.2013
+  },
+  {
+    "id": "11105",
+    "name": "Used Cars",
+    "category": "other",
+    "score": 0.2009
+  },
+  {
+    "id": "22111104",
+    "name": "Flats",
+    "category": "other",
+    "score": 0.2004
+  },
+  {
+    "id": "14106",
+    "name": "Fragrances & Perfumes",
+    "category": "other",
+    "score": 0.2004
+  },
+  {
+    "id": "22110102",
+    "name": "Dresses",
+    "category": "other",
+    "score": 0.2002
+  },
+  {
+    "id": "25998018006",
+    "name": "Darts",
+    "category": "other",
+    "score": 0.2002
+  },
+  {
+    "id": "16100100",
+    "name": "Hair Dryers",
+    "category": "other",
+    "score": 0.2002
+  },
+  {
+    "id": "25100107",
+    "name": "Racing Games",
+    "category": "other",
+    "score": 0.2002
+  },
+  {
+    "id": "27101103",
+    "name": "Poultry, Eggs & Meat",
+    "category": "other",
+    "score": 0.1995
+  },
+  {
+    "id": "14102102",
+    "name": "Styling Products",
+    "category": "other",
+    "score": 0.1994
+  },
+  {
+    "id": "25999003011",
+    "name": "Pachinko",
+    "category": "other",
+    "score": 0.199
+  },
+  {
+    "id": "18100",
+    "name": "Storage Products",
+    "category": "other",
+    "score": 0.1989
+  },
+  {
+    "id": "25999002003",
+    "name": "Brawl Games",
+    "category": "other",
+    "score": 0.1988
+  },
+  {
+    "id": "25999006003",
+    "name": "Simulation Racing",
+    "category": "other",
+    "score": 0.1988
+  },
+  {
+    "id": "25999005001",
+    "name": "Block",
+    "category": "other",
+    "score": 0.1983
+  },
+  {
+    "id": "25999004006",
+    "name": "M3-Meta",
+    "category": "other",
+    "score": 0.1983
+  },
+  {
+    "id": "15101102",
+    "name": "Tablets",
+    "category": "other",
+    "score": 0.1977
+  },
+  {
+    "id": "28101114",
+    "name": "Chess, Cards & Mahjong",
+    "category": "other",
+    "score": 0.1975
+  },
+  {
+    "id": "22101104",
+    "name": "Glasses & Lenses",
+    "category": "other",
+    "score": 0.1974
+  },
+  {
+    "id": "22110109",
+    "name": "Skirts",
+    "category": "other",
+    "score": 0.1972
+  },
+  {
+    "id": "25999002016",
+    "name": "Stealth",
+    "category": "other",
+    "score": 0.1968
+  },
+  {
+    "id": "16104118",
+    "name": "Household Appliance Accessories",
+    "category": "other",
+    "score": 0.1968
+  },
+  {
+    "id": "22101100",
+    "name": "Hats",
+    "category": "other",
+    "score": 0.1967
+  },
+  {
+    "id": "25998003002",
+    "name": "Three Kingdoms",
+    "category": "other",
+    "score": 0.1965
+  },
+  {
+    "id": "16104106",
+    "name": "Humidifiers",
+    "category": "other",
+    "score": 0.1962
+  },
+  {
+    "id": "25100100",
+    "name": "Roleplaying Games",
+    "category": "other",
+    "score": 0.196
+  },
+  {
+    "id": "25999013006",
+    "name": "Go-Stop",
+    "category": "other",
+    "score": 0.1958
+  },
+  {
+    "id": "22102106",
+    "name": "Makeup Bags",
+    "category": "other",
+    "score": 0.1957
+  },
+  {
+    "id": "16101125",
+    "name": "Coffee Makers",
+    "category": "other",
+    "score": 0.1947
+  },
+  {
+    "id": "22110115",
+    "name": "Tights",
+    "category": "other",
+    "score": 0.1947
+  },
+  {
+    "id": "20112103",
+    "name": "Keyboard Apps & Tools",
+    "category": "other",
+    "score": 0.1945
+  },
+  {
+    "id": "25998018007",
+    "name": "Archery",
+    "category": "other",
+    "score": 0.1943
+  },
+  {
+    "id": "20112109",
+    "name": "Social App Analytics",
+    "category": "other",
+    "score": 0.1942
+  },
+  {
+    "id": "16100113",
+    "name": "Electric Combs",
+    "category": "other",
+    "score": 0.1942
+  },
+  {
+    "id": "25100104106",
+    "name": "Other Ball Games",
+    "category": "other",
+    "score": 0.1933
+  },
+  {
+    "id": "14101100",
+    "name": "Shampoos",
+    "category": "other",
+    "score": 0.1932
+  },
+  {
+    "id": "25100101102",
+    "name": "Life Simulation Games",
+    "category": "other",
+    "score": 0.193
+  },
+  {
+    "id": "26104101",
+    "name": "Flower Delivery",
+    "category": "other",
+    "score": 0.1929
+  },
+  {
+    "id": "22108103",
+    "name": "Jackets",
+    "category": "other",
+    "score": 0.1927
+  },
+  {
+    "id": "22110101",
+    "name": "Jackets",
+    "category": "other",
+    "score": 0.1927
+  },
+  {
+    "id": "16105100100",
+    "name": "Instant Cameras",
+    "category": "other",
+    "score": 0.1926
+  },
+  {
+    "id": "25998018011",
+    "name": "Snow Sports",
+    "category": "other",
+    "score": 0.1925
+  },
+  {
+    "id": "25999005014",
+    "name": "Escape Room",
+    "category": "other",
+    "score": 0.1925
+  },
+  {
+    "id": "22105",
+    "name": "Watches",
+    "category": "other",
+    "score": 0.1923
+  },
+  {
+    "id": "21102",
+    "name": "Construction Materials & Lighting",
+    "category": "other",
+    "score": 0.1921
+  },
+  {
+    "id": "16104119",
+    "name": "Washers & Dryers",
+    "category": "other",
+    "score": 0.192
+  },
+  {
+    "id": "25999002006",
+    "name": "Music or Rhythm",
+    "category": "other",
+    "score": 0.1918
+  },
+  {
+    "id": "22108100",
+    "name": "T-shirts",
+    "category": "other",
+    "score": 0.1915
+  },
+  {
+    "id": "25999005016",
+    "name": "Sudoku",
+    "category": "other",
+    "score": 0.1914
+  },
+  {
+    "id": "23117101",
+    "name": "Singing & Music Competitions",
+    "category": "other",
+    "score": 0.1911
+  },
+  {
+    "id": "25998019",
+    "name": "War Games",
+    "category": "other",
+    "score": 0.191
+  },
+  {
+    "id": "25999004010",
+    "name": "Other-Meta",
+    "category": "other",
+    "score": 0.1908
+  },
+  {
+    "id": "16102",
+    "name": "Large Appliances",
+    "category": "other",
+    "score": 0.1908
+  },
+  {
+    "id": "10106100",
+    "name": "Music & Instruments",
+    "category": "other",
+    "score": 0.1904
+  },
+  {
+    "id": "23116100",
+    "name": "Music & Instruments",
+    "category": "other",
+    "score": 0.1904
+  },
+  {
+    "id": "14104108",
+    "name": "Makeup Sets",
+    "category": "other",
+    "score": 0.19
+  },
+  {
+    "id": "22110105",
+    "name": "T-Shirts",
+    "category": "other",
+    "score": 0.1898
+  },
+  {
+    "id": "25100103",
+    "name": "Shooting",
+    "category": "other",
+    "score": 0.1892
+  },
+  {
+    "id": "16102102",
+    "name": "TVs & Home Theaters",
+    "category": "other",
+    "score": 0.1887
+  },
+  {
+    "id": "25999005007",
+    "name": "Jigsaw",
+    "category": "other",
+    "score": 0.1885
+  },
+  {
+    "id": "25999003004",
+    "name": "Coin Pusher",
+    "category": "other",
+    "score": 0.1884
+  },
+  {
+    "id": "25999005003",
+    "name": "Brick Breaker",
+    "category": "other",
+    "score": 0.1883
+  },
+  {
+    "id": "25100108",
+    "name": "Music Games",
+    "category": "other",
+    "score": 0.1882
+  },
+  {
+    "id": "17103104",
+    "name": "Villas",
+    "category": "other",
+    "score": 0.1876
+  },
+  {
+    "id": "25999009013",
+    "name": "Interactive Story",
+    "category": "other",
+    "score": 0.1875
+  },
+  {
+    "id": "22111100",
+    "name": "Sandals",
+    "category": "other",
+    "score": 0.1872
+  },
+  {
+    "id": "25100105",
+    "name": "Action Games",
+    "category": "other",
+    "score": 0.1866
+  },
+  {
+    "id": "14100103",
+    "name": "Toothbrushes & Tools",
+    "category": "other",
+    "score": 0.1861
+  },
+  {
+    "id": "22101105",
+    "name": "Ties, Bowties & Tie Clips",
+    "category": "other",
+    "score": 0.1861
+  },
+  {
+    "id": "16101113",
+    "name": "Slow Cookers",
+    "category": "other",
+    "score": 0.1856
+  },
+  {
+    "id": "16104102",
+    "name": "Air Purifiers",
+    "category": "other",
+    "score": 0.1852
+  },
+  {
+    "id": "14104104",
+    "name": "Makeup Tools",
+    "category": "other",
+    "score": 0.1851
+  },
+  {
+    "id": "14104100103",
+    "name": "Blush, Highlighters & Contouring",
+    "category": "other",
+    "score": 0.185
+  },
+  {
+    "id": "16104100",
+    "name": "Vacuums",
+    "category": "other",
+    "score": 0.1847
+  },
+  {
+    "id": "14103101105",
+    "name": "Facial Masks",
+    "category": "other",
+    "score": 0.1846
+  },
+  {
+    "id": "25999011001",
+    "name": "4X",
+    "category": "other",
+    "score": 0.1845
+  },
+  {
+    "id": "27100122",
+    "name": "Middle Eastern Cuisine",
+    "category": "other",
+    "score": 0.1843
+  },
+  {
+    "id": "22101101",
+    "name": "Scarves",
+    "category": "other",
+    "score": 0.1842
+  },
+  {
+    "id": "16104117",
+    "name": "Electric Heating Appliances",
+    "category": "other",
+    "score": 0.1841
+  },
+  {
+    "id": "25100116",
+    "name": "Combat Games",
+    "category": "other",
+    "score": 0.1838
+  },
+  {
+    "id": "27101102",
+    "name": "Vegetables",
+    "category": "other",
+    "score": 0.1835
+  },
+  {
+    "id": "25998021001",
+    "name": "Medieval",
+    "category": "other",
+    "score": 0.1835
+  },
+  {
+    "id": "20103101",
+    "name": "Cameras",
+    "category": "other",
+    "score": 0.1835
+  },
+  {
+    "id": "25999004009",
+    "name": "Other Match",
+    "category": "other",
+    "score": 0.1833
+  },
+  {
+    "id": "14104103",
+    "name": "Eye Makeup",
+    "category": "other",
+    "score": 0.1833
+  },
+  {
+    "id": "25100104999",
+    "name": "Other Sports Games",
+    "category": "other",
+    "score": 0.1831
+  },
+  {
+    "id": "25100111",
+    "name": "Match-three",
+    "category": "other",
+    "score": 0.1831
+  },
+  {
+    "id": "23117",
+    "name": "Variety Shows",
+    "category": "other",
+    "score": 0.1827
+  },
+  {
+    "id": "26100",
+    "name": "Wedding Photography",
+    "category": "other",
+    "score": 0.1824
+  },
+  {
+    "id": "16100111",
+    "name": "Hair Clippers",
+    "category": "other",
+    "score": 0.1819
+  },
+  {
+    "id": "22108102",
+    "name": "Polo Shirts",
+    "category": "other",
+    "score": 0.1819
+  },
+  {
+    "id": "16100115",
+    "name": "Pedicure Tools",
+    "category": "other",
+    "score": 0.1817
+  },
+  {
+    "id": "27101106",
+    "name": "Instant Food",
+    "category": "other",
+    "score": 0.1816
+  },
+  {
+    "id": "25998002",
+    "name": "Asian Fantasy",
+    "category": "other",
+    "score": 0.1815
+  },
+  {
+    "id": "25999004007",
+    "name": "M3-Saga",
+    "category": "other",
+    "score": 0.1814
+  },
+  {
+    "id": "27100111",
+    "name": "Japanese Cuisine",
+    "category": "other",
+    "score": 0.1806
+  },
+  {
+    "id": "25992002",
+    "name": "IAP",
+    "category": "other",
+    "score": 0.1796
+  },
+  {
+    "id": "23111",
+    "name": "Collectables & Antiques",
+    "category": "other",
+    "score": 0.1793
+  },
+  {
+    "id": "18102",
+    "name": "Glasses & Drinkware",
+    "category": "other",
+    "score": 0.1792
+  },
+  {
+    "id": "16101129",
+    "name": "Food Processors",
+    "category": "other",
+    "score": 0.1791
+  },
+  {
+    "id": "25999002004",
+    "name": "Fighting Games",
+    "category": "other",
+    "score": 0.179
+  },
+  {
+    "id": "25999009002",
+    "name": "Avatar Life",
+    "category": "other",
+    "score": 0.179
+  },
+  {
+    "id": "14106100",
+    "name": "Men's Fragrances & Perfumes",
+    "category": "other",
+    "score": 0.1789
+  },
+  {
+    "id": "25999003008",
+    "name": "Mahjong",
+    "category": "other",
+    "score": 0.1784
+  },
+  {
+    "id": "25998018005",
+    "name": "Pool or Billiards",
+    "category": "other",
+    "score": 0.1783
+  },
+  {
+    "id": "25999009016",
+    "name": "Other Simulation",
+    "category": "other",
+    "score": 0.1783
+  },
+  {
+    "id": "25999007004",
+    "name": "Location RPG",
+    "category": "other",
+    "score": 0.1782
+  },
+  {
+    "id": "14103100100",
+    "name": "Body Cleansing",
+    "category": "other",
+    "score": 0.1781
+  },
+  {
+    "id": "25999007006",
+    "name": "Open World RPG",
+    "category": "other",
+    "score": 0.1775
+  },
+  {
+    "id": "16101112",
+    "name": "Heated Lunch Boxes",
+    "category": "other",
+    "score": 0.1774
+  },
+  {
+    "id": "25100109",
+    "name": "Action-adventure Games",
+    "category": "other",
+    "score": 0.1766
+  },
+  {
+    "id": "25998001001",
+    "name": "Nijigen",
+    "category": "other",
+    "score": 0.1766
+  },
+  {
+    "id": "25999007001",
+    "name": "Action RPG",
+    "category": "other",
+    "score": 0.1765
+  },
+  {
+    "id": "25999013007",
+    "name": "Hanafuda",
+    "category": "other",
+    "score": 0.1757
+  },
+  {
+    "id": "22108108",
+    "name": "Socks",
+    "category": "other",
+    "score": 0.1755
+  },
+  {
+    "id": "22110113",
+    "name": "Socks",
+    "category": "other",
+    "score": 0.1755
+  },
+  {
+    "id": "25999004003",
+    "name": "Bubble Shooter",
+    "category": "other",
+    "score": 0.1754
+  },
+  {
+    "id": "22112",
+    "name": "Traditional & Ceremonial Clothing",
+    "category": "other",
+    "score": 0.1753
+  },
+  {
+    "id": "25999002015",
+    "name": "Slasher Games",
+    "category": "other",
+    "score": 0.1753
+  },
+  {
+    "id": "27101104",
+    "name": "Frozen Food",
+    "category": "other",
+    "score": 0.1746
+  },
+  {
+    "id": "20112110",
+    "name": "Wallpapers",
+    "category": "other",
+    "score": 0.1745
+  },
+  {
+    "id": "25100100100",
+    "name": "ARPGs",
+    "category": "other",
+    "score": 0.1741
+  },
+  {
+    "id": "18105",
+    "name": "Kitchen Accessories",
+    "category": "other",
+    "score": 0.1739
+  },
+  {
+    "id": "14103100102",
+    "name": "Scrubs & Body Exfoliation",
+    "category": "other",
+    "score": 0.1735
+  },
+  {
+    "id": "22111",
+    "name": "Women's Shoes",
+    "category": "other",
+    "score": 0.1733
+  },
+  {
+    "id": "25999004008",
+    "name": "Merge-Saga",
+    "category": "other",
+    "score": 0.1733
+  },
+  {
+    "id": "25999004005",
+    "name": "Line-Saga",
+    "category": "other",
+    "score": 0.1732
+  },
+  {
+    "id": "25999012006",
+    "name": "Minigames",
+    "category": "other",
+    "score": 0.1722
+  },
+  {
+    "id": "16104105",
+    "name": "Water Purifiers",
+    "category": "other",
+    "score": 0.172
+  },
+  {
+    "id": "23119107",
+    "name": "Thrillers",
+    "category": "other",
+    "score": 0.1717
+  },
+  {
+    "id": "20112101",
+    "name": "System Cleanup Software",
+    "category": "other",
+    "score": 0.1713
+  },
+  {
+    "id": "25996001",
+    "name": "2D",
+    "category": "other",
+    "score": 0.1711
+  },
+  {
+    "id": "25999007007",
+    "name": "Other RPG",
+    "category": "other",
+    "score": 0.1711
+  },
+  {
+    "id": "25100101",
+    "name": "Simulation Games",
+    "category": "other",
+    "score": 0.171
+  },
+  {
+    "id": "14104100",
+    "name": "Face Makeup",
+    "category": "other",
+    "score": 0.1702
+  },
+  {
+    "id": "16100114",
+    "name": "Electric Ear Cleaners",
+    "category": "other",
+    "score": 0.1702
+  },
+  {
+    "id": "25999008002",
+    "name": "Cover Fire",
+    "category": "other",
+    "score": 0.169
+  },
+  {
+    "id": "25998005",
+    "name": "Cover Fire",
+    "category": "other",
+    "score": 0.169
+  },
+  {
+    "id": "25999005015",
+    "name": "Spot the Difference",
+    "category": "other",
+    "score": 0.169
+  },
+  {
+    "id": "22110104",
+    "name": "Shirts & Tops",
+    "category": "other",
+    "score": 0.1686
+  },
+  {
+    "id": "14103101100",
+    "name": "Sunscreens",
+    "category": "other",
+    "score": 0.1683
+  },
+  {
+    "id": "25999013011",
+    "name": "Solitaire",
+    "category": "other",
+    "score": 0.1675
+  },
+  {
+    "id": "27100106",
+    "name": "Desserts",
+    "category": "other",
+    "score": 0.1668
+  },
+  {
+    "id": "23117999",
+    "name": "Other Variety Shows",
+    "category": "other",
+    "score": 0.1666
+  },
+  {
+    "id": "25999004002",
+    "name": "Blast-Saga",
+    "category": "other",
+    "score": 0.1661
+  },
+  {
+    "id": "22110114",
+    "name": "Pajamas",
+    "category": "other",
+    "score": 0.1659
+  },
+  {
+    "id": "22109104",
+    "name": "Loafers & Moccasins",
+    "category": "other",
+    "score": 0.1654
+  },
+  {
+    "id": "25999012008",
+    "name": "Party Royale",
+    "category": "other",
+    "score": 0.1654
+  },
+  {
+    "id": "14102100",
+    "name": "Hair Dye Products",
+    "category": "other",
+    "score": 0.1652
+  },
+  {
+    "id": "25998008",
+    "name": "Games for Women",
+    "category": "other",
+    "score": 0.1651
+  },
+  {
+    "id": "22110100",
+    "name": "Coats",
+    "category": "other",
+    "score": 0.1651
+  },
+  {
+    "id": "22108104",
+    "name": "Coats",
+    "category": "other",
+    "score": 0.1651
+  },
+  {
+    "id": "25999003003",
+    "name": "Claw Machine",
+    "category": "other",
+    "score": 0.1648
+  },
+  {
+    "id": "22109102",
+    "name": "Sandals & Slippers",
+    "category": "other",
+    "score": 0.164
+  },
+  {
+    "id": "20104103",
+    "name": "Dictionaries & Translation Tools",
+    "category": "other",
+    "score": 0.1635
+  },
+  {
+    "id": "25999007003",
+    "name": "Idle RPG",
+    "category": "other",
+    "score": 0.1616
+  },
+  {
+    "id": "16105100",
+    "name": "Cameras & Video Cameras",
+    "category": "other",
+    "score": 0.1611
+  },
+  {
+    "id": "20112102",
+    "name": "VPNs",
+    "category": "other",
+    "score": 0.161
+  },
+  {
+    "id": "16104113",
+    "name": "Electric Fans",
+    "category": "other",
+    "score": 0.1605
+  },
+  {
+    "id": "25999011008",
+    "name": "Summoning",
+    "category": "other",
+    "score": 0.1598
+  },
+  {
+    "id": "11101103",
+    "name": "Windshield Repair",
+    "category": "other",
+    "score": 0.1597
+  },
+  {
+    "id": "16104108",
+    "name": "Robotic Vacuums",
+    "category": "other",
+    "score": 0.1592
+  },
+  {
+    "id": "16104104",
+    "name": "Electric Irons",
+    "category": "other",
+    "score": 0.1588
+  },
+  {
+    "id": "27102100",
+    "name": "Instant Drinks",
+    "category": "other",
+    "score": 0.1584
+  },
+  {
+    "id": "11101101",
+    "name": "Car Interior Accessories",
+    "category": "other",
+    "score": 0.1583
+  },
+  {
+    "id": "25999006001",
+    "name": "Arcade Racing",
+    "category": "other",
+    "score": 0.1581
+  },
+  {
+    "id": "22102107",
+    "name": "Key Pouches",
+    "category": "other",
+    "score": 0.1571
+  },
+  {
+    "id": "25999005005",
+    "name": "Hidden Object",
+    "category": "other",
+    "score": 0.1571
+  },
+  {
+    "id": "22102102",
+    "name": "Shoulder Bags",
+    "category": "other",
+    "score": 0.157
+  },
+  {
+    "id": "16102100",
+    "name": "Refrigerators",
+    "category": "other",
+    "score": 0.1567
+  },
+  {
+    "id": "25100102103",
+    "name": "Tower Defense Games",
+    "category": "other",
+    "score": 0.1566
+  },
+  {
+    "id": "14103101102",
+    "name": "Face Lotions & Moisturizers",
+    "category": "other",
+    "score": 0.1565
+  },
+  {
+    "id": "16104107",
+    "name": "Steam Cleaners",
+    "category": "other",
+    "score": 0.1552
+  },
+  {
+    "id": "14103101103",
+    "name": "Facial Essence",
+    "category": "other",
+    "score": 0.1552
+  },
+  {
+    "id": "25999008004",
+    "name": "Sniper Games",
+    "category": "other",
+    "score": 0.1551
+  },
+  {
+    "id": "25998016",
+    "name": "Sniper Games",
+    "category": "other",
+    "score": 0.1551
+  },
+  {
+    "id": "25100106",
+    "name": "Adventure Games",
+    "category": "other",
+    "score": 0.1548
+  },
+  {
+    "id": "25999012010",
+    "name": "Truth or Dare",
+    "category": "other",
+    "score": 0.1545
+  },
+  {
+    "id": "16100101",
+    "name": "Curling Irons & Straighteners",
+    "category": "other",
+    "score": 0.1545
+  },
+  {
+    "id": "25999011009",
+    "name": "Tower Defense",
+    "category": "other",
+    "score": 0.1533
+  },
+  {
+    "id": "22108109",
+    "name": "Vests",
+    "category": "other",
+    "score": 0.1527
+  },
+  {
+    "id": "16105101",
+    "name": "Speakers & Audio",
+    "category": "other",
+    "score": 0.1518
+  },
+  {
+    "id": "25999013010",
+    "name": "Other Tabletop",
+    "category": "other",
+    "score": 0.151
+  },
+  {
+    "id": "14103100105",
+    "name": "Shaving & Body Hair Removal",
+    "category": "other",
+    "score": 0.1509
+  },
+  {
+    "id": "25100110",
+    "name": "Puzzle Games",
+    "category": "other",
+    "score": 0.15
+  },
+  {
+    "id": "25999005010",
+    "name": "Minesweeper",
+    "category": "other",
+    "score": 0.1498
+  },
+  {
+    "id": "25998020",
+    "name": "Western Fantasy",
+    "category": "other",
+    "score": 0.1495
+  },
+  {
+    "id": "25999005011",
+    "name": "Nonogram",
+    "category": "other",
+    "score": 0.149
+  },
+  {
+    "id": "14104100102",
+    "name": "Makeup Bases & Primers",
+    "category": "other",
+    "score": 0.1482
+  },
+  {
+    "id": "25999008003",
+    "name": "PvE Shooting Games",
+    "category": "other",
+    "score": 0.1476
+  },
+  {
+    "id": "22108110",
+    "name": "Sweatshirts & Hoodies",
+    "category": "other",
+    "score": 0.1474
+  },
+  {
+    "id": "27101107",
+    "name": "Rice, Wheat, Cooking Oil, Spices & Seasonings",
+    "category": "other",
+    "score": 0.1472
+  },
+  {
+    "id": "14102104",
+    "name": "Wigs & Accessories",
+    "category": "other",
+    "score": 0.1465
+  },
+  {
+    "id": "14104101",
+    "name": "Eyebrow Makeup",
+    "category": "other",
+    "score": 0.1457
+  },
+  {
+    "id": "14101103",
+    "name": "Shampoo-Conditioning Sets",
+    "category": "other",
+    "score": 0.145
+  },
+  {
+    "id": "14106101",
+    "name": "Women's Fragrances & Perfumes",
+    "category": "other",
+    "score": 0.1448
+  },
+  {
+    "id": "23118100",
+    "name": "Romantic Fiction",
+    "category": "other",
+    "score": 0.1446
+  },
+  {
+    "id": "25999013009",
+    "name": "Othello",
+    "category": "other",
+    "score": 0.1441
+  },
+  {
+    "id": "25999007008",
+    "name": "Puzzle RPG",
+    "category": "other",
+    "score": 0.144
+  },
+  {
+    "id": "14104100101",
+    "name": "Face Powders",
+    "category": "other",
+    "score": 0.1439
+  },
+  {
+    "id": "25999002009",
+    "name": "Platformer",
+    "category": "other",
+    "score": 0.1421
+  },
+  {
+    "id": "25999008",
+    "name": "Shooting Games",
+    "category": "other",
+    "score": 0.1421
+  },
+  {
+    "id": "25999001009",
+    "name": "Shooting Games",
+    "category": "other",
+    "score": 0.1421
+  },
+  {
+    "id": "14103100103",
+    "name": "Deodorants & Antiperspirants",
+    "category": "other",
+    "score": 0.1416
+  },
+  {
+    "id": "25999004001",
+    "name": "Blast-Meta",
+    "category": "other",
+    "score": 0.1413
+  },
+  {
+    "id": "17105107",
+    "name": "Scenic Viewpoints",
+    "category": "other",
+    "score": 0.141
+  },
+  {
+    "id": "25999013008",
+    "name": "Mahjong Solitaire",
+    "category": "other",
+    "score": 0.1408
+  },
+  {
+    "id": "14104102",
+    "name": "Lip Makeup",
+    "category": "other",
+    "score": 0.1404
+  },
+  {
+    "id": "25100103100",
+    "name": "First-person Shooter Games",
+    "category": "other",
+    "score": 0.1398
+  },
+  {
+    "id": "25998002001",
+    "name": "Wuxia or Xian Xia",
+    "category": "other",
+    "score": 0.1395
+  },
+  {
+    "id": "25999002011",
+    "name": "Run & Gun",
+    "category": "other",
+    "score": 0.1393
+  },
+  {
+    "id": "16105100101",
+    "name": "Action Camera",
+    "category": "other",
+    "score": 0.1378
+  },
+  {
+    "id": "14103101101",
+    "name": "Toners",
+    "category": "other",
+    "score": 0.1377
+  },
+  {
+    "id": "16104112",
+    "name": "Garment Steamers & Irons",
+    "category": "other",
+    "score": 0.1367
+  },
+  {
+    "id": "25999005012",
+    "name": "Other Puzzle",
+    "category": "other",
+    "score": 0.1353
+  },
+  {
+    "id": "22112110",
+    "name": "Wedding Dresses",
+    "category": "other",
+    "score": 0.1349
+  },
+  {
+    "id": "25999002014",
+    "name": "Shoot'em Up Games",
+    "category": "other",
+    "score": 0.1337
+  },
+  {
+    "id": "25998019001",
+    "name": "Modern Military Games",
+    "category": "other",
+    "score": 0.1328
+  },
+  {
+    "id": "11111",
+    "name": "Accessories for 2/3-Wheeled Vehicles",
+    "category": "other",
+    "score": 0.1327
+  },
+  {
+    "id": "16104114",
+    "name": "Vacuums & Dust Mite Controllers",
+    "category": "other",
+    "score": 0.1314
+  },
+  {
+    "id": "25100103102",
+    "name": "Air Combat Games",
+    "category": "other",
+    "score": 0.1306
+  },
+  {
+    "id": "20101102",
+    "name": "Audio players",
+    "category": "other",
+    "score": 0.1293
+  },
+  {
+    "id": "25999009001",
+    "name": "Animal Avatar",
+    "category": "other",
+    "score": 0.1288
+  },
+  {
+    "id": "25999005008",
+    "name": "Klotski",
+    "category": "other",
+    "score": 0.128
+  },
+  {
+    "id": "14103100101",
+    "name": "Skin Moisturizer",
+    "category": "other",
+    "score": 0.1273
+  },
+  {
+    "id": "16101119",
+    "name": "Electric Grills",
+    "category": "other",
+    "score": 0.1269
+  },
+  {
+    "id": "28101123",
+    "name": "Knee Protectors",
+    "category": "other",
+    "score": 0.1266
+  },
+  {
+    "id": "25999008005",
+    "name": "Team Deathmatch",
+    "category": "other",
+    "score": 0.1265
+  },
+  {
+    "id": "25998021002",
+    "name": "Western American Games",
+    "category": "other",
+    "score": 0.1256
+  },
+  {
+    "id": "14103101104",
+    "name": "Facial Cleansers & Make-up Remover",
+    "category": "other",
+    "score": 0.1237
+  },
+  {
+    "id": "16101118",
+    "name": "Multi-purpose Pots",
+    "category": "other",
+    "score": 0.1231
+  },
+  {
+    "id": "25100102100",
+    "name": "Turn-based Strategy Games",
+    "category": "other",
+    "score": 0.1213
+  },
+  {
+    "id": "25999004004",
+    "name": "Connect Tiles",
+    "category": "other",
+    "score": 0.121
+  },
+  {
+    "id": "25999007013",
+    "name": "Tower Defense RPG",
+    "category": "other",
+    "score": 0.1178
+  },
+  {
+    "id": "16101100",
+    "name": "Freezers & Ice Makers",
+    "category": "other",
+    "score": 0.1156
+  },
+  {
+    "id": "25100103101",
+    "name": "Third-person Shooter Games",
+    "category": "other",
+    "score": 0.1103
+  },
+  {
+    "id": "20101",
+    "name": "Audio & Video Players",
+    "category": "other",
+    "score": 0.1013
+  },
+  {
+    "id": "25999002001",
+    "name": "Artillery Shooter Games",
+    "category": "other",
+    "score": 0.1012
+  },
+  {
+    "id": "25999005017",
+    "name": "Tile-Matching",
+    "category": "other",
+    "score": 0.1001
+  },
+  {
+    "id": "25999007009",
+    "name": "Roguelike ARPG",
+    "category": "other",
+    "score": 0.0896
+  }
+]

@@ -1,0 +1,16 @@
+services:
+  api-data-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-data-pipeline
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - LEVEL=${LEVEL:-country}          # override here to be used in file name: country, province, city, dma
+    volumes:
+      - ./data:/app/data                 # link host folder data to data folder inside container
+      - ./logging:/app/logging
+    command: ["python", "main.py"]

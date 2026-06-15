@@ -1,0 +1,449 @@
+[
+  {
+    "id": "28",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Sports & Outdoors",
+    "children_ids": [
+      "28100",
+      "28101"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "19",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Pets",
+    "children_ids": [
+      "19100",
+      "19101",
+      "19102",
+      "19103",
+      "19105",
+      "19106"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "13",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Financial Services",
+    "children_ids": [
+      "13101",
+      "13102",
+      "13108",
+      "13112",
+      "13114"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "12",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Baby & Kids Products",
+    "children_ids": [
+      "12101",
+      "12102",
+      "12103",
+      "12104",
+      "12105",
+      "12106",
+      "12107",
+      "12108",
+      "12109"
+    ],
+    "level": 1,
+    "supported_special_industries": [],
+    "hashtag_type": null
+  },
+  {
+    "id": "24",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Business Services",
+    "children_ids": [
+      "24100",
+      "24101",
+      "24102",
+      "24103",
+      "24104",
+      "24106",
+      "24107",
+      "24108",
+      "24109",
+      "24110",
+      "24111",
+      "24112",
+      "24113",
+      "24114",
+      "24116",
+      "24117",
+      "24118",
+      "24119",
+      "24120"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "14",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Beauty & Personal Care",
+    "children_ids": [
+      "14100",
+      "14101",
+      "14102",
+      "14103",
+      "14104",
+      "14106",
+      "14107"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "10",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Education",
+    "children_ids": [
+      "10100",
+      "10101",
+      "10102",
+      "10103",
+      "10104",
+      "10105",
+      "10106"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "20",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Apps",
+    "children_ids": [
+      "20100",
+      "20101",
+      "20102",
+      "20103",
+      "20104",
+      "20105",
+      "20106",
+      "20107",
+      "20108",
+      "20109",
+      "20110",
+      "20111",
+      "20112"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "23",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "News & Entertainment",
+    "children_ids": [
+      "23102",
+      "23103",
+      "23104",
+      "23105",
+      "23106",
+      "23107",
+      "23108",
+      "23109",
+      "23110",
+      "23111",
+      "23112",
+      "23113",
+      "23114",
+      "23116",
+      "23117",
+      "23118",
+      "23119",
+      "23122",
+      "23123",
+      "23124",
+      "23126",
+      "23129",
+      "23131",
+      "23133",
+      "23999",
+      "29101",
+      "20107105"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "11",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Vehicles & Transportation",
+    "children_ids": [
+      "11100",
+      "11101",
+      "11102",
+      "11103",
+      "11104",
+      "11105",
+      "11106",
+      "11107",
+      "11108",
+      "11109",
+      "11111",
+      "11112"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "18",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Household Products",
+    "children_ids": [
+      "18100",
+      "18102",
+      "18104",
+      "18105",
+      "18106",
+      "18107",
+      "18108",
+      "18109",
+      "18110",
+      "18111",
+      "18112"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "16",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Appliances",
+    "children_ids": [
+      "16100",
+      "16101",
+      "16102",
+      "16104",
+      "16105"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "27",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Food & Beverage",
+    "children_ids": [
+      "27100",
+      "27101",
+      "27102",
+      "27104"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "15",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Tech & Electronics",
+    "children_ids": [
+      "15100",
+      "15101",
+      "15102",
+      "15104",
+      "15105",
+      "15106",
+      "15107"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "30",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "E-Commerce (Non-app)",
+    "children_ids": [
+      "30100"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "22",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Apparel & Accessories",
+    "children_ids": [
+      "22101",
+      "22102",
+      "22105",
+      "22106",
+      "22107",
+      "22108",
+      "22109",
+      "22110",
+      "22111",
+      "22112",
+      "22113"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "26",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Life Services",
+    "children_ids": [
+      "26100",
+      "26101",
+      "26104",
+      "26105",
+      "26106",
+      "26107",
+      "26108",
+      "26111",
+      "26112",
+      "26113",
+      "26114"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "17",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Travel",
+    "children_ids": [
+      "17103",
+      "17105",
+      "17106"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "25",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Games",
+    "children_ids": [
+      "25100",
+      "25992",
+      "25993",
+      "25996",
+      "25998",
+      "25999"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  },
+  {
+    "id": "21",
+    "sub_targeting_type": "GENERAL_INTEREST",
+    "name": "Home Improvement",
+    "children_ids": [
+      "21100",
+      "21101",
+      "21102",
+      "21103",
+      "21104"
+    ],
+    "level": 1,
+    "supported_special_industries": [
+      "HOUSING",
+      "EMPLOYMENT",
+      "CREDIT"
+    ],
+    "hashtag_type": null
+  }
+]

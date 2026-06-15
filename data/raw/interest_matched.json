@@ -1,0 +1,237 @@
+[
+  {
+    "id": "25999009004",
+    "name": "Building",
+    "category": "business"
+  },
+  {
+    "id": "23102",
+    "name": "Business & Economy",
+    "category": "business"
+  },
+  {
+    "id": "20110",
+    "name": "Business & Productivity",
+    "category": "business"
+  },
+  {
+    "id": "24",
+    "name": "Business Services",
+    "category": "business"
+  },
+  {
+    "id": "27102105",
+    "name": "Coffee",
+    "category": "business"
+  },
+  {
+    "id": "17103101",
+    "name": "Economy Hotels",
+    "category": "business"
+  },
+  {
+    "id": "10104104",
+    "name": "Enterprise Management Training",
+    "category": "business"
+  },
+  {
+    "id": "20105103",
+    "name": "Express Deliveries",
+    "category": "business"
+  },
+  {
+    "id": "25998012001",
+    "name": "Farming",
+    "category": "business"
+  },
+  {
+    "id": "20106",
+    "name": "Financial Services",
+    "category": "business"
+  },
+  {
+    "id": "16104118",
+    "name": "Household Appliance Accessories",
+    "category": "business"
+  },
+  {
+    "id": "24116",
+    "name": "IT Services",
+    "category": "business"
+  },
+  {
+    "id": "13102",
+    "name": "Insurance",
+    "category": "business"
+  },
+  {
+    "id": "20106102",
+    "name": "Money Management & Bookkeeping",
+    "category": "business"
+  },
+  {
+    "id": "20105",
+    "name": "Online Shopping",
+    "category": "business"
+  },
+  {
+    "id": "12",
+    "name": "Baby & Kids Products",
+    "category": "childcare"
+  },
+  {
+    "id": "12104",
+    "name": "Baby Bedding",
+    "category": "childcare"
+  },
+  {
+    "id": "12102",
+    "name": "Baby Formula",
+    "category": "childcare"
+  },
+  {
+    "id": "12105",
+    "name": "Baby Shoes",
+    "category": "childcare"
+  },
+  {
+    "id": "12107",
+    "name": "Child Car Seats",
+    "category": "childcare"
+  },
+  {
+    "id": "23118106",
+    "name": "Children's Books",
+    "category": "childcare"
+  },
+  {
+    "id": "12103",
+    "name": "Diapers & Baby Wipes",
+    "category": "childcare"
+  },
+  {
+    "id": "10100",
+    "name": "Early Childhood & Preschool Education",
+    "category": "childcare"
+  },
+  {
+    "id": "16101112",
+    "name": "Heated Lunch Boxes",
+    "category": "childcare"
+  },
+  {
+    "id": "20111100",
+    "name": "Parenting",
+    "category": "childcare"
+  },
+  {
+    "id": "12101",
+    "name": "Strollers & Cribs",
+    "category": "childcare"
+  },
+  {
+    "id": "13112",
+    "name": "Foreign Exchange Transactions",
+    "category": "economy"
+  },
+  {
+    "id": "20106103",
+    "name": "Investment",
+    "category": "economy"
+  },
+  {
+    "id": "24119",
+    "name": "Investment Planning & Management",
+    "category": "economy"
+  },
+  {
+    "id": "13101",
+    "name": "Securities",
+    "category": "economy"
+  },
+  {
+    "id": "22102103",
+    "name": "Backpacks",
+    "category": "education"
+  },
+  {
+    "id": "10104103",
+    "name": "Chef Training & Examinations",
+    "category": "education"
+  },
+  {
+    "id": "10102101",
+    "name": "College Education",
+    "category": "education"
+  },
+  {
+    "id": "10104101",
+    "name": "Design Training & Education",
+    "category": "education"
+  },
+  {
+    "id": "10104109",
+    "name": "Driving Schools & Pilot Training",
+    "category": "education"
+  },
+  {
+    "id": "10103103",
+    "name": "ESL Testing",
+    "category": "education"
+  },
+  {
+    "id": "10",
+    "name": "Education",
+    "category": "education"
+  },
+  {
+    "id": "25999014001",
+    "name": "Educational Games",
+    "category": "education"
+  },
+  {
+    "id": "20104101",
+    "name": "Exam Preparation",
+    "category": "education"
+  },
+  {
+    "id": "10102",
+    "name": "Higher Education",
+    "category": "education"
+  },
+  {
+    "id": "10103",
+    "name": "Overseas Education",
+    "category": "education"
+  },
+  {
+    "id": "10103101",
+    "name": "Overseas Study for Undergraduate Education",
+    "category": "education"
+  },
+  {
+    "id": "10105104",
+    "name": "Spanish Language Training",
+    "category": "education"
+  },
+  {
+    "id": "27104",
+    "name": "Cooking & Recipes",
+    "category": "healthcare"
+  },
+  {
+    "id": "14103105",
+    "name": "Hand & Foot Care",
+    "category": "healthcare"
+  },
+  {
+    "id": "20109101",
+    "name": "Medical Care",
+    "category": "healthcare"
+  },
+  {
+    "id": "27101103",
+    "name": "Poultry, Eggs & Meat",
+    "category": "healthcare"
+  }
+]
